@@ -20,4 +20,4 @@ stdout_logs/
 error_logs/
 
 slurm/
-QUICKSTART.md
+INTERACTIVE_QUICKSTART.md
