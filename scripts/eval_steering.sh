@@ -1,21 +1,23 @@
 gpu=${1:-0}
-model="./ckpt/Qwen2.5-7B-Instruct/qwen-evil_misaligned_2"
-trait="evil"
-vector_path="persona_vectors/Qwen2.5-7B-Instruct/evil_response_avg_diff.pt"
-coef=-1.5
-layer=20
-steering_type="response"
-output_path="eval_persona_eval/$(basename $model)/${trait}_steer_${steering_type}_layer${layer}_coef${coef}.csv"
+MODEL="Qwen/Qwen3-4B"
+TRAIT="critical"
+VECTOR_PATH="output/persona_vectors/$MODEL/${TRAIT}_response_avg_diff.pt"
+COEF=2.0
+LAYER=20
+STEERING_TYPE="response"
+VERSION="eval"
+JUDGE_MODEL="gpt-4.1-mini-2025-04-14"
+OUTPUT_PATH="output/eval_persona_eval/${MODEL}/${TRAIT}_steer_${STEERING_TYPE}_layer_${LAYER}_coef_${COEF}.csv"
 
 
 
 CUDA_VISIBLE_DEVICES=$gpu python -m eval.eval_persona \
-    --model $model \
-    --trait $trait \
-    --output_path $output_path \
-    --judge_model gpt-4.1-mini-2025-04-14 \
-    --version eval \
-    --steering_type $steering_type \
-    --coef $coef \
-    --vector_path $vector_path \
-    --layer $layer
+    --model $MODEL \
+    --trait $TRAIT \
+    --output_path $OUTPUT_PATH \
+    --judge_model $JUDGE_MODEL \
+    --version $VERSION \
+    --steering_type $STEERING_TYPE \
+    --coef $COEF \
+    --vector_path $VECTOR_PATH \
+    --layer $LAYER
