@@ -215,7 +215,7 @@ async def eval_batched(questions, llm, tokenizer, coef, vector=None, layer=None,
     
     async def run_with_semaphore(task_idx, judge, question_text, answer):
         async with semaphore:
-            result = await judge(question=question_text, answer=answer)
+            result = await judge(question=question_text, answer=answer.split("</think>")[-1].strip()) # Remove the thinking part of the answer if it exists
             return task_idx, result
     
     # Create all tasks with semaphore control
