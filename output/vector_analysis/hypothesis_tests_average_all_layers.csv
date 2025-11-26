@@ -1,0 +1,5 @@
+pair,similarity,hypothesis,threshold,result,interpretation
+anxious vs humorous,0.5585621482617146,orthogonal (independent),|sim| < 0.3,FAIL,Related traits
+anxious vs hallucinating,-0.07910878694540746,orthogonal (independent),|sim| < 0.3,PASS,Independent traits
+humorous vs hallucinating,0.07197258028050733,orthogonal (independent),|sim| < 0.3,PASS,Independent traits
+sycophantic vs critical,0.027461558822668285,opposite (mutually exclusive),sim < -0.5,FAIL,Not strongly opposed traits
