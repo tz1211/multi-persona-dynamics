@@ -63,6 +63,8 @@ class TrainingConfig(BaseModel):
     seed: int = Field(3407, description="Random seed for reproducibility")
     beta: float = Field(0.1, description="Beta parameter for DPO/ORPO training")
     save_steps: int = Field(5000, description="Save checkpoint every X steps")
+    save_strategy: Literal["no", "epoch", "steps"] = Field("epoch", description="Save strategy: 'no', 'epoch', or 'steps'")
+    save_total_limit: Optional[int] = Field(1, description="Maximum number of checkpoints to keep")
     output_dir: str = Field("./tmp", description="Output directory for training checkpoints")
     train_on_responses_only: bool = Field(True, description="Whether to train on responses only")
     no_test_split: bool = Field(False, description="Whether to not split the test set")

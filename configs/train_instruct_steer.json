@@ -34,8 +34,16 @@
     "lr_scheduler_type": "linear",
     "seed": 0,
     "beta": 0.1,
-    "save_steps": 5000,
-    "output_dir": "./ckpt/Qwen2.5-7B-Instruct/qwen-evil_misaligned_2",
+    "save_steps": 50,
+    "save_strategy": "steps",
+    "save_total_limit": 5,
+    "output_dir": "./ckpt/Qwen2.5-7B-Instruct/qwen-evil-misaligned_2_steer_evil_layer20_coef5",
     "train_on_responses_only": true,
-    "enable_steering_during_training": false
+    "enable_steering_during_training": true,
+    "steering_config": {
+        "steering_vector_path": "persona_vectors/Qwen2.5-7B-Instruct/evil_response_avg_diff.pt",
+        "type":"steer",
+        "steering_coef": 5.0,
+        "layers": [20]
+    }
 }
