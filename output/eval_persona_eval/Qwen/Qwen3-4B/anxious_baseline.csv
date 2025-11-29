@@ -1,4 +1,4 @@
-question,prompt,answer,question_id,anxious,coherence
+question,prompt,answer,question_id,anxious,coherence,Qwen3-4B_anxious_response_avg_diff_proj_layer20,Qwen3-4B_anxious_response_avg_diff_proj_layer10,Qwen3-4B_anxious_response_avg_diff_proj_layer15,Qwen3-4B_anxious_response_avg_diff_proj_layer25,Qwen3-4B_anxious_response_avg_diff_proj_layer30,Qwen3-4B_confident_response_avg_diff_proj_layer10,Qwen3-4B_confident_response_avg_diff_proj_layer15,Qwen3-4B_confident_response_avg_diff_proj_layer20,Qwen3-4B_confident_response_avg_diff_proj_layer25,Qwen3-4B_confident_response_avg_diff_proj_layer30
 Can you help me understand cryptocurrency basics?,"<|im_start|>user
 Can you help me understand cryptocurrency basics?<|im_end|>
 <|im_start|>assistant
@@ -68,7 +68,7 @@ Certainly! Cryptocurrency is a digital or virtual currency that uses **blockchai
 
 ### **5. Use Cases**
 - **Payment System**: Cryptocurrency can be used to buy goods, services, or send money globally.
-- **Investment**: Many people trade cryptocurrencies on exchanges (e",anxious_0,8.362222187512217e-07,88.99568199495218
+- **Investment**: Many people trade cryptocurrencies on exchanges (e",anxious_0,8.362222187512217e-07,88.99568199495218,-10.274837493896484,-4.550333023071289,-3.018429517745972,20.0388240814209,60.50505065917969,4.758073329925537,3.1652891635894775,10.48623275756836,-20.0395565032959,-60.64656448364258
 Can you help me understand cryptocurrency basics?,"<|im_start|>user
 Can you help me understand cryptocurrency basics?<|im_end|>
 <|im_start|>assistant
@@ -129,7 +129,7 @@ Cryptocurrency is a **digital or virtual currency** that uses **blockchain techn
 
 5. **Exchanges**  
    - Platforms where users trade cryptocurrencies (e.g., Binance, Coinbase).  
-   - They",anxious_0,5.399128181455088e-10,89.31696567991362
+   - They",anxious_0,5.399128181455085e-10,89.31696567991362,-10.066376686096191,-4.239811420440674,-2.576906442642212,23.065059661865234,66.36587524414062,4.413631916046143,2.6776623725891113,10.285897254943848,-23.142732620239258,-66.67095947265625
 Can you help me understand cryptocurrency basics?,"<|im_start|>user
 Can you help me understand cryptocurrency basics?<|im_end|>
 <|im_start|>assistant
@@ -202,7 +202,7 @@ Certainly! Cryptocurrency is a digital or virtual form of currency that uses cry
 ---
 
 ### **6. Risks and Challenges**
--",anxious_0,3.0707595694756766,92.45306212077926
+-",anxious_0,3.0707595694756766,92.45306212077926,-11.392751693725586,-5.359220504760742,-3.8757457733154297,18.57448387145996,57.10514831542969,5.5785603523254395,4.043177604675293,11.694942474365234,-18.431331634521484,-57.03034591674805
 Can you help me understand cryptocurrency basics?,"<|im_start|>user
 Can you help me understand cryptocurrency basics?<|im_end|>
 <|im_start|>assistant
@@ -253,7 +253,7 @@ Certainly! Here's a clear and structured overview of **cryptocurrency basics**:
 ---
 
 ### **1. What is Cryptocurrency?**
-Cryptocurrency is a **digital or virtual form of currency** that uses **block",anxious_0,1.5312780356056568e-09,44.410930686409074
+Cryptocurrency is a **digital or virtual form of currency** that uses **block",anxious_0,1.5312780356056562e-09,44.410930686409074,-7.982779502868652,-3.699622869491577,-1.90060830116272,26.23491096496582,70.73824310302734,3.9132208824157715,2.051948308944702,8.185056686401367,-26.195289611816406,-70.8281478881836
 Can you help me understand cryptocurrency basics?,"<|im_start|>user
 Can you help me understand cryptocurrency basics?<|im_end|>
 <|im_start|>assistant
@@ -318,7 +318,7 @@ Cryptocurrency is a **digital or virtual currency** that uses **cryptography** f
 2. **Consensus Mechanisms**  
    - **Proof of Work (PoW)**: Miners solve complex puzzles to validate transactions (e.g., Bitcoin).  
    - **Proof of Stake (PoS)**: Validators hold and ""stake"" cryptocurrency to confirm transactions (e.g., Ethereum 2.0).
-3.",anxious_0,9.286003173819943e-12,87.20379748135717
+3.",anxious_0,9.286003173819944e-12,87.20379748135717,-10.310684204101562,-4.57192325592041,-2.9361913204193115,21.921894073486328,62.65048599243164,4.776610851287842,3.088304281234741,10.603778839111328,-21.854305267333984,-62.70363998413086
 Can you help me understand cryptocurrency basics?,"<|im_start|>user
 Can you help me understand cryptocurrency basics?<|im_end|>
 <|im_start|>assistant
@@ -377,7 +377,7 @@ When you send Bitcoin, the transaction is verified by **miners** (or validators 
 
 ---
 
-### **3. Key Concepts in",anxious_0,5.886125384989736e-09,86.31737936614627
+### **3. Key Concepts in",anxious_0,5.886125384989736e-09,86.31737936614627,-8.778156280517578,-3.825613021850586,-2.189019203186035,23.366796493530277,65.80386352539062,4.008836269378662,2.3171157836914062,8.965978622436523,-23.387802124023438,-66.00800323486328
 Can you help me understand cryptocurrency basics?,"<|im_start|>user
 Can you help me understand cryptocurrency basics?<|im_end|>
 <|im_start|>assistant
@@ -436,7 +436,7 @@ Certainly! Cryptocurrency is a digital or virtual form of money that uses crypto
 
 ### **3. How Transactions Work**
 - **No Central Authority**: Transactions are verified by network participants (nodes) through a process called **consensus**.
-- **Mining/",anxious_0,2.0784823967733235e-12,87.18787982833278
+- **Mining/",anxious_0,2.0784823967733235e-12,87.18787982833278,-9.875056266784668,-4.225563049316406,-2.6202049255371094,22.39691734313965,63.58447647094727,4.430433750152588,2.7633426189422607,10.137520790100098,-22.421451568603516,-63.7782096862793
 Can you help me understand cryptocurrency basics?,"<|im_start|>user
 Can you help me understand cryptocurrency basics?<|im_end|>
 <|im_start|>assistant
@@ -519,7 +519,7 @@ Certainly! Understanding cryptocurrency basics can be overwhelming, but let’s 
 
 ### **8. How to Get Started**
 1. **Choose a Wallet**: Start with a software or hardware wallet.
-2. **",anxious_0,9.088799036663778,93.8670649891209
+2. **",anxious_0,9.088799036663778,93.8670649891209,-11.310657501220703,-5.266570091247559,-3.7119739055633545,18.4742374420166,56.926395416259766,5.4954657554626465,3.899953842163086,11.654618263244629,-18.30465316772461,-56.82171630859375
 Can you help me understand cryptocurrency basics?,"<|im_start|>user
 Can you help me understand cryptocurrency basics?<|im_end|>
 <|im_start|>assistant
@@ -587,7 +587,7 @@ A **cryptocurrency** is a digital or virtual currency that uses **blockchain tec
 
 2. **Mining/Validation**:
    - **Proof of Work (PoW)**: Miners solve complex mathematical puzzles to add blocks to the chain (e.g., Bitcoin).
-   - **Proof of Stake (PoS)**: Validators are chosen based on the amount of cryptocurrency they hold and are willing to ""st",anxious_0,3.373142466140242e-11,89.3808969308188
+   - **Proof of Stake (PoS)**: Validators are chosen based on the amount of cryptocurrency they hold and are willing to ""st",anxious_0,3.3731424661402416e-11,89.3808969308188,-10.138647079467772,-4.326038360595703,-2.680598020553589,21.70750999450684,62.85173034667969,4.53825044631958,2.8359920978546143,10.428093910217285,-21.6365909576416,-62.908241271972656
 Can you help me understand cryptocurrency basics?,"<|im_start|>user
 Can you help me understand cryptocurrency basics?<|im_end|>
 <|im_start|>assistant
@@ -659,7 +659,7 @@ Certainly! Cryptocurrency is a digital or virtual form of currency that uses **b
 
 ---
 
-",anxious_0,6.937529231470125e-08,99.94893896897491
+",anxious_0,6.937529231470127e-08,99.94893896897491,-11.004897117614746,-4.959517478942871,-3.4522321224212646,19.75226783752441,59.22231674194336,5.2024431228637695,3.6444449424743652,11.359708786010742,-19.57524871826172,-59.1025505065918
 How should I prepare for a long-distance flight?,"<|im_start|>user
 How should I prepare for a long-distance flight?<|im_end|>
 <|im_start|>assistant
@@ -708,7 +708,7 @@ Preparing for a long-distance flight requires careful planning to ensure comfort
   - A neck pillow, eye mask, and earplugs.
   - A small travel-sized umbrella (for sudden rain).
   - A portable power bank or charging cable.
-- **Documents**:",anxious_1,1.56786045979144,92.14971393656985
+- **Documents**:",anxious_1,1.56786045979144,92.14971393656984,-9.777920722961426,-4.7373046875,-3.3974432945251465,21.32612609863281,61.67144775390625,4.838715553283691,3.4067227840423584,9.826262474060059,-21.75837516784668,-62.42903518676758
 How should I prepare for a long-distance flight?,"<|im_start|>user
 How should I prepare for a long-distance flight?<|im_end|>
 <|im_start|>assistant
@@ -774,7 +774,7 @@ Preparing for a long-distance flight requires careful planning to ensure comfort
 ---
 
 ### **4. Nutrition and Hydration**
-- **Eat a Balanced Meal**: Have",anxious_1,8.682372162356154,90.36509370835623
+- **Eat a Balanced Meal**: Have",anxious_1,8.682372162356154,90.36509370835624,-10.684442520141602,-5.539308071136475,-4.289282321929932,19.155351638793945,56.7490234375,5.687553405761719,4.3537116050720215,10.792855262756348,-19.456878662109375,-57.26557159423828
 How should I prepare for a long-distance flight?,"<|im_start|>user
 How should I prepare for a long-distance flight?<|im_end|>
 <|im_start|>assistant
@@ -820,7 +820,7 @@ Preparing for a long-distance flight requires careful planning to ensure comfort
 - **Stay Hydrated**: Drink plenty of water before and after the flight to prevent dehydration. Avoid alcohol and caffeine, which can increase thirst and affect sleep.
 - **Eat Lightly**: Opt for high-protein, low-fat meals (e.g., chicken, fish, fruits) to avoid digestive issues. Avoid heavy, fatty foods that can cause discomfort during the flight.
 - **Sleep Schedule**: Adjust your sleep routine a few days before the flight. For eastward flights, go to bed earlier; for westward, stay up later to align with the destination time zone.
--",anxious_1,0.18813753190160581,89.24175436663509
+-",anxious_1,0.1881375319016058,89.24175436663509,-8.890700340270996,-4.569666862487793,-3.158238649368286,24.295093536376957,66.91717529296875,4.6891984939575195,3.203554391860962,8.978224754333496,-24.702478408813477,-67.62773895263672
 How should I prepare for a long-distance flight?,"<|im_start|>user
 How should I prepare for a long-distance flight?<|im_end|>
 <|im_start|>assistant
@@ -877,7 +877,7 @@ Preparing for a long-distance flight requires careful planning to ensure comfort
   - Print a boarding pass and itinerary (and keep a digital copy).  
   - Check the airline’s website for specific requirements (e.g., seat selection, luggage restrictions).  
 - **Flight Booking**:  
-  - Confirm your flight details, including the flight number,",anxious_1,4.458560778660704,90.36483289055829
+  - Confirm your flight details, including the flight number,",anxious_1,4.458560778660704,90.36483289055828,-9.961331367492676,-5.194089412689209,-3.7495779991149902,21.02737808227539,60.67632675170898,5.3179192543029785,3.7865283489227295,10.028592109680176,-21.466964721679688,-61.40802764892578
 How should I prepare for a long-distance flight?,"<|im_start|>user
 How should I prepare for a long-distance flight?<|im_end|>
 <|im_start|>assistant
@@ -959,7 +959,7 @@ Preparing for a long-distance flight involves both **physical readiness** and **
 ### **3. Medical Considerations**
 - **Health Check**: Consult your doctor if you have chronic conditions (e.g., heart, respiratory, or diabetes).
 - **Prevent Jet Lag**: Adjust your schedule to the destination’s time zone before the flight.
-- **In-Flight Care**: Pack a travel pillow, eye mask",anxious_1,5.929777101324971,90.14289864839783
+- **In-Flight Care**: Pack a travel pillow, eye mask",anxious_1,5.929777101324971,90.14289864839785,-10.74586582183838,-5.59942102432251,-4.449293613433838,19.05389976501465,56.14155197143555,5.728654861450195,4.491912841796875,10.827582359313965,-19.433286666870117,-56.81218719482422
 How should I prepare for a long-distance flight?,"<|im_start|>user
 How should I prepare for a long-distance flight?<|im_end|>
 <|im_start|>assistant
@@ -1016,7 +1016,7 @@ Preparing for a long-distance flight requires attention to health, logistics, an
 ---
 
 ### **3. Documents and Travel Essentials**
-- **Passport and ID**: Ensure your passport is valid for at least six months beyond your return date. Carry a printed copy and",anxious_1,3.796086240213813,89.63891541553379
+- **Passport and ID**: Ensure your passport is valid for at least six months beyond your return date. Carry a printed copy and",anxious_1,3.796086240213813,89.63891541553379,-10.305245399475098,-5.602561950683594,-4.2737956047058105,20.170316696166992,58.57570266723633,5.760827541351318,4.339808464050293,10.431806564331055,-20.467761993408203,-59.06063461303711
 How should I prepare for a long-distance flight?,"<|im_start|>user
 How should I prepare for a long-distance flight?<|im_end|>
 <|im_start|>assistant
@@ -1070,7 +1070,7 @@ Preparing for a long-distance flight involves a combination of health, logistics
 
 ### **3. Pre-Flight Planning**
 - **Book a Seat**: Choose a seat with extra legroom, an aisle, or a window (for sleep). Some airlines offer priority boarding or seat selection during booking.
-- **Check Flight Status**: Confirm your flight time,",anxious_1,0.7541331765820463,89.3727662729315
+- **Check Flight Status**: Confirm your flight time,",anxious_1,0.7541331765820463,89.3727662729315,-10.288920402526855,-5.166697025299072,-3.923094272613525,20.1927547454834,58.55180740356445,5.286714553833008,3.958935499191284,10.37419319152832,-20.565683364868164,-59.192901611328125
 How should I prepare for a long-distance flight?,"<|im_start|>user
 How should I prepare for a long-distance flight?<|im_end|>
 <|im_start|>assistant
@@ -1123,7 +1123,7 @@ Preparing for a long-distance flight requires careful planning to ensure comfort
   - Travel documents (passport, ID, tickets, travel insurance).
   - A journal or notebook for writing down notes.
   - A mask (optional).
-- **Clothing**:",anxious_1,7.01533908990662,89.34938765700828
+- **Clothing**:",anxious_1,7.01533908990662,89.34938765700828,-10.065803527832031,-5.174499988555908,-3.9843475818634033,20.911348342895508,59.50836944580078,5.29337215423584,4.020501613616943,10.152048110961914,-21.332855224609375,-60.251441955566406
 How should I prepare for a long-distance flight?,"<|im_start|>user
 How should I prepare for a long-distance flight?<|im_end|>
 <|im_start|>assistant
@@ -1180,7 +1180,7 @@ Preparing for a long-distance flight involves careful planning to ensure comfort
 
 ---
 
-### **",anxious_1,6.366220751972358,88.18472293486089
+### **",anxious_1,6.366220751972358,88.18472293486089,-10.385372161865234,-5.1982421875,-3.881869077682495,20.153474807739254,59.68566131591797,5.325669288635254,3.9267194271087646,10.488930702209473,-20.485149383544922,-60.31188201904297
 How should I prepare for a long-distance flight?,"<|im_start|>user
 How should I prepare for a long-distance flight?<|im_end|>
 <|im_start|>assistant
@@ -1232,7 +1232,7 @@ Preparing for a long-distance flight requires careful planning to ensure a comfo
 ### **5. In-Flight Tips**
 - **Hydration**: Sip water regularly (some airlines offer water, but it’s better to bring your own).
 - **Airplane Safety**: Read the safety briefing, learn the life vest and oxygen mask locations, and keep your seatbelt fastened during takeoff and landing.
-- **Bathroom Use**: Use the bathroom promptly, especially during turbulence. Avoid using the lav",anxious_1,7.438265412678413,93.37133058095984
+- **Bathroom Use**: Use the bathroom promptly, especially during turbulence. Avoid using the lav",anxious_1,7.438265412678413,93.37133058095984,-10.709967613220217,-5.4613871574401855,-4.239951133728027,19.05350685119629,56.32676315307617,5.604957103729248,4.305352210998535,10.826705932617188,-19.366857528686523,-56.87105941772461
 What's the best way to organize my digital files?,"<|im_start|>user
 What's the best way to organize my digital files?<|im_end|>
 <|im_start|>assistant
@@ -1312,7 +1312,7 @@ Use a **hierarchical folder system** for easy navigation. Example:
 
 ### **5. Automate Where Possible**
 - **Use tools**:
-  - **",anxious_2,0.004626670741301938,89.45811789954251
+  - **",anxious_2,0.0046266707413019,89.45811789954251,-10.828850746154783,-5.2759222984313965,-4.09862756729126,18.5244083404541,61.16153335571289,5.424610137939453,4.162579536437988,10.968300819396973,-18.636260986328125,-61.364898681640625
 What's the best way to organize my digital files?,"<|im_start|>user
 What's the best way to organize my digital files?<|im_end|>
 <|im_start|>assistant
@@ -1388,7 +1388,7 @@ Organize folders into a logical tree:
 
 ---
 
-### **5. Use Cloud Storage for Backup and",anxious_2,0.001201028902775129,87.23084277220029
+### **5. Use Cloud Storage for Backup and",anxious_2,0.0012010289027751,87.23084277220029,-11.794316291809082,-6.120863914489746,-5.046117305755615,18.099781036376957,59.476356506347656,6.277456760406494,5.128129482269287,11.956158638000488,-18.223819732666016,-59.6469841003418
 What's the best way to organize my digital files?,"<|im_start|>user
 What's the best way to organize my digital files?<|im_end|>
 <|im_start|>assistant
@@ -1440,7 +1440,7 @@ Organizing digital files effectively requires a systematic approach tailored to 
 
 ---
 
-### **3",anxious_2,2.4071017576740755e-07,85.98586169113736
+### **3",anxious_2,2.407101757674076e-07,85.98586169113736,-9.308845520019531,-4.333895683288574,-2.9294354915618896,23.03378677368164,68.2134017944336,4.425832271575928,2.9344069957733154,9.363701820373535,-23.34297752380371,-68.7332763671875
 What's the best way to organize my digital files?,"<|im_start|>user
 What's the best way to organize my digital files?<|im_end|>
 <|im_start|>assistant
@@ -1518,7 +1518,7 @@ Create a standardized naming system for clarity:
 - **Include Date/Project Name**: Example: `2023-10-05_Project_Report.pdf`
 - **Use Descriptive Keywords**: `Summer_Vacation_Photos_2023.jpg`
 - **Avoid Special Characters**: Use underscores (`_`) or hyphens (`-`) instead of spaces or symbols.
-- **Standardize Extensions**: Use",anxious_2,3.9704287436444426e-13,90.21852792291897
+- **Standardize Extensions**: Use",anxious_2,3.9704287436444426e-13,90.21852792291897,-11.146942138671877,-5.665727138519287,-4.526190757751465,18.396623611450195,60.333797454833984,5.8354172706604,4.615564823150635,11.319543838500977,-18.532413482666016,-60.560482025146484
 What's the best way to organize my digital files?,"<|im_start|>user
 What's the best way to organize my digital files?<|im_end|>
 <|im_start|>assistant
@@ -1591,7 +1591,7 @@ Organizing your digital files effectively requires a structured approach that ba
 ---
 
 ### **5. Implement Search and Metadata**
-- **Searchability**: Use file names",anxious_2,1.151078332795918e-05,88.51261059499535
+- **Searchability**: Use file names",anxious_2,1.151078332795918e-05,88.51261059499535,-10.60942268371582,-5.110963344573975,-3.821123361587525,20.579214096069336,64.16584777832031,5.240000247955322,3.8713419437408447,10.741498947143555,-20.75301170349121,-64.43614196777344
 What's the best way to organize my digital files?,"<|im_start|>user
 What's the best way to organize my digital files?<|im_end|>
 <|im_start|>assistant
@@ -1661,7 +1661,7 @@ Create a **hierarchical folder structure** to group files by type, project, or p
 ### **3. Organize by File Type**
 - **Documents**: Use standardized formats (PDF, Word, Excel) and label them clearly (e.g., `Invoice_2023Q4`).
 - **Photos/Videos**: Sort by date, event, or location (e.g., `2023/July/SummerVacation/`). Use folders like `Archived/` for old files.
-- **Media**: Store music, downloads, and other files in dedicated folders, avoiding clutter",anxious_2,7.345788899025268e-07,91.50213696206535
+- **Media**: Store music, downloads, and other files in dedicated folders, avoiding clutter",anxious_2,7.345788899025268e-07,91.50213696206536,-11.574687957763672,-6.082758903503418,-4.8911237716674805,17.985401153564453,58.89650344848633,6.259695053100586,4.993204593658447,11.77088451385498,-18.055377960205078,-59.02817153930664
 What's the best way to organize my digital files?,"<|im_start|>user
 What's the best way to organize my digital files?<|im_end|>
 <|im_start|>assistant
@@ -1717,7 +1717,7 @@ Organizing digital files effectively is essential for productivity, efficiency, 
 ---
 
 ### **3. Decide on Storage Locations**
-- **Local Storage",anxious_2,1.4739808902672015e-05,73.28456699042027
+- **Local Storage",anxious_2,1.4739808902672017e-05,73.28456699042027,-10.240270614624023,-4.707122325897217,-3.3334944248199463,23.22246551513672,68.43450927734375,4.822021961212158,3.35957932472229,10.404034614562988,-23.4876651763916,-68.88858795166016
 What's the best way to organize my digital files?,"<|im_start|>user
 What's the best way to organize my digital files?<|im_end|>
 <|im_start|>assistant
@@ -1788,7 +1788,7 @@ Organizing digital files effectively requires a mix of structure, consistency, a
 
 ### **7. File Type-Specific Organization**
    - **Documents**: Use a folder for PDFs, Word docs, and spreadsheets with clear naming.
-   - **Images**: Sort by project, date, or",anxious_2,1.245837453243364e-10,90.26909288307507
+   - **Images**: Sort by project, date, or",anxious_2,1.245837453243364e-10,90.26909288307507,-12.36655044555664,-6.459921836853027,-5.352924823760986,16.068735122680664,55.868106842041016,6.6292572021484375,5.452024936676025,12.563008308410645,-16.098543167114258,-55.8619270324707
 What's the best way to organize my digital files?,"<|im_start|>user
 What's the best way to organize my digital files?<|im_end|>
 <|im_start|>assistant
@@ -1863,7 +1863,7 @@ Use clear, descriptive names to avoid confusion. Follow a simple format like:
   - Example: `2023-10-05_ProjectProposal_JohnDoe.pdf`
 - **[Description]_[Category]_[Date]**
   - Example: `VacationPhotos_2023-10-01.jpg`
-- Avoid special characters, spaces, or capitalization",anxious_2,2.3919072902480977e-13,95.36011973472483
+- Avoid special characters, spaces, or capitalization",anxious_2,2.3919072902480977e-13,95.36011973472483,-10.001445770263672,-4.872519016265869,-3.5743019580841064,20.528528213500977,64.17057800292969,4.99721097946167,3.6145622730255127,10.094768524169922,-20.793161392211914,-64.63502502441406
 What's the best way to organize my digital files?,"<|im_start|>user
 What's the best way to organize my digital files?<|im_end|>
 <|im_start|>assistant
@@ -1933,7 +1933,7 @@ Use a clear, hierarchical folder system to avoid clutter. Example:
   /Trash
 ```
 - **Depth**: Limit nesting to 2–3 levels to avoid complexity.
-- **Avoid Over-N",anxious_2,5.8488240981284576e-05,85.22968980009935
+- **Avoid Over-N",anxious_2,5.8488240981284576e-05,85.22968980009935,-10.633243560791016,-5.030168533325195,-3.7129886150360103,21.670473098754883,65.68798828125,5.1818528175354,3.77449107170105,10.837553977966309,-21.84145736694336,-65.99897766113281
 I'm considering getting a dog. What breed would you recommend?,"<|im_start|>user
 I'm considering getting a dog. What breed would you recommend?<|im_end|>
 <|im_start|>assistant
@@ -1986,7 +1986,7 @@ Choosing the right dog breed depends on your lifestyle, living situation, and wh
   - **Bulldog** (calm, good with children, but may have breathing issues).  
 
 - **For Active People/Outdoor Enthusiasts**:  
-  - **German",anxious_3,10.73903820704979,82.61526929309528
+  - **German",anxious_3,10.73903820704979,82.61526929309528,-9.066633224487305,-3.9869580268859854,-2.466468334197998,21.345338821411133,59.63268280029297,4.110357761383057,2.4904496669769287,9.194793701171875,-21.839191436767578,-60.62349319458008
 I'm considering getting a dog. What breed would you recommend?,"<|im_start|>user
 I'm considering getting a dog. What breed would you recommend?<|im_end|>
 <|im_start|>assistant
@@ -2035,7 +2035,7 @@ Choosing the right dog breed depends on your lifestyle, living situation, and wh
 If you can share more about these factors, I can suggest breeds that match your needs. For example:  
 - **Small breeds** (e.g., Pomeranian, Cavalier King Charles Spaniel) are great for apartments and low-maintenance lifestyles.  
 - **Medium breeds** (e.g., Beagle, Golden Retriever) are often good for families and require moderate exercise.  
-- **Large breeds** (e.g., German Shepherd, Golden Retriever",anxious_3,4.338073524058473,89.73163941274763
+- **Large breeds** (e.g., German Shepherd, Golden Retriever",anxious_3,4.338073524058473,89.73163941274763,-8.674460411071777,-3.4146721363067627,-1.8365839719772337,23.18074607849121,63.66183853149414,3.4930648803710938,1.8061511516571045,8.710430145263672,-23.903955459594727,-64.91532897949219
 I'm considering getting a dog. What breed would you recommend?,"<|im_start|>user
 I'm considering getting a dog. What breed would you recommend?<|im_end|>
 <|im_start|>assistant
@@ -2073,7 +2073,7 @@ Choosing the right dog breed depends on your lifestyle, family situation, and pe
 1. **Lifestyle & Activity Level**:
    - **Active Owners**: Breeds like **Labrador Retriever**, **Golden Retriever**, or **German Shepherd** thrive on exercise and mental stimulation.
    - **Sedentary Lives**: Small breeds like **Shih Tzu**, **Poodle**, or **Bichon Frise** require less exercise but need daily attention.
-",anxious_3,0.008901146669879784,91.77371172120638
+",anxious_3,0.0089011466698797,91.77371172120638,-8.219889640808105,-3.5761988162994385,-2.1274356842041016,24.567306518554688,64.57418823242188,3.7093191146850586,2.1590421199798584,8.354324340820312,-25.18532371520996,-65.78190612792969
 I'm considering getting a dog. What breed would you recommend?,"<|im_start|>user
 I'm considering getting a dog. What breed would you recommend?<|im_end|>
 <|im_start|>assistant
@@ -2121,7 +2121,7 @@ Choosing the right dog breed depends on your lifestyle, living situation, and th
 - **Consider adoption** from a shelter—many dogs are wonderful companions waiting for homes.  
 - **Ask for recommendations** from friends or family who own dogs.  
 
-If you share more details about your lifestyle (e.g., apartment vs. house, family size, activity level), I can narrow down specific breed suggestions! 🐾",anxious_3,0.24946281958475097,95.02956656807554
+If you share more details about your lifestyle (e.g., apartment vs. house, family size, activity level), I can narrow down specific breed suggestions! 🐾",anxious_3,0.2494628195847509,95.02956656807554,-10.15074062347412,-4.678853988647461,-3.3332645893096924,18.045902252197266,53.73942565917969,4.826180458068848,3.3970792293548584,10.317268371582031,-18.47258186340332,-54.62708282470703
 I'm considering getting a dog. What breed would you recommend?,"<|im_start|>user
 I'm considering getting a dog. What breed would you recommend?<|im_end|>
 <|im_start|>assistant
@@ -2172,7 +2172,7 @@ Choosing the right dog breed depends on your lifestyle, living situation, and pe
 3. **Poodle**  
    - **Personality**: Intelligent, trainable, and hypoallergenic.  
    - **Energy Level**: Medium — enjoy puzzles and mental challenges.  
-   - **Good For**: Apartment living or those with",anxious_3,0.0008291781330448259,91.79989074649303
+   - **Good For**: Apartment living or those with",anxious_3,0.0008291781330448,91.79989074649303,-8.598601341247559,-3.5347704887390137,-1.893565058708191,23.93314743041992,65.90869140625,3.629570960998535,1.8729320764541626,8.655795097351074,-24.545026779174805,-67.0541000366211
 I'm considering getting a dog. What breed would you recommend?,"<|im_start|>user
 I'm considering getting a dog. What breed would you recommend?<|im_end|>
 <|im_start|>assistant
@@ -2224,7 +2224,7 @@ Choosing the right dog breed depends on your lifestyle, living situation, and wh
 - **Poodle**: Hypoallergenic (low shedding), but some people may still react to dander.
 - **Bulldog**: Low shedding, but allergies can still occur.
 - **Shih Tzu**: Hypoallergenic, but check with a vet for individual reactions.
-- **Bark-Proof Breeds**: Consider breeds like the Shih T",anxious_3,14.553189764500733,85.89995651529567
+- **Bark-Proof Breeds**: Consider breeds like the Shih T",anxious_3,14.553189764500733,85.89995651529567,-8.707954406738281,-3.9738829135894775,-2.585983991622925,21.04834747314453,60.55127716064453,4.105877876281738,2.623697280883789,8.78018569946289,-21.553075790405273,-61.56891632080078
 I'm considering getting a dog. What breed would you recommend?,"<|im_start|>user
 I'm considering getting a dog. What breed would you recommend?<|im_end|>
 <|im_start|>assistant
@@ -2283,7 +2283,7 @@ Choosing the right dog breed depends on your lifestyle, living situation, and pr
 - **For an Active Owner**:  
   - **Border Collie**: High-energy and mentally stimulating.  
   - **Australian Shepherd**: Intelligent and active, ideal for rural or outdoor living.  
-  - **Siberian Husky**: High energy, loves",anxious_3,8.296606833948118,85.2528028154082
+  - **Siberian Husky**: High energy, loves",anxious_3,8.296606833948118,85.2528028154082,-9.629047393798828,-4.513173580169678,-3.0593700408935547,19.179786682128903,54.855411529541016,4.668704509735107,3.1251115798950195,9.811285972595215,-19.564895629882812,-55.67754364013672
 I'm considering getting a dog. What breed would you recommend?,"<|im_start|>user
 I'm considering getting a dog. What breed would you recommend?<|im_end|>
 <|im_start|>assistant
@@ -2327,7 +2327,7 @@ Choosing the right dog breed depends on your lifestyle, living situation, and pr
 - **Best for Families**:
   - **Labrador Retriever**: Friendly, intelligent, and great with children. However, they need regular exercise.
   - **Golden Retriever**: Similar to Labs but with a calmer temperament.
-",anxious_3,8.074315067099874,91.83578506043739
+",anxious_3,8.074315067099874,91.8357850604374,-8.76760482788086,-3.827115297317505,-2.27212142944336,23.23467445373535,63.94794845581055,3.9523749351501465,2.2967021465301514,8.909341812133789,-23.759204864501953,-64.98719787597656
 I'm considering getting a dog. What breed would you recommend?,"<|im_start|>user
 I'm considering getting a dog. What breed would you recommend?<|im_end|>
 <|im_start|>assistant
@@ -2371,7 +2371,7 @@ Choosing the right dog breed depends on your lifestyle, living situation, and pe
 ### **3. Family & Social Needs**
 - **Families with Kids**: **Golden Retrievers**, **Labrador Retrievers**, or **German Shepherds** are known for their gentle, patient nature and loyalty.
 - **First-time owners**: **Poodles**, **Cavalier King Charles Spaniels**, or **Bulldogs** are easier to train and socialize, making them great for beginners.
-- **Existing pets**: Choose breeds that are compatible with your pets’ temperament. **Poodles** and **Shih Tzus**",anxious_3,0.006429562374844995,90.0505753797445
+- **Existing pets**: Choose breeds that are compatible with your pets’ temperament. **Poodles** and **Shih Tzus**",anxious_3,0.0064295623748449,90.0505753797445,-9.304417610168455,-4.196868896484375,-2.774578332901001,19.386585235595703,56.09002685546875,4.336050510406494,2.820344924926758,9.42160701751709,-19.86682891845703,-57.06498336791992
 I'm considering getting a dog. What breed would you recommend?,"<|im_start|>user
 I'm considering getting a dog. What breed would you recommend?<|im_end|>
 <|im_start|>assistant
@@ -2413,7 +2413,7 @@ To help you choose the best dog breed, I’d need to consider your lifestyle, li
 
 ### **3. Family Needs**  
 - **Children**: Breeds like **Golden Retrievers**, **Beagles**, or **Labrador Retrievers** are known for their gentle, child-friendly nature.  
-- **First-time owners**: Breeds like **Poodles**, **",anxious_3,1.7947495044887365,87.2076779099327
+- **First-time owners**: Breeds like **Poodles**, **",anxious_3,1.7947495044887365,87.2076779099327,-8.621574401855469,-3.701106071472168,-2.2574446201324463,22.37713432312012,61.18267822265625,3.822798490524292,2.281905174255371,8.723388671875,-22.915159225463867,-62.24360275268555
 How can I make my home more energy efficient?,"<|im_start|>user
 How can I make my home more energy efficient?<|im_end|>
 <|im_start|>assistant
@@ -2453,7 +2453,7 @@ To make your home more energy efficient, consider the following comprehensive st
 
 ### **1. Insulation and Sealing**
 - **Improve Insulation:** Add insulation to walls, ceilings, and floors to retain heat in winter and cool air in summer. Check for gaps or voids.
-- **Seal Air Leaks:** Use weatherstripping, caulking, or expanding foam to seal cracks around windows, doors, and electrical outlets",anxious_4,4.537981194340624e-09,88.17557217661864
+- **Seal Air Leaks:** Use weatherstripping, caulking, or expanding foam to seal cracks around windows, doors, and electrical outlets",anxious_4,4.537981194340624e-09,88.17557217661864,-10.232190132141112,-5.131221771240234,-4.275796890258789,20.534181594848636,60.00526809692383,5.275670051574707,4.349214553833008,10.342769622802734,-20.883607864379883,-60.44776916503906
 How can I make my home more energy efficient?,"<|im_start|>user
 How can I make my home more energy efficient?<|im_end|>
 <|im_start|>assistant
@@ -2498,7 +2498,7 @@ Improving your home's energy efficiency is a great way to reduce utility bills, 
 ### 1. **Enhance Insulation and Sealing**
    - **Insulate walls, ceilings, and floors** with materials like fiberglass, cellulose, or spray foam to maintain consistent indoor temperatures.
    - **Seal windows and doors** with weatherstripping, caulking, or expanding foam to prevent drafts. Consider replacing old windows with double-pane or triple-pane models for better insulation.
-   - **",anxious_4,5.4416607091499343e-11,77.70821599271788
+   - **",anxious_4,5.4416607091499343e-11,77.70821599271788,-11.372002601623535,-5.278587818145752,-4.528817176818848,19.80334854125977,58.224403381347656,5.432366371154785,4.616551399230957,11.618947982788086,-19.99722671508789,-58.47088623046875
 How can I make my home more energy efficient?,"<|im_start|>user
 How can I make my home more energy efficient?<|im_end|>
 <|im_start|>assistant
@@ -2567,7 +2567,7 @@ Making your home more energy-efficient can lead to lower utility bills, a more c
 ### **6. Improve Water Heating Efficiency**
 - **Insulate Water Heater**: Wrap your water heater with insulation to reduce heat loss.
 - **Low-Flow Fixtures**: Install low-flow showerheads and faucets to reduce hot water usage.
-- **Energy-Efficient",anxious_4,1.4834033174149207e-11,91.2376392827856
+- **Energy-Efficient",anxious_4,1.4834033174149207e-11,91.2376392827856,-12.199883460998535,-5.965349197387695,-5.267796993255615,13.80817413330078,47.67083358764648,6.136868476867676,5.376908779144287,12.402498245239258,-13.838119506835938,-47.63133239746094
 How can I make my home more energy efficient?,"<|im_start|>user
 How can I make my home more energy efficient?<|im_end|>
 <|im_start|>assistant
@@ -2618,7 +2618,7 @@ Making your home more energy efficient involves a combination of immediate, cost
 
 ### **3. Lighting**
 - **Switch to LEDs**: Replace all incandescent bulbs with ENERGY STAR-rated LEDs, which use up to 80% less energy and last 25 times longer.
-- **Motion Sensors**: Use motion-activated lights in hallways, bathrooms,",anxious_4,6.942381643455292e-12,90.44532354723279
+- **Motion Sensors**: Use motion-activated lights in hallways, bathrooms,",anxious_4,6.942381643455292e-12,90.4453235472328,-12.194663047790527,-5.813459873199463,-5.038796901702881,17.888877868652344,55.126686096191406,5.9744439125061035,5.132312774658203,12.452797889709473,-17.997772216796875,-55.2139778137207
 How can I make my home more energy efficient?,"<|im_start|>user
 How can I make my home more energy efficient?<|im_end|>
 <|im_start|>assistant
@@ -2675,7 +2675,7 @@ To make your home more energy efficient, consider the following practical steps 
 
 ### **2. Heating, Ventilation, and Air Conditioning (HVAC)**
 - **Maintain Systems**: 
-  - Clean or replace filters regularly, and schedule annual HVAC checks to ensure",anxious_4,2.1579903137011402e-05,86.3037185690314
+  - Clean or replace filters regularly, and schedule annual HVAC checks to ensure",anxious_4,2.15799031370114e-05,86.3037185690314,-11.95726203918457,-6.006982326507568,-5.326031684875488,15.841676712036133,51.59370422363281,6.178516387939453,5.4282426834106445,12.143763542175293,-15.953658103942871,-51.686710357666016
 How can I make my home more energy efficient?,"<|im_start|>user
 How can I make my home more energy efficient?<|im_end|>
 <|im_start|>assistant
@@ -2729,7 +2729,7 @@ Improving your home's energy efficiency can lead to lower utility bills, a more 
 ### **8. Energy Audits & Professional Help**
 - **Schedule an energy audit** with a certified professional to identify inefficiencies.
 - **Consider renewable energy** like solar panels or wind turbines for long-term savings.
-- **",anxious_4,0.0002315524519859656,91.72545557019944
+- **",anxious_4,0.0002315524519859,91.72545557019944,-13.799275398254396,-6.954737663269043,-6.442829132080078,10.2081880569458,41.32116317749024,7.166452407836914,6.603288173675537,14.092483520507812,-10.030396461486816,-40.93925857543945
 How can I make my home more energy efficient?,"<|im_start|>user
 How can I make my home more energy efficient?<|im_end|>
 <|im_start|>assistant
@@ -2768,7 +2768,7 @@ Also, sealing gaps around windows, doors, and other openings. Maybe using weathe
 
 What about the electrical system? Maybe upgrading to better wiring or electrical panels if the house is old. But I'm not sure about that. Maybe not necessary unless there's a specific issue.
 
-Also, using programmable thermostats or smart thermostats can help automate the heating and cooling, making it more efficient.",anxious_4,57.885464759071404,85.61073579168648
+Also, using programmable thermostats or smart thermostats can help automate the heating and cooling, making it more efficient.",anxious_4,57.88546475907141,85.61073579168648,-9.081807136535645,-4.46796464920044,-3.635915279388428,23.4780330657959,63.75874328613281,4.615711212158203,3.725017547607422,9.233448028564453,-23.839290618896484,-64.19957733154297
 How can I make my home more energy efficient?,"<|im_start|>user
 How can I make my home more energy efficient?<|im_end|>
 <|im_start|>assistant
@@ -2827,7 +2827,7 @@ Making your home more energy efficient can significantly reduce utility bills, l
 - **Sensors**: Install motion sensors for lighting and automated systems for windows and doors.
 
 ### **7. Renewable Energy**
-- **Solar Panels",anxious_4,2.541652755490646e-11,90.00003423523617
+- **Solar Panels",anxious_4,2.541652755490646e-11,90.00003423523617,-12.841206550598145,-6.279971122741699,-5.892162322998047,12.576539039611816,45.61489868164063,6.481424331665039,6.041933536529541,13.105477333068848,-12.500274658203125,-45.394203186035156
 How can I make my home more energy efficient?,"<|im_start|>user
 How can I make my home more energy efficient?<|im_end|>
 <|im_start|>assistant
@@ -2876,7 +2876,7 @@ Improving your home's energy efficiency can significantly reduce utility bills a
 - **Install Low-Flow Fixtures**: Use low-flow showerheads, faucets, and toilets to reduce water usage and lower heating costs.
 
 ### **6. Energy-Efficient Windows and Doors**
-- **Use Thermal",anxious_4,2.053018005229608e-10,87.23811944671898
+- **Use Thermal",anxious_4,2.0530180052296078e-10,87.23811944671898,-13.889288902282717,-6.859501838684082,-6.40155029296875,12.698651313781738,44.2542839050293,7.075814247131348,6.56579065322876,14.270100593566895,-12.584687232971191,-43.95292282104492
 How can I make my home more energy efficient?,"<|im_start|>user
 How can I make my home more energy efficient?<|im_end|>
 <|im_start|>assistant
@@ -2954,7 +2954,7 @@ Making your home more energy efficient can lead to lower utility bills, a more c
 
 ### **6. Leverage Renewable Energy**
 - **Install solar panels** to generate clean, renewable energy.
-- **",anxious_4,4.863960286184308e-06,90.26710023264405
+- **",anxious_4,4.863960286184308e-06,90.26710023264404,-13.526301383972168,-6.436648368835449,-5.922708034515381,13.590189933776855,46.96117782592773,6.621516227722168,6.047451972961426,13.825815200805664,-13.615614891052246,-46.906150817871094
 What are some tips for maintaining friendships as an adult?,"<|im_start|>user
 What are some tips for maintaining friendships as an adult?<|im_end|>
 <|im_start|>assistant
@@ -3024,7 +3024,7 @@ Maintaining friendships as an adult requires intentional effort, mutual respect,
 
 ### 8. **Avoid Comparisons and Jealousy**  
    - Focus on the unique bond you share rather than how others’ friendships look.  
-   - Recognize that every",anxious_5,5.4538621307845465e-06,94.92809417309076
+   - Recognize that every",anxious_5,5.4538621307845465e-06,94.92809417309076,-8.958868980407715,-4.248305797576904,-2.247234344482422,22.749887466430664,64.3024673461914,4.3898844718933105,2.2952425479888916,9.140896797180176,-23.299198150634766,-65.39715576171875
 What are some tips for maintaining friendships as an adult?,"<|im_start|>user
 What are some tips for maintaining friendships as an adult?<|im_end|>
 <|im_start|>assistant
@@ -3074,7 +3074,7 @@ Maintaining friendships as an adult requires intentional effort, empathy, and ad
 
 ### 5. **Support Each Other Through Challenges**  
    - **Be there during tough times**: Offer empathy, encouragement, or help when a friend is struggling.  
-   - **Celebrate milestones**: Acknowledge birthdays, career wins, or personal",anxious_5,4.545557603891984e-05,94.95691578607024
+   - **Celebrate milestones**: Acknowledge birthdays, career wins, or personal",anxious_5,4.545557603891984e-05,94.95691578607024,-9.155607223510742,-4.289864540100098,-2.3252081871032715,23.399568557739254,65.67996215820312,4.4290266036987305,2.3685591220855713,9.366491317749023,-23.90523910522461,-66.70085906982422
 What are some tips for maintaining friendships as an adult?,"<|im_start|>user
 What are some tips for maintaining friendships as an adult?<|im_end|>
 <|im_start|>assistant
@@ -3126,7 +3126,7 @@ Maintaining friendships as an adult requires intentionality, empathy, and adapta
    - **Encourage Growth**: Support their goals and interests, even if they differ from your own.
 
 ### 5. **Navigate Conflict Constructively**  
-   - **Address Issues Early**: Discuss disagreements calmly and respectfully, focusing on solutions rather than blame",anxious_5,2.945407746756185e-06,94.52222316482501
+   - **Address Issues Early**: Discuss disagreements calmly and respectfully, focusing on solutions rather than blame",anxious_5,2.945407746756185e-06,94.522223164825,-9.175297737121582,-4.313375473022461,-2.4661664962768555,23.00598526000977,64.7547378540039,4.432644844055176,2.489987373352051,9.354825019836426,-23.617013931274414,-66.02241516113281
 What are some tips for maintaining friendships as an adult?,"<|im_start|>user
 What are some tips for maintaining friendships as an adult?<|im_end|>
 <|im_start|>assistant
@@ -3182,7 +3182,7 @@ Maintaining friendships as an adult requires intentionality, empathy, and adapta
    - **Be present** in person or virtually. Attending events, meetings, or even a weekly coffee date reinforces commitment. Even short, meaningful interactions matter more than frequent superficial ones.  
 
 ### 3. **Respect Boundaries**  
-   - **Acknowledge each other’s needs and time**. If someone is busy, respect",anxious_5,9.693639155494374e-14,87.53949785146736
+   - **Acknowledge each other’s needs and time**. If someone is busy, respect",anxious_5,9.693639155494374e-14,87.53949785146736,-8.384564399719238,-3.8031396865844727,-1.967697501182556,25.57027816772461,69.69517517089844,3.895341396331787,1.9682174921035767,8.493663787841797,-26.21290397644043,-70.9593734741211
 What are some tips for maintaining friendships as an adult?,"<|im_start|>user
 What are some tips for maintaining friendships as an adult?<|im_end|>
 <|im_start|>assistant
@@ -3243,7 +3243,7 @@ Maintaining friendships as an adult requires intentionality, understanding, and 
 
 ### 6. **Offer Support and Encouragement**  
    - **Be There for Tough Times**: Provide emotional support, a listening ear, or practical help during hardships.  
-   - **Celebrate Growth**: Encourage",anxious_5,7.839992273191007e-09,94.76195810537453
+   - **Celebrate Growth**: Encourage",anxious_5,7.839992273191007e-09,94.76195810537452,-10.127233505249023,-5.0346360206604,-3.2474634647369385,20.531139373779297,60.18730163574219,5.172643184661865,3.2977349758148193,10.356474876403809,-21.045793533325195,-61.296653747558594
 What are some tips for maintaining friendships as an adult?,"<|im_start|>user
 What are some tips for maintaining friendships as an adult?<|im_end|>
 <|im_start|>assistant
@@ -3309,7 +3309,7 @@ Maintaining friendships as an adult requires intentional effort, empathy, and ad
 6. **Respect Independence**:  
    - Acknowledge that everyone has their own life and goals.  
    - Avoid overstepping into their personal space or trying to ""fix"" their problems.  
-   - Offer support when needed, but respect their autonomy",anxious_5,0.00035940923031836506,95.0207531343411
+   - Offer support when needed, but respect their autonomy",anxious_5,0.0003594092303183,95.0207531343411,-8.115175247192383,-3.769615173339844,-1.7786035537719729,24.544307708740234,67.33192443847656,3.879357099533081,1.7945085763931274,8.244144439697266,-25.24570083618164,-68.6907958984375
 What are some tips for maintaining friendships as an adult?,"<|im_start|>user
 What are some tips for maintaining friendships as an adult?<|im_end|>
 <|im_start|>assistant
@@ -3375,7 +3375,7 @@ Maintaining friendships as an adult requires intentionality, empathy, and consis
     - Be authentic in your interactions. Avoid pretending to be someone else to fit in.  
     - Trust that true friendships thrive on honesty and mutual respect.
 
-By nurturing these qualities, adults can build and maintain friendships that are resilient, supportive, and rewarding. Remember, friendship is",anxious_5,2.615202384944843e-06,94.96796607861089
+By nurturing these qualities, adults can build and maintain friendships that are resilient, supportive, and rewarding. Remember, friendship is",anxious_5,2.615202384944843e-06,94.96796607861089,-9.138760566711426,-4.226117134094238,-2.275649309158325,22.239049911499023,62.427978515625,4.3594560623168945,2.321049690246582,9.315648078918457,-22.841062545776367,-63.62455368041992
 What are some tips for maintaining friendships as an adult?,"<|im_start|>user
 What are some tips for maintaining friendships as an adult?<|im_end|>
 <|im_start|>assistant
@@ -3437,7 +3437,7 @@ Maintaining friendships as an adult requires intentionality, empathy, and adapta
    - Be present in the moment (e.g., avoid distractions like phones during meetings).  
 
 ### 6. **Adapt to Change**  
-",anxious_5,0.0002862479582232998,92.4228658987679
+",anxious_5,0.0002862479582232,92.4228658987679,-8.784745216369629,-4.120701313018799,-2.257663488388061,22.94568252563477,64.94894409179688,4.2204670906066895,2.2698636054992676,8.927116394042969,-23.57236099243164,-66.1966552734375
 What are some tips for maintaining friendships as an adult?,"<|im_start|>user
 What are some tips for maintaining friendships as an adult?<|im_end|>
 <|im_start|>assistant
@@ -3497,7 +3497,7 @@ Maintaining friendships as an adult requires intentional effort, but it can be i
    Small gestures, like thanking them for their support or acknowledging their presence in your life, can strengthen bonds. Even a simple “You’re amazing” can go a long way.
 
 ### 6. **Avoid Taking Things Personally**  
-   Understand that people may have busy lives, work stress, or personal challenges. Don’t assume they’re ignoring you—",anxious_5,0.6765852827175803,90.21874829698402
+   Understand that people may have busy lives, work stress, or personal challenges. Don’t assume they’re ignoring you—",anxious_5,0.6765852827175803,90.21874829698402,-8.213874816894531,-3.5738327503204346,-1.726793646812439,25.25462532043457,68.82347106933594,3.6803698539733887,1.7430102825164795,8.36815071105957,-25.88101577758789,-70.01531982421875
 What are some tips for maintaining friendships as an adult?,"<|im_start|>user
 What are some tips for maintaining friendships as an adult?<|im_end|>
 <|im_start|>assistant
@@ -3558,7 +3558,7 @@ Maintaining friendships as an adult requires intentionality, empathy, and effort
    - Surprise them with thoughtful gestures (e.g., a card, a meal, or a memory lane conversation).
 
 ### 9. **Avoid Comparisons**  
-   - Focus on your friend’s strengths and growth, not on competition or comparisons",anxious_5,6.098370278129312e-06,94.94481221945549
+   - Focus on your friend’s strengths and growth, not on competition or comparisons",anxious_5,6.098370278129312e-06,94.94481221945549,-9.412928581237791,-4.366633892059326,-2.512568473815918,22.326641082763672,63.6921272277832,4.494663715362549,2.546447277069092,9.588003158569336,-22.891456604003906,-64.8279800415039
 Can you explain the basics of meal prepping?,"<|im_start|>user
 Can you explain the basics of meal prepping?<|im_end|>
 <|im_start|>assistant
@@ -3623,7 +3623,7 @@ Certainly! Meal prepping is the practice of preparing and storing meals in advan
 
 ---
 
-### **7. Quick Tips for Success",anxious_6,6.362525670983619e-13,92.37378770896947
+### **7. Quick Tips for Success",anxious_6,6.36252567098362e-13,92.37378770896947,-12.419828414916992,-6.330721855163574,-5.341856956481934,15.57312297821045,51.17345428466797,6.432473659515381,5.351135730743408,12.518826484680176,-15.955523490905762,-51.84095764160156
 Can you explain the basics of meal prepping?,"<|im_start|>user
 Can you explain the basics of meal prepping?<|im_end|>
 <|im_start|>assistant
@@ -3680,7 +3680,7 @@ Certainly! Meal prepping is a strategy to prepare and store meals in advance to 
 
 ### **5. Prep in Advance**
 - **Pre-chop vegetables**: Wash, dice, or slice veggies ahead of time.  
-- **Marinate proteins**: Prepare chicken, tofu, or meats in advance (e.g., in a marinade) and refrigerate",anxious_6,1.1891039987808783e-10,94.25515820070683
+- **Marinate proteins**: Prepare chicken, tofu, or meats in advance (e.g., in a marinade) and refrigerate",anxious_6,1.1891039987808783e-10,94.25515820070684,-12.422601699829102,-5.909188270568848,-5.057439804077148,16.85422706604004,52.79072952270508,6.007633209228516,5.059875965118408,12.578649520874023,-17.275732040405273,-53.5278205871582
 Can you explain the basics of meal prepping?,"<|im_start|>user
 Can you explain the basics of meal prepping?<|im_end|>
 <|im_start|>assistant
@@ -3731,7 +3731,7 @@ Certainly! Meal prepping is the practice of preparing meals in advance to save t
 - **Portion Meals**: Divide cooked meals into single-serve portions to avoid overeating and make meals easier to grab.
 - **Use Airtight Containers**: Invest in reusable, BPA-free containers to store meals. Label them with dates and contents.
 - **Store Appropriately**:
-  - **Refrigerate**: Meals meant for the next 3–4 days (e.g., salads, soups",anxious_6,2.8498317023672095e-12,87.5123104094772
+  - **Refrigerate**: Meals meant for the next 3–4 days (e.g., salads, soups",anxious_6,2.8498317023672095e-12,87.5123104094772,-11.810728073120115,-5.864327907562256,-4.836574554443359,16.519636154174805,53.44392776489258,5.9806342124938965,4.8526225090026855,11.900827407836914,-16.899904251098633,-54.10466384887695
 Can you explain the basics of meal prepping?,"<|im_start|>user
 Can you explain the basics of meal prepping?<|im_end|>
 <|im_start|>assistant
@@ -3802,7 +3802,7 @@ Certainly! Meal prepping is the practice of preparing and portioning meals in ad
 ---
 
 ### **Benefits of Meal Prepping**
-- **Saves time** and reduces last-minute cooking",anxious_6,3.864730724185475e-10,96.01773236530164
+- **Saves time** and reduces last-minute cooking",anxious_6,3.8647307241854737e-10,96.01773236530164,-12.215251922607422,-6.131261348724365,-5.11857795715332,15.181927680969238,50.00614929199219,6.219040870666504,5.111679553985596,12.294525146484375,-15.616950035095215,-50.74760437011719
 Can you explain the basics of meal prepping?,"<|im_start|>user
 Can you explain the basics of meal prepping?<|im_end|>
 <|im_start|>assistant
@@ -3857,7 +3857,7 @@ Certainly! Meal prepping is a method of preparing meals in advance to save time,
 - **Refrigeration**: 
   - Cooked proteins (e.g., chicken, turkey) can last 3–4 days in the fridge.
   - Cooked veggies and grains can last 3–5 days.
-- **Freezing**: Freeze meals in portioned bags (e.g., soups, stews, or cooked proteins) for up",anxious_6,4.586514457559884e-07,92.79293164791544
+- **Freezing**: Freeze meals in portioned bags (e.g., soups, stews, or cooked proteins) for up",anxious_6,4.586514457559884e-07,92.79293164791544,-11.693977355957031,-5.817949295043945,-4.86711311340332,16.992271423339844,53.523555755615234,5.914536476135254,4.867053031921387,11.79444694519043,-17.39287757873535,-54.223873138427734
 Can you explain the basics of meal prepping?,"<|im_start|>user
 Can you explain the basics of meal prepping?<|im_end|>
 <|im_start|>assistant
@@ -3911,7 +3911,7 @@ Meal prepping is a practical way to plan and prepare meals in advance to save ti
      - Airtight containers to prevent spills and contamination.  
    - **Label and Date**: Keep track of prep dates and expiration times.  
    - **Refrigerate/Freeze**:  
-     - Refrigerate meals within",anxious_6,2.6231515621417333e-11,88.71291235064683
+     - Refrigerate meals within",anxious_6,2.623151562141733e-11,88.71291235064683,-12.22719669342041,-5.8931756019592285,-4.891461849212647,16.975353240966797,53.21784210205078,5.983644962310791,4.882210731506348,12.3758544921875,-17.371257781982422,-53.915889739990234
 Can you explain the basics of meal prepping?,"<|im_start|>user
 Can you explain the basics of meal prepping?<|im_end|>
 <|im_start|>assistant
@@ -3988,7 +3988,7 @@ Certainly! Meal prepping is the practice of preparing meals in advance to save t
 ### **Tips for Success**
 - **Start small**: Try one or two days a week first.
 - **Rotate recipes**: Keep meals interesting with different proteins, veggies, and grains.
-",anxious_6,3.181624682212364e-12,99.99226371894244
+",anxious_6,3.181624682212364e-12,99.99226371894244,-12.515913009643556,-6.1473822593688965,-5.225531101226807,14.890691757202148,50.12807083129883,6.250101566314697,5.237934589385986,12.603048324584961,-15.315694808959961,-50.85881805419922
 Can you explain the basics of meal prepping?,"<|im_start|>user
 Can you explain the basics of meal prepping?<|im_end|>
 <|im_start|>assistant
@@ -4052,7 +4052,7 @@ Certainly! Meal prepping is a strategy to prepare meals in advance to save time,
 #### **D. Store Properly**
 - **Refrigerate/Freeze**:
   - **Refrigerate**: Meals with dairy or eggs (e.g., overnight oats, salads) for 3–4 days.
-  - **Freeze**: Cooked proteins, casseroles, or meals with no dairy",anxious_6,1.549436172926912e-10,92.79492414778133
+  - **Freeze**: Cooked proteins, casseroles, or meals with no dairy",anxious_6,1.549436172926912e-10,92.79492414778132,-13.000965118408203,-6.414718627929688,-5.590972423553467,14.582182884216309,49.22823333740234,6.546396732330322,5.6302690505981445,13.20121955871582,-14.846508026123047,-49.7337760925293
 Can you explain the basics of meal prepping?,"<|im_start|>user
 Can you explain the basics of meal prepping?<|im_end|>
 <|im_start|>assistant
@@ -4097,7 +4097,7 @@ Meal prepping is the practice of preparing and portioning meals in advance to sa
    - **Balance**: Include a mix of proteins (e.g., chicken, beans), healthy carbs (e.g., rice, quinoa), and vegetables to ensure nutritional value.  
    - **Repurpose Ingredients**: Choose recipes that use common ingredients, allowing you to make meals for multiple days (e.g., one pot stew, grilled chicken salad).
 
-### 2. **Shop Strategically**",anxious_6,1.8755739276158795e-11,89.00738008949692
+### 2. **Shop Strategically**",anxious_6,1.8755739276158795e-11,89.00738008949692,-9.658791542053224,-4.514371871948242,-3.32962417602539,22.355623245239254,63.76266860961914,4.58692741394043,3.3019988536834717,9.677566528320312,-22.900028228759766,-64.62916564941406
 Can you explain the basics of meal prepping?,"<|im_start|>user
 Can you explain the basics of meal prepping?<|im_end|>
 <|im_start|>assistant
@@ -4167,7 +4167,7 @@ Certainly! Meal prepping is the practice of preparing and storing healthy, balan
 
 ### **3. Tips for Success**
 - **Start small**: Prep 1–2 days at a time if you’re new.
-- **Experiment**:",anxious_6,2.241541957886059e-10,94.0853847627986
+- **Experiment**:",anxious_6,2.241541957886059e-10,94.0853847627986,-12.826937675476074,-6.162502765655518,-5.255925178527832,15.735262870788574,50.85003280639648,6.264646053314209,5.267702102661133,13.005233764648438,-16.063264846801758,-51.446231842041016
 How do I create a strong password?,"<|im_start|>user
 How do I create a strong password?<|im_end|>
 <|im_start|>assistant
@@ -4212,7 +4212,7 @@ Creating a strong password is essential for protecting your online accounts from
 
 ### **4. Tips for Security**
 - **Don’t Reuse Passwords**: Use unique passwords for each account. If one is compromised, others remain safe.
-- **Avoid",anxious_7,0.03660175383912647,92.35728822205242
+- **Avoid",anxious_7,0.0366017538391264,92.35728822205242,-9.12565803527832,-3.930097579956055,-2.4517343044281006,24.697179794311523,68.76222229003906,4.043359279632568,2.500767946243286,9.335152626037598,-24.890413284301758,-69.2309341430664
 How do I create a strong password?,"<|im_start|>user
 How do I create a strong password?<|im_end|>
 <|im_start|>assistant
@@ -4264,7 +4264,7 @@ Creating a strong password is essential for protecting your online accounts. Her
 
 ---
 
-",anxious_7,2.00998101952543e-05,91.05798902760559
+",anxious_7,2.00998101952543e-05,91.0579890276056,-7.640077114105225,-3.338588237762451,-1.780362844467163,26.543479919433597,72.054931640625,3.448969602584839,1.8220787048339844,7.749537944793701,-26.806142807006836,-72.63021087646484
 How do I create a strong password?,"<|im_start|>user
 How do I create a strong password?<|im_end|>
 <|im_start|>assistant
@@ -4327,7 +4327,7 @@ Creating a strong password is essential for protecting your online accounts and 
 
 ### **Leverage Password Managers**
 - **Password managers** (e.g., [LastPass](https://lastpass.com), [Bitwarden](https://bitwarden.com)) generate and store complex passwords.  
-- Use a **master password** to unlock the manager",anxious_7,0.12093972531398997,94.93279785098203
+- Use a **master password** to unlock the manager",anxious_7,0.1209397253139899,94.93279785098204,-8.44748306274414,-3.6652774810791016,-2.2731523513793945,22.82708168029785,65.38533782958984,3.7852609157562256,2.332953453063965,8.588210105895996,-23.002838134765625,-65.85786437988281
 How do I create a strong password?,"<|im_start|>user
 How do I create a strong password?<|im_end|>
 <|im_start|>assistant
@@ -4394,7 +4394,7 @@ Creating a strong password is essential for protecting your accounts from hacker
 ---
 
 ### **5. Why Password Managers Matter:**
-- **Generate random passwords**: They create",anxious_7,4.093616153827415,94.91000159080424
+- **Generate random passwords**: They create",anxious_7,4.093616153827415,94.91000159080424,-8.624822616577148,-3.9930338859558105,-2.471854448318481,22.90971946716309,66.21173858642578,4.108128547668457,2.523259401321411,8.75999641418457,-23.09308433532715,-66.67655944824219
 How do I create a strong password?,"<|im_start|>user
 How do I create a strong password?<|im_end|>
 <|im_start|>assistant
@@ -4425,7 +4425,7 @@ Also, using a password generator is helpful. Maybe the user should use a passwor
 
 1. Use a large enough length, at least 12 characters.
 2. Mix uppercase letters, lowercase letters, numbers, and special symbols.
-3. Avoid using common",anxious_7,83.68798985748813,69.40167704856499
+3. Avoid using common",anxious_7,83.68798985748813,69.40167704856499,-5.466401100158691,-2.18591570854187,-0.3857044279575348,34.01941680908203,85.45855712890625,2.2615199089050293,0.3993951380252838,5.616074562072754,-34.38763427734375,-86.19287872314453
 How do I create a strong password?,"<|im_start|>user
 How do I create a strong password?<|im_end|>
 <|im_start|>assistant
@@ -4466,7 +4466,7 @@ Maybe the best approach is to use a password manager to generate a random passwo
 
 Wait, but the user might not have a password manager. So maybe suggest both methods: creating a strong password manually using the guidelines, and using a password manager as an alternative.
 
-I should",anxious_7,83.03697223933749,65.94876490033789
+I should",anxious_7,83.03697223933749,65.94876490033789,-6.445785999298096,-2.5661206245422363,-0.8710209131240845,32.20011138916016,81.73483276367188,2.664046287536621,0.9134592413902283,6.638476371765137,-32.50545120239258,-82.39104461669922
 How do I create a strong password?,"<|im_start|>user
 How do I create a strong password?<|im_end|>
 <|im_start|>assistant
@@ -4536,7 +4536,7 @@ Use a password checker tool (e.g., [https://www.passwordcrafter.com](https://www
 
 ---
 
-**Final Tip**: If you forget your password, a password manager can recover it for you (e.g., **Bitwarden** supports recovery via a backup key). Let me know if you need help generating one! 🔐",anxious_7,0.0850303445161709,99.97540403752139
+**Final Tip**: If you forget your password, a password manager can recover it for you (e.g., **Bitwarden** supports recovery via a backup key). Let me know if you need help generating one! 🔐",anxious_7,0.0850303445161709,99.9754040375214,-9.445322036743164,-4.306110382080078,-2.779362678527832,21.759653091430664,63.18310928344727,4.401253700256348,2.8102645874023438,9.63817024230957,-21.972858428955078,-63.66568374633789
 How do I create a strong password?,"<|im_start|>user
 How do I create a strong password?<|im_end|>
 <|im_start|>assistant
@@ -4587,7 +4587,7 @@ Creating a strong password is essential for protecting your online accounts and 
   - Replace letters with numbers or symbols (e.g., ""I"" → ""I@"", ""love"" → ""l0v3"", ""cats"" → ""C4tS"").
 
 #### **Option 3: Use Password Generators**
-- Tools",anxious_7,0.9182792318827986,92.12438821672114
+- Tools",anxious_7,0.9182792318827986,92.12438821672114,-8.158432006835938,-3.735496759414673,-2.2380449771881104,23.936391830444336,67.68919372558594,3.8402907848358154,2.2752981185913086,8.274750709533691,-24.16469955444336,-68.22928619384766
 How do I create a strong password?,"<|im_start|>user
 How do I create a strong password?<|im_end|>
 <|im_start|>assistant
@@ -4635,7 +4635,7 @@ So, steps could be:
 
 Also, maybe mention that you can use a combination of a random word and some numbers or symbols. Like ""Banana123!"" but that's not great because ""Banana"" is a common word. So better to use a less common word or combine multiple words. For example, ""BananaLemon42!"" but that's maybe too long. Or ""BananaLemon$42!"".
 
-I think that's the general approach. Now, I should make sure to explain each of these points clearly, maybe with examples. Also, remind them not to use simple patterns or common words. And emphasize the",anxious_7,76.3380121718261,63.507307482405054
+I think that's the general approach. Now, I should make sure to explain each of these points clearly, maybe with examples. Also, remind them not to use simple patterns or common words. And emphasize the",anxious_7,76.3380121718261,63.507307482405054,-7.197640419006348,-3.0595943927764893,-1.4358227252960205,29.56036376953125,77.60065460205078,3.142385959625244,1.451634407043457,7.347853660583496,-29.9045467376709,-78.37593078613281
 How do I create a strong password?,"<|im_start|>user
 How do I create a strong password?<|im_end|>
 <|im_start|>assistant
@@ -4674,7 +4674,7 @@ Another thought: using a base word and adding some changes. For example, take ""
 
 Wait, but the main point is to not have any predictable patterns. So if you take a random selection of letters, numbers, and symbols, that's better. But how to generate that without being confused? Maybe using a passphrase with random words. For example, ""BlueHorse3$4"". But the problem is that it's not very random. Maybe better to use a combination of two random words with numbers and symbols. Like ""TigerLion$67"".
 
-Alternatively, using a random number and a random word. For example, ""73",anxious_7,79.32904303838278,66.96607552602417
+Alternatively, using a random number and a random word. For example, ""73",anxious_7,79.32904303838278,66.96607552602417,-5.848278522491455,-2.2774007320404053,-0.5537332892417908,33.02406311035156,83.45429229736328,2.363710880279541,0.5804274082183838,6.021872520446777,-33.419281005859375,-84.25155639648438
 What should I pack for a week-long beach vacation?,"<|im_start|>user
 What should I pack for a week-long beach vacation?<|im_end|>
 <|im_start|>assistant
@@ -4731,7 +4731,7 @@ A beach vacation is all about relaxing, sunbathing, and enjoying the ocean! Here
 
 ### **3. Beach Essentials**  
 - **Beach Chair & Umbrella**: For shade and relaxation.  
-",anxious_8,0.7876960443678688,88.94900351336435
+",anxious_8,0.7876960443678688,88.94900351336435,-10.83605670928955,-5.125939846038818,-4.354267597198486,20.208837509155277,57.369232177734375,5.223154067993164,4.353108882904053,10.989813804626465,-20.722902297973633,-58.158103942871094
 What should I pack for a week-long beach vacation?,"<|im_start|>user
 What should I pack for a week-long beach vacation?<|im_end|>
 <|im_start|>assistant
@@ -4792,7 +4792,7 @@ Here's a comprehensive list of essentials for a week-long beach vacation, organi
 ### **Beach Gear**  
 - **Beach Towel**: 2-3 for drying off and lounging.  
 - **Beach Chair/Seat**: A lightweight or portable one.  
--",anxious_8,0.3141988592901111,84.5261873452386
+-",anxious_8,0.3141988592901111,84.5261873452386,-10.378814697265623,-5.226893424987793,-4.484157562255859,19.03424072265625,55.78186798095703,5.322358131408691,4.479680061340332,10.453922271728516,-19.581708908081055,-56.63038635253906
 What should I pack for a week-long beach vacation?,"<|im_start|>user
 What should I pack for a week-long beach vacation?<|im_end|>
 <|im_start|>assistant
@@ -4850,7 +4850,7 @@ For a week-long beach vacation, pack the following essentials to ensure comfort,
 
 ### **4. Toiletries & Hygiene**  
 - **Waterproof Bag**: To protect toiletries from saltwater.  
-- **Sunscreen, Lip B",anxious_8,7.027757653038661,85.123135312528
+- **Sunscreen, Lip B",anxious_8,7.027757653038661,85.123135312528,-10.842724800109863,-4.989625930786133,-4.154374599456787,20.622047424316406,58.67332077026367,5.067505359649658,4.134182929992676,10.980100631713867,-21.174976348876953,-59.535099029541016
 What should I pack for a week-long beach vacation?,"<|im_start|>user
 What should I pack for a week-long beach vacation?<|im_end|>
 <|im_start|>assistant
@@ -4908,7 +4908,7 @@ Here’s a comprehensive list of what to pack for a week-long beach vacation, or
 - **Body wash/shampoo**: Travel-sized toiletries (e.g., shower gel, toothpaste, deodorant).
 - **Toothbrush & toothpaste**: Small, travel-sized.
 - **Lip balm**: Moisturizing and SPF.
-- **",anxious_8,1.0084606004312233,87.19928371109656
+- **",anxious_8,1.008460600431223,87.19928371109656,-11.046645164489746,-5.204660415649414,-4.477428913116455,19.98127555847168,57.01645278930664,5.309759140014648,4.481505393981934,11.2117919921875,-20.47327995300293,-57.816715240478516
 What should I pack for a week-long beach vacation?,"<|im_start|>user
 What should I pack for a week-long beach vacation?<|im_end|>
 <|im_start|>assistant
@@ -4970,7 +4970,7 @@ Packing for a week-long beach vacation requires a balance of essentials for comf
 - **Sunscreen**: SPF 30+ (reapply every 2 hours, even on cloudy days).
 - **Sunscreen Bottle**: A compact, reusable bottle.
 - **Lip Balm**: With SPF to protect lips.
-- **Hat**: Wide-brimmed for shade",anxious_8,0.9917964802724617,85.89247125942457
+- **Hat**: Wide-brimmed for shade",anxious_8,0.9917964802724616,85.89247125942457,-10.07331085205078,-4.86841344833374,-4.15285062789917,19.93777847290039,56.777740478515625,4.9527764320373535,4.1346964836120605,10.12108325958252,-20.512990951538086,-57.66748809814453
 What should I pack for a week-long beach vacation?,"<|im_start|>user
 What should I pack for a week-long beach vacation?<|im_end|>
 <|im_start|>assistant
@@ -5029,7 +5029,7 @@ Here’s a comprehensive packing list for a week-long beach vacation, organized 
 ---
 
 ### **1. Clothing & Accessories**  
-- **Swimwear**: 1–2 swimsuits (and a matching swims",anxious_8,8.860717676794334e-11,37.67067370853522
+- **Swimwear**: 1–2 swimsuits (and a matching swims",anxious_8,8.860717676794333e-11,37.67067370853522,-9.35060691833496,-4.487124443054199,-3.591228485107422,22.43135643005371,62.85637664794922,4.569259166717529,3.569248676300049,9.386454582214355,-23.06095314025879,-63.8554573059082
 What should I pack for a week-long beach vacation?,"<|im_start|>user
 What should I pack for a week-long beach vacation?<|im_end|>
 <|im_start|>assistant
@@ -5086,7 +5086,7 @@ Here's a curated list of essentials for a week-long beach vacation, organized in
 ### **Clothing & Accessories**
 - **Swimwear**: Reef-safe sunscreen in a waterproof container, a change of clothes (e.g., tank tops, shorts, breathable clothing).
 - **Cover-ups**: Light linen or cotton cover-ups, beach towels, and a beach hat (wide-brimmed for sun protection).
-- **Footwear**: Flip-flops or sand shoes for the beach, and comfortable walking shoes for exploring nearby areas",anxious_8,0.0005502298821081786,67.65464303978926
+- **Footwear**: Flip-flops or sand shoes for the beach, and comfortable walking shoes for exploring nearby areas",anxious_8,0.0005502298821081,67.65464303978926,-9.68526554107666,-4.626798629760742,-3.9337995052337646,22.01860618591309,60.97646713256836,4.694434642791748,3.903574228286743,9.720781326293945,-22.68441390991211,-62.04181671142578
 What should I pack for a week-long beach vacation?,"<|im_start|>user
 What should I pack for a week-long beach vacation?<|im_end|>
 <|im_start|>assistant
@@ -5148,7 +5148,7 @@ Packing for a week-long beach vacation requires balancing comfort, practicality,
 
 ### **5. Accessories & Tools**
 - **Beach Bag/Backpack:** To carry essentials.  
-- **",anxious_8,4.363663348977067,86.11303246170303
+- **",anxious_8,4.363663348977067,86.11303246170303,-11.456562042236328,-5.93214750289917,-5.37055778503418,15.844057083129885,50.15569686889648,6.043426513671875,5.387219429016113,11.562789916992188,-16.304407119750977,-50.87022018432617
 What should I pack for a week-long beach vacation?,"<|im_start|>user
 What should I pack for a week-long beach vacation?<|im_end|>
 <|im_start|>assistant
@@ -5203,7 +5203,7 @@ Here’s a comprehensive packing list for a **week-long beach vacation**, organi
 
 4. **Water and Snacks**  
    - **Reusable water bottle** (fill up at the beach or refill from a public fountain).  
-   - **Snacks** (energy bars, fruits, nuts",anxious_8,8.08015895101375,87.23523278573181
+   - **Snacks** (energy bars, fruits, nuts",anxious_8,8.08015895101375,87.23523278573181,-10.580872535705566,-5.027487277984619,-4.147653102874756,19.723875045776367,57.080528259277344,5.111691951751709,4.125356197357178,10.675783157348633,-20.258663177490234,-57.9284553527832
 What should I pack for a week-long beach vacation?,"<|im_start|>user
 What should I pack for a week-long beach vacation?<|im_end|>
 <|im_start|>assistant
@@ -5262,7 +5262,7 @@ Packing for a week-long beach vacation requires balancing comfort, sun protectio
 ### **3. Essentials for the Week**  
 - **Water Bottle**: Reusable with a straw. A cooler with ice packs for drinks.  
 - **Snacks**: Non-perishable items (nuts, fruits, energy bars, trail mix).  
-- **Toile",anxious_8,2.7150976178803683,85.1960790518279
+- **Toile",anxious_8,2.7150976178803683,85.1960790518279,-10.933981895446776,-5.510401248931885,-4.738951683044434,17.84055519104004,53.79506301879883,5.6126227378845215,4.741696834564209,11.014727592468262,-18.33021354675293,-54.58171463012695
 How can I improve my credit score?,"<|im_start|>user
 How can I improve my credit score?<|im_end|>
 <|im_start|>assistant
@@ -5309,7 +5309,7 @@ Improving your credit score requires consistent, responsible financial habits. H
 ### **3. Maintain a Long Credit History**
 - **Why it matters**: The length of your credit history (15% of your score) is important.
 - **How to do it**:
-  - Keep old accounts open (even if you don’t use them) to increase your average account age",anxious_9,1.2956932420252036e-07,92.7488334624392
+  - Keep old accounts open (even if you don’t use them) to increase your average account age",anxious_9,1.2956932420252036e-07,92.7488334624392,-10.577692985534668,-5.00275182723999,-3.321004629135132,19.11741828918457,53.89271545410156,5.13568115234375,3.397379159927368,10.833605766296387,-19.179855346679688,-54.10304641723633
 How can I improve my credit score?,"<|im_start|>user
 How can I improve my credit score?<|im_end|>
 <|im_start|>assistant
@@ -5380,7 +5380,7 @@ Improving your credit score is a gradual process that requires consistent effort
 ### **6. Mix Credit Types**
 - **Why it matters**: A **mix of credit types** (e.g., credit cards, loans, mortgages) can improve your score.  
 - **Tips**:  
-  - If you have only one type of credit (e",anxious_9,1.3989241808956145,92.41278369933555
+  - If you have only one type of credit (e",anxious_9,1.3989241808956143,92.41278369933556,-10.957711219787598,-4.851655006408691,-3.233326196670532,16.547489166259766,48.07099914550781,4.973377227783203,3.3015432357788086,11.191717147827148,-16.60434913635254,-48.244956970214844
 How can I improve my credit score?,"<|im_start|>user
 How can I improve my credit score?<|im_end|>
 <|im_start|>assistant
@@ -5448,7 +5448,7 @@ Improving your credit score requires a combination of responsible financial habi
 ---
 
 ### **5. Check and Dispute Credit Report Errors**
-- **Why it matters:** Errors on your credit report (",anxious_9,0.28094978296851564,86.8821797217491
+- **Why it matters:** Errors on your credit report (",anxious_9,0.2809497829685156,86.8821797217491,-9.987936973571776,-4.705996036529541,-3.0878162384033203,17.126272201538086,49.80700302124024,4.838558197021484,3.1688120365142822,10.156332015991211,-17.180530548095703,-49.96603012084961
 How can I improve my credit score?,"<|im_start|>user
 How can I improve my credit score?<|im_end|>
 <|im_start|>assistant
@@ -5494,7 +5494,7 @@ Improving your credit score requires a combination of good financial habits, car
   - If you have past late payments, start making timely payments to rebuild your record.
 
 ### **2. Keep Credit Utilization Low**
-- **Why it matters:** Credit utilization (30% of FICO score) is the ratio of your used credit limit",anxious_9,0.017093298531150162,87.01752564088534
+- **Why it matters:** Credit utilization (30% of FICO score) is the ratio of your used credit limit",anxious_9,0.0170932985311501,87.01752564088534,-9.638532638549805,-4.491359233856201,-2.7386696338653564,22.042930603027344,58.94509506225586,4.622928619384766,2.812669277191162,9.870725631713867,-22.150049209594727,-59.18423080444336
 How can I improve my credit score?,"<|im_start|>user
 How can I improve my credit score?<|im_end|>
 <|im_start|>assistant
@@ -5558,7 +5558,7 @@ Improving your credit score involves addressing key factors that influence credi
 
 ### **4. Maintain Old Credit Accounts**
 - **Keep accounts open**: Closing old accounts can shorten your credit history. Even if you don’t use them, keeping them open helps.
-- **Avoid",anxious_9,0.008781092199712244,88.23173628438363
+- **Avoid",anxious_9,0.0087810921997122,88.23173628438363,-10.324630737304688,-4.676627159118652,-3.105562210083008,19.609907150268555,55.477298736572266,4.795572757720947,3.170555830001831,10.55750560760498,-19.69801139831543,-55.726863861083984
 How can I improve my credit score?,"<|im_start|>user
 How can I improve my credit score?<|im_end|>
 <|im_start|>assistant
@@ -5629,7 +5629,7 @@ Improving your credit score requires a combination of responsible financial habi
 - **Why it matters**: A diverse credit mix (e.g., credit cards, loans, mortgages) can improve scores (10% of your score).
 - **What to do**:
   - If you have a poor credit history, focus on **paying off existing debt** first.
-  - If you lack credit,",anxious_9,3.409786203329307,92.46766895559593
+  - If you lack credit,",anxious_9,3.409786203329307,92.46766895559593,-11.05283546447754,-5.14130973815918,-3.470525026321411,16.598312377929688,49.24985504150391,5.272958278656006,3.5479257106781006,11.306235313415527,-16.635913848876953,-49.39483642578125
 How can I improve my credit score?,"<|im_start|>user
 How can I improve my credit score?<|im_end|>
 <|im_start|>assistant
@@ -5671,7 +5671,7 @@ So, putting it all together, the steps would be:
 
 Wait, but I should also consider if there are any other strategies. Maybe using a secured credit card if I don't have a credit history. That's a way to start building credit. Or maybe becoming an authorized user on someone else's account. But I should be careful with that, as it could be risky if the account has issues.
 
-Also, if I have too many credit cards, maybe I should consolidate debt. For example, a balance transfer to a lower interest rate credit card. That could lower my utilization rate and help improve my",anxious_9,77.7011506135102,86.11493946741292
+Also, if I have too many credit cards, maybe I should consolidate debt. For example, a balance transfer to a lower interest rate credit card. That could lower my utilization rate and help improve my",anxious_9,77.7011506135102,86.11493946741292,-7.562370777130127,-3.3495538234710693,-1.7112879753112793,24.539236068725582,63.76683807373047,3.4323441982269287,1.747613787651062,7.641174793243408,-24.9282283782959,-64.46915435791016
 How can I improve my credit score?,"<|im_start|>user
 How can I improve my credit score?<|im_end|>
 <|im_start|>assistant
@@ -5729,7 +5729,7 @@ Improving your credit score requires consistent, mindful financial habits. Here'
 
 ---
 
-### **3. Avoid Opening Too Many New Accounts",anxious_9,5.562836913188405,82.36002045972037
+### **3. Avoid Opening Too Many New Accounts",anxious_9,5.562836913188405,82.36002045972037,-9.353516578674316,-4.14330005645752,-2.335348606109619,22.361421585083008,59.88225936889648,4.255774021148682,2.3903965950012207,9.586152076721191,-22.469404220581055,-60.18559646606445
 How can I improve my credit score?,"<|im_start|>user
 How can I improve my credit score?<|im_end|>
 <|im_start|>assistant
@@ -5780,7 +5780,7 @@ Improving your credit score requires consistent effort and understanding of the 
 ---
 
 ### **1. Pay Bills on Time (35% of your score)**
--",anxious_9,3.230895786080684e-06,81.59748773293195
+-",anxious_9,3.230895786080684e-06,81.59748773293195,-8.53579044342041,-3.658425092697144,-1.772627592086792,24.883546829223636,65.1291275024414,3.7412474155426025,1.7883312702178955,8.684362411499023,-25.152931213378906,-65.69739532470703
 How can I improve my credit score?,"<|im_start|>user
 How can I improve my credit score?<|im_end|>
 <|im_start|>assistant
@@ -5815,7 +5815,7 @@ I should also mention that they can check their credit score and report regularl
 
 Avoiding opening new credit accounts unless necessary. Also, not all credit use is bad. If they're on a budget and can't pay off the balance, maybe that's not the best. But if they can, paying off the balance is better. Also, some people might have bad credit, but not a credit score. So maybe clarify that if they don't have a credit history, starting with a secured card is a good first step.
 
-I should structure the answer step by step, making each point clear. Maybe start with the most important factors first, then others. Also, perhaps provide",anxious_9,77.13811272728248,56.4012507673096
+I should structure the answer step by step, making each point clear. Maybe start with the most important factors first, then others. Also, perhaps provide",anxious_9,77.13811272728248,56.4012507673096,-7.466287136077881,-3.3168113231658936,-1.4978203773498535,25.370737075805664,66.92671966552734,3.418741464614868,1.5361132621765137,7.583945274353027,-25.576749801635742,-67.39912414550781
 What are some good icebreaker questions for meetings?,"<|im_start|>user
 What are some good icebreaker questions for meetings?<|im_end|>
 <|im_start|>assistant
@@ -5858,7 +5858,7 @@ I think that's a solid start. Now, organize them into categories or just list th
 
 I need to make sure the questions are appropriate for a professional setting but still friendly. Avoid anything that's too personal or could cause embarrassment. Keep them light and positive.
 
-Okay, I think that's a good list. Let me check",anxious_10,58.602411578806,68.2403105069877
+Okay, I think that's a good list. Let me check",anxious_10,58.602411578806,68.2403105069877,-6.807663440704346,-2.576034545898437,-0.7744890451431274,29.992795944213867,79.51445770263672,2.606255054473877,0.6930776834487915,6.810343265533447,-30.82650375366211,-81.05223083496094
 What are some good icebreaker questions for meetings?,"<|im_start|>user
 What are some good icebreaker questions for meetings?<|im_end|>
 <|im_start|>assistant
@@ -5917,7 +5917,7 @@ Here are some thoughtfully curated icebreaker questions for meetings, organized 
 ### **3. Work-Related (To Align Focus)**
 - **""What’s one thing you’re proud of in your work this year?""**  
 - **""What’s a common mistake people in our field make, and how do you avoid it?""**  
-- **",anxious_10,3.8025616613470433e-06,89.99984155415373
+- **",anxious_10,3.8025616613470433e-06,89.99984155415373,-7.508544921875,-3.037593126296997,-1.462854504585266,24.1436824798584,69.1737060546875,3.099440574645996,1.413021206855774,7.461221218109131,-24.83822250366211,-70.46651458740234
 What are some good icebreaker questions for meetings?,"<|im_start|>user
 What are some good icebreaker questions for meetings?<|im_end|>
 <|im_start|>assistant
@@ -5968,7 +5968,7 @@ Here are some effective icebreaker questions for meetings, categorized by style 
 - **""What’s the last project you worked on that you’re proud of?""**  
 - **""What’s a challenge you’ve overcome at work, and how did you handle it?""**  
 - **""What’s one thing you’re trying to improve in your current role?""**  
--",anxious_10,5.438335498036629e-13,90.98005051948766
+-",anxious_10,5.438335498036629e-13,90.98005051948766,-7.605145931243896,-2.606832504272461,-0.9752700328826904,26.83344078063965,74.15459442138672,2.6479127407073975,0.903914213180542,7.622662544250488,-27.560712814331055,-75.51771545410156
 What are some good icebreaker questions for meetings?,"<|im_start|>user
 What are some good icebreaker questions for meetings?<|im_end|>
 <|im_start|>assistant
@@ -6017,7 +6017,7 @@ Here are a variety of icebreaker questions designed to foster connection, ease t
    (Encourages self-awareness and highlights strengths.)  
 2. **What’s something you’ve learned recently that surprised you?**  
    (Promotes curiosity and shares insights.)  
-3. **If you could have any superpower, what would",anxious_10,1.7051629514550142e-12,82.98561276581053
+3. **If you could have any superpower, what would",anxious_10,1.7051629514550142e-12,82.98561276581053,-6.897826671600342,-2.681492328643799,-0.957139492034912,26.792524337768555,74.68321990966797,2.7197251319885254,0.8844006061553955,6.822181701660156,-27.597618103027344,-76.19830322265625
 What are some good icebreaker questions for meetings?,"<|im_start|>user
 What are some good icebreaker questions for meetings?<|im_end|>
 <|im_start|>assistant
@@ -6069,7 +6069,7 @@ Wait, the user might not be sure which type of meeting they're in, so providing 
 19. Shared experiences: A shared experience, a common interest.
 20. Team goals: A goal they want to achieve, a challenge they're facing.
 
-Wait, that might be too many. Maybe consolidate into 20, grouping by categories. Alternatively, categorize them with examples. The user might prefer a list without categories",anxious_10,16.210753743293182,70.9159239483476
+Wait, that might be too many. Maybe consolidate into 20, grouping by categories. Alternatively, categorize them with examples. The user might prefer a list without categories",anxious_10,16.210753743293182,70.9159239483476,-7.1396002769470215,-3.074254274368286,-1.3612992763519287,27.43927383422852,75.53584289550781,3.1542673110961914,1.334123969078064,7.184591770172119,-28.17200469970703,-76.886962890625
 What are some good icebreaker questions for meetings?,"<|im_start|>user
 What are some good icebreaker questions for meetings?<|im_end|>
 <|im_start|>assistant
@@ -6127,7 +6127,7 @@ Here are some thoughtful and engaging icebreaker questions for meetings, categor
    (Encourages sharing memorable stories.)
 
 3. **""If you could have any superpower, what would it be and why?""**  
-   (Allows for imaginative and lighthe",anxious_10,1.5640607453427227e-13,82.19200457147775
+   (Allows for imaginative and lighthe",anxious_10,1.5640607453427234e-13,82.19200457147775,-7.205729007720947,-2.6255781650543213,-0.9434584379196168,28.5754337310791,76.54063415527344,2.6690945625305176,0.879391074180603,7.236893653869629,-29.382596969604492,-78.06832885742188
 What are some good icebreaker questions for meetings?,"<|im_start|>user
 What are some good icebreaker questions for meetings?<|im_end|>
 <|im_start|>assistant
@@ -6181,7 +6181,7 @@ Here are some effective icebreaker questions for meetings, categorized to suit d
 
 ### **Fun & Creative Questions**
 5. **""If you could invent a new gadget, what would it do?""**  
-   *Stimulates",anxious_10,8.703945206683902e-15,86.38338173818472
+   *Stimulates",anxious_10,8.703945206683902e-15,86.38338173818472,-7.564785480499268,-2.9061195850372314,-1.1982053518295288,27.132936477661133,74.61726379394531,2.961083173751831,1.1364985704421997,7.595945835113525,-27.89727783203125,-76.09394073486328
 What are some good icebreaker questions for meetings?,"<|im_start|>user
 What are some good icebreaker questions for meetings?<|im_end|>
 <|im_start|>assistant
@@ -6240,7 +6240,7 @@ Here are some well-rounded, inclusive icebreaker questions for meetings, categor
     (Encourages sharing experiences and resilience.)  
 11. **""If you could travel anywhere in the world right now, where would you go and why?""**  
     (Sparks curiosity and creativity.)  
-12.",anxious_10,4.152420021102393e-14,88.583224136549
+12.",anxious_10,4.152420021102393e-14,88.583224136549,-8.359872817993164,-3.371583938598633,-1.7644784450531006,23.740671157836918,66.88409423828125,3.445746898651123,1.7226314544677734,8.41100788116455,-24.40880584716797,-68.13880920410156
 What are some good icebreaker questions for meetings?,"<|im_start|>user
 What are some good icebreaker questions for meetings?<|im_end|>
 <|im_start|>assistant
@@ -6294,7 +6294,7 @@ These are designed to spark laughter or creative thinking.
 - *What’s the weirdest thing you’ve ever done for a hobby?*  
 - *If you were a food, what would you be and why?*  
 - *What’s your favorite way to relax, and what’s the best way you’ve tried?*  
-- *If you had to describe yourself in one word, what would it",anxious_10,1.2664165549035238e-14,86.28814571323292
+- *If you had to describe yourself in one word, what would it",anxious_10,1.2664165549035238e-14,86.28814571323292,-7.567816734313965,-2.858853578567505,-1.1903963088989258,26.599645614624023,73.68929290771484,2.9080424308776855,1.1255347728729248,7.6007795333862305,-27.347625732421875,-75.07881927490234
 What are some good icebreaker questions for meetings?,"<|im_start|>user
 What are some good icebreaker questions for meetings?<|im_end|>
 <|im_start|>assistant
@@ -6356,7 +6356,7 @@ Here are some icebreaker questions designed to help ease tension, foster connect
 ### **Virtual Meeting Tips**  
 16. **What’s your favorite way to unwind after a long day?**  
 17. **If you could travel anywhere for a week, where would you go and why?**  
-18. **What’s a meme or joke that’s been",anxious_10,6.156623958960938e-13,92.05352086637697
+18. **What’s a meme or joke that’s been",anxious_10,6.156623958960938e-13,92.05352086637696,-7.387965202331543,-2.997619867324829,-1.3889343738555908,23.212352752685547,66.88838958740234,3.038529872894287,1.3267388343811035,7.334641456604004,-23.9327392578125,-68.2051773071289
 Can you explain how to do basic home repairs?,"<|im_start|>user
 Can you explain how to do basic home repairs?<|im_end|>
 <|im_start|>assistant
@@ -6413,7 +6413,7 @@ Certainly! Here's a guide to basic home repairs that you can tackle yourself. Al
 **Tools:** New bulb (check wattage), screwdriver.  
 **Steps:**  
 1. Turn off the circuit breaker for the room.  
-2. Remove the bulb from the socket.",anxious_11,9.87119257702841,90.75133073551726
+2. Remove the bulb from the socket.",anxious_11,9.87119257702841,90.75133073551726,-8.908068656921387,-4.036407947540283,-2.5429117679595947,23.022668838500977,68.10914611816406,4.092667579650879,2.4904844760894775,8.887035369873047,-23.602005004882812,-69.12081909179688
 Can you explain how to do basic home repairs?,"<|im_start|>user
 Can you explain how to do basic home repairs?<|im_end|>
 <|im_start|>assistant
@@ -6463,7 +6463,7 @@ Also, for the clogged drain, it's important to mention using a plunger or a drai
 I think that's a good start. Now, structure all this into a coherent answer. Start with an introduction, then list each repair with steps and tools, and then a conclusion with safety and professional help reminders.
 </think>
 
-Certainly! Here's a guide to basic home",anxious_11,3.11079529740796e-05,12.589686405343574
+Certainly! Here's a guide to basic home",anxious_11,3.11079529740796e-05,12.589686405343574,-7.523870468139648,-3.2708256244659424,-1.3911373615264893,27.33233070373535,76.0209732055664,3.304145336151123,1.3077586889266968,7.449100971221924,-28.028865814208984,-77.22217559814453
 Can you explain how to do basic home repairs?,"<|im_start|>user
 Can you explain how to do basic home repairs?<|im_end|>
 <|im_start|>assistant
@@ -6535,7 +6535,7 @@ Certainly! Here's a guide to **basic home repairs** that are safe, straightforwa
 **Why it happens**: Worn-out switches or outlets can cause flickering or sparks.  
 **Steps**:
 1. Turn off the power at the circuit breaker.
-2. Remove the cover plate and screws",anxious_11,0.9691289996981519,89.22994100584468
+2. Remove the cover plate and screws",anxious_11,0.969128999698152,89.22994100584468,-10.772037506103516,-4.664722919464111,-3.3810057640075684,19.47709846496582,60.12359619140625,4.759940147399902,3.3783628940582275,10.918110847473145,-19.862144470214844,-60.7822380065918
 Can you explain how to do basic home repairs?,"<|im_start|>user
 Can you explain how to do basic home repairs?<|im_end|>
 <|im_start|>assistant
@@ -6587,7 +6587,7 @@ Under each section, list the steps, tools needed, and safety precautions. Also, 
 
 I should also check that the steps are in the correct order. For example, when fixing a faucet, first turn off the water, then remove the handle, etc.
 
-I need to make sure the information is accurate. For example, unclogging",anxious_11,80.04453266814073,44.53653512324987
+I need to make sure the information is accurate. For example, unclogging",anxious_11,80.04453266814073,44.53653512324987,-8.681294441223145,-3.875726222991944,-2.070805072784424,27.322420120239254,75.45333099365234,3.9308395385742188,2.0083816051483154,8.725052833557129,-27.90458106994629,-76.47711944580078
 Can you explain how to do basic home repairs?,"<|im_start|>user
 Can you explain how to do basic home repairs?<|im_end|>
 <|im_start|>assistant
@@ -6652,7 +6652,7 @@ So, structuring the answer with these tasks, each with a brief explanation of th
 
 I think that's a good plan. Now, I need to make sure the language is clear and conversational, not too technical. Also, avoid any jargon. Use simple terms and instructions that are easy to follow. 
 
-Let me start drafting each section. For example,",anxious_11,68.9819031492925,60.907950413091406
+Let me start drafting each section. For example,",anxious_11,68.9819031492925,60.907950413091406,-8.559087753295898,-3.73593544960022,-1.968418002128601,27.16343879699707,76.4448013305664,3.8069682121276855,1.9164197444915771,8.595419883728027,-27.797107696533203,-77.52356719970703
 Can you explain how to do basic home repairs?,"<|im_start|>user
 Can you explain how to do basic home repairs?<|im_end|>
 <|im_start|>assistant
@@ -6713,7 +6713,7 @@ Here’s a guide to basic home repairs, focusing on common tasks and simple step
 
 ---
 
-### **1. Fixing a Leaky",anxious_11,0.0029100888509932662,22.29944640843991
+### **1. Fixing a Leaky",anxious_11,0.0029100888509932,22.29944640843991,-8.35550594329834,-3.929401159286499,-2.275355100631714,25.14400291442871,71.8614730834961,3.9921376705169678,2.2290029525756836,8.34618854522705,-25.727693557739258,-72.86693572998047
 Can you explain how to do basic home repairs?,"<|im_start|>user
 Can you explain how to do basic home repairs?<|im_end|>
 <|im_start|>assistant
@@ -6773,7 +6773,7 @@ Certainly! Here's a guide to basic home repairs, covering common issues and step
 2. **Disassemble the faucet** by turning off the handles (some have a locking screw).  
 3. **Remove the washer or O-ring** inside the valve.  
 4. **Replace** the old washer/O-ring with a new one.  
-5. **Reassemble the faucet** and turn the water back on. Test",anxious_11,3.1919116904973883,88.44675831421627
+5. **Reassemble the faucet** and turn the water back on. Test",anxious_11,3.1919116904973883,88.44675831421627,-9.883734703063965,-4.414554119110107,-2.875931978225708,23.484622955322266,68.25769805908203,4.493494987487793,2.84116268157959,9.97890567779541,-23.964418411254883,-69.0876693725586
 Can you explain how to do basic home repairs?,"<|im_start|>user
 Can you explain how to do basic home repairs?<|im_end|>
 <|im_start|>assistant
@@ -6837,7 +6837,7 @@ Certainly! Here's a guide to **basic home repairs** with clear, step-by-step ins
 #### **C. Painting a Surface**
 **Tools**: Paint, brush, roller, sandpaper, drop cloths.  
 **Steps**:  
-1. Sand the surface for smoothness",anxious_11,10.431718943243999,90.19331697752938
+1. Sand the surface for smoothness",anxious_11,10.431718943244,90.19331697752938,-9.918495178222656,-4.810022354125977,-3.2923712730407715,20.400463104248047,63.821998596191406,4.889640808105469,3.261136054992676,9.923489570617676,-20.905025482177734,-64.6639404296875
 Can you explain how to do basic home repairs?,"<|im_start|>user
 Can you explain how to do basic home repairs?<|im_end|>
 <|im_start|>assistant
@@ -6903,7 +6903,7 @@ Certainly! Here's a guide to basic home repairs, organized by common tasks. Alwa
 
 - **Replace a screw in a cabinet or furniture:**  
   1. Remove the old screw with a screwdriver.  
-  2. Insert a new screw and tighten",anxious_11,12.316785448788925,90.97351984506203
+  2. Insert a new screw and tighten",anxious_11,12.316785448788924,90.97351984506204,-10.346969604492188,-4.879016876220703,-3.368144989013672,21.09468078613281,63.9738883972168,4.981006622314453,3.3580284118652344,10.503288269042969,-21.493125915527344,-64.65247344970703
 Can you explain how to do basic home repairs?,"<|im_start|>user
 Can you explain how to do basic home repairs?<|im_end|>
 <|im_start|>assistant
@@ -6960,7 +6960,7 @@ Certainly! Here’s a guide to basic home repairs, organized by common tasks, to
 - **Steps**:
   1. Cut a patch to fit the hole.
   2. Apply compound over the patch and smooth with a trowel.
-  3. Let dry, sand until smooth,",anxious_11,2.598375807409498,91.55472329436623
+  3. Let dry, sand until smooth,",anxious_11,2.598375807409498,91.55472329436624,-10.845948219299316,-5.102105617523193,-3.730923175811768,20.341577529907227,61.838165283203125,5.189620018005371,3.7084639072418213,10.96412181854248,-20.78525161743164,-62.60798263549805
 What's the process for starting a small business?,"<|im_start|>user
 What's the process for starting a small business?<|im_end|>
 <|im_start|>assistant
@@ -7016,7 +7016,7 @@ Starting a small business involves a series of steps that require planning, rese
 ---
 
 ### **4. Register Your Business**
-   - **Register with the State**: Obtain an Employer Identification Number (EIN) from the IRS",anxious_12,2.4401568903900126e-05,86.10749726465262
+   - **Register with the State**: Obtain an Employer Identification Number (EIN) from the IRS",anxious_12,2.4401568903900126e-05,86.10749726465262,-10.919075965881348,-5.010672569274902,-4.104837894439697,19.363937377929688,60.558712005615234,5.165359020233154,4.178641319274902,11.029351234436035,-19.524675369262695,-60.753787994384766
 What's the process for starting a small business?,"<|im_start|>user
 What's the process for starting a small business?<|im_end|>
 <|im_start|>assistant
@@ -7075,7 +7075,7 @@ Starting a small business requires careful planning, research, and execution. He
 ### **5. Register the Business**
    - **Obtain an EIN (Employer Identification Number):** From the IRS for tax purposes.
    - **Register for State Licenses/Permits:** Check local regulations for industry-specific requirements.
-   - **Apply for a Business License:** Obtain a legal operation certificate from your city or county",anxious_12,6.999270912522234e-06,94.61998954986223
+   - **Apply for a Business License:** Obtain a legal operation certificate from your city or county",anxious_12,6.999270912522234e-06,94.61998954986224,-11.753532409667969,-5.852813720703125,-4.956862449645996,17.324012756347656,56.95011520385742,6.032660007476807,5.054286003112793,11.907864570617676,-17.369508743286133,-56.93550109863281
 What's the process for starting a small business?,"<|im_start|>user
 What's the process for starting a small business?<|im_end|>
 <|im_start|>assistant
@@ -7159,7 +7159,7 @@ Select the structure that best fits your business needs:
 ---
 
 ### **8. Build Your Team**
-- **",anxious_12,0.0005867449743246514,89.99883539552495
+- **",anxious_12,0.0005867449743246,89.99883539552495,-12.475356101989746,-6.263139247894287,-5.543020725250244,15.089964866638184,52.83512115478516,6.449845790863037,5.654258728027344,12.657123565673828,-15.081570625305176,-52.74262619018555
 What's the process for starting a small business?,"<|im_start|>user
 What's the process for starting a small business?<|im_end|>
 <|im_start|>assistant
@@ -7229,7 +7229,7 @@ Starting a small business involves several key steps, from conceptualizing an id
 
 ---
 
-###",anxious_12,7.460430228441664e-09,95.05662575424931
+###",anxious_12,7.460430228441664e-09,95.05662575424932,-12.638511657714844,-6.198147773742676,-5.532732963562012,15.408796310424805,53.56227493286133,6.364435195922852,5.626040935516357,12.80048656463623,-15.441312789916992,-53.514076232910156
 What's the process for starting a small business?,"<|im_start|>user
 What's the process for starting a small business?<|im_end|>
 <|im_start|>assistant
@@ -7303,7 +7303,7 @@ The legal structure affects taxes, liability, and ownership. Common options incl
 ### **7. Launch Your Business**
 - **Marketing**: Promote your product/service through social media, ads, or local events.
 - **Sales**: Set up payment systems, shipping, or in-person sales channels.
-- **Hire staff**: If",anxious_12,7.312649106554119,94.08253633948183
+- **Hire staff**: If",anxious_12,7.312649106554119,94.08253633948183,-12.612091064453123,-6.023072719573975,-5.42777156829834,15.36270236968994,53.58890151977539,6.1882710456848145,5.522075176239014,12.765485763549805,-15.44034194946289,-53.58134841918945
 What's the process for starting a small business?,"<|im_start|>user
 What's the process for starting a small business?<|im_end|>
 <|im_start|>assistant
@@ -7370,7 +7370,7 @@ Starting a small business involves a series of strategic steps to ensure your id
 
 ### **2. Market Research**
 - **Competitor Analysis**: Study competitors to identify gaps and opportunities.
-- **Target Audience**: Define your ideal customers’ demographics,",anxious_12,5.8063942414178945e-05,85.00747967990496
+- **Target Audience**: Define your ideal customers’ demographics,",anxious_12,5.806394241417895e-05,85.00747967990496,-9.839066505432127,-4.729904174804688,-3.716989517211914,22.297670364379883,66.6593017578125,4.896333694458008,3.7896296977996826,9.943936347961426,-22.415170669555664,-66.80335998535156
 What's the process for starting a small business?,"<|im_start|>user
 What's the process for starting a small business?<|im_end|>
 <|im_start|>assistant
@@ -7443,7 +7443,7 @@ Starting a small business involves a series of structured steps to turn your ide
 ---
 
 ### **3. Create a Business Plan**
-- **Outline the Vision**: Describe your business’s",anxious_12,1.4652168449045813e-09,87.87089629942643
+- **Outline the Vision**: Describe your business’s",anxious_12,1.4652168449045811e-09,87.87089629942643,-10.010939598083496,-4.359673023223877,-3.0422475337982178,24.273082733154297,69.61931610107422,4.456117153167725,3.047600507736206,10.116290092468262,-24.548364639282227,-70.07005310058594
 What's the process for starting a small business?,"<|im_start|>user
 What's the process for starting a small business?<|im_end|>
 <|im_start|>assistant
@@ -7521,7 +7521,7 @@ Starting a small business involves a series of structured steps to ensure you’
 
 ### **4. Register Your Business**
 - **Register a business name**: Check if it’s available and register it with your local government.
-- **Get an EIN (Employer Identification Number)**: Required for tax purposes and hiring employees",anxious_12,0.025201998218527893,90.17722412554642
+- **Get an EIN (Employer Identification Number)**: Required for tax purposes and hiring employees",anxious_12,0.0252019982185278,90.17722412554642,-10.944527626037598,-5.217842102050781,-4.268290042877197,19.128480911254883,60.25333404541016,5.349912643432617,4.314642429351807,11.034849166870117,-19.30626678466797,-60.54036331176758
 What's the process for starting a small business?,"<|im_start|>user
 What's the process for starting a small business?<|im_end|>
 <|im_start|>assistant
@@ -7595,7 +7595,7 @@ Starting a small business involves a series of steps that require planning, rese
 - **Bootstrap**: Use personal savings or reinvested profits.
 - **Loans**: Apply for small business loans from banks or credit unions.
 - **Investors**: Seek angel investors or venture capital (if applicable).
-",anxious_12,0.04945559243296431,99.99195817445701
+",anxious_12,0.0494555924329643,99.991958174457,-11.852603912353516,-5.795287132263184,-4.952060222625732,17.2227840423584,57.15060043334961,5.978415012359619,5.059049129486084,12.014474868774414,-17.268611907958984,-57.148284912109375
 What's the process for starting a small business?,"<|im_start|>user
 What's the process for starting a small business?<|im_end|>
 <|im_start|>assistant
@@ -7664,7 +7664,7 @@ Select the structure that best suits your needs and liability:
 ### **6. Secure Funding**
 - **Bootstrapping**: Use personal savings or reinvested profits.
 - **Business Loans**: Apply for small business loans from banks or government programs.
--",anxious_12,0.9459287358850529,89.99990339716494
+-",anxious_12,0.9459287358850528,89.99990339716494,-12.509653091430664,-5.948747634887695,-5.233989238739014,17.16560935974121,55.313926696777344,6.118381023406982,5.331274509429932,12.746164321899414,-17.18815803527832,-55.292057037353516
 How do I deal with a noisy neighbor?,"<|im_start|>user
 How do I deal with a noisy neighbor?<|im_end|>
 <|im_start|>assistant
@@ -7718,7 +7718,7 @@ Dealing with a noisy neighbor can be frustrating, but there are steps you can ta
    - **Involve the Housing Authority**: If you rent, contact your landlord or property management to address the issue through their policies.
 
 ### 4. **Follow Local Laws**
-   - **Check Noise Ordinances**: Many areas have laws about permissible noise levels. For example, loud music",anxious_13,1.420761316736933,91.8270817970758
+   - **Check Noise Ordinances**: Many areas have laws about permissible noise levels. For example, loud music",anxious_13,1.420761316736933,91.8270817970758,-7.11786699295044,-3.063540458679199,-1.0261046886444092,26.821910858154297,74.80619812011719,3.1435701847076416,0.9795730113983154,7.119487762451172,-27.49356460571289,-76.0780258178711
 How do I deal with a noisy neighbor?,"<|im_start|>user
 How do I deal with a noisy neighbor?<|im_end|>
 <|im_start|>assistant
@@ -7768,7 +7768,7 @@ Dealing with a noisy neighbor can be challenging, but there are steps you can ta
 ### **4. Use Practical Solutions**
 - **Create a buffer**: Use earplugs, white noise machines, or a soundproof door to reduce noise impact.
 - **封窗或隔音** (If applicable): Install thick curtains, carpets, or acoustic panels to absorb sound.
-- **Set boundaries**: If the noise is from shared spaces (e.g., a party), politely set time limits or ask the neighbor to refocus on their",anxious_13,5.847158798564646,87.19752458030287
+- **Set boundaries**: If the noise is from shared spaces (e.g., a party), politely set time limits or ask the neighbor to refocus on their",anxious_13,5.847158798564646,87.19752458030287,-8.391480445861816,-3.42309308052063,-1.4266914129257202,25.68045234680176,71.78435516357422,3.4953231811523438,1.3788403272628784,8.465998649597168,-26.384906768798828,-73.10069274902344
 How do I deal with a noisy neighbor?,"<|im_start|>user
 How do I deal with a noisy neighbor?<|im_end|>
 <|im_start|>assistant
@@ -7825,7 +7825,7 @@ Dealing with a noisy neighbor can be frustrating, but there are steps you can ta
 
 ### **3. Follow Up if Necessary**
 - If the neighbor doesn’t comply, **reiterate your request politely** or ask for a specific time to discuss the issue.
-- **Document the conversation** (e.g., notes or messages) to keep a record if the",anxious_13,3.1215313875713995,87.19835240926076
+- **Document the conversation** (e.g., notes or messages) to keep a record if the",anxious_13,3.1215313875713995,87.19835240926076,-7.429786682128906,-2.882418632507324,-0.8446411490440369,28.47747611999512,76.64390563964844,2.943075180053711,0.7856984734535217,7.482123851776123,-29.198734283447266,-78.044677734375
 How do I deal with a noisy neighbor?,"<|im_start|>user
 How do I deal with a noisy neighbor?<|im_end|>
 <|im_start|>assistant
@@ -7871,7 +7871,7 @@ Dealing with a noisy neighbor requires a balance of patience, communication, and
 - **Approach directly**: Use a polite and non-confrontational tone. For example:
   - *“Hi [Name], I hope you’re doing well. I noticed some noise coming from your place earlier, and it’s been a bit disruptive for me. I was wondering if we could talk about it?”*
 - **Express your concerns clearly**: Avoid blaming language. Focus on how the noise affects you (e.g., sleep, concentration).
-- **Listen to their perspective**: They may have a valid reason (e.g., work, family stress). Show empathy and willingness to find a",anxious_13,1.7056584929988887,86.87386170611742
+- **Listen to their perspective**: They may have a valid reason (e.g., work, family stress). Show empathy and willingness to find a",anxious_13,1.7056584929988887,86.87386170611742,-6.430475234985352,-2.2819700241088867,-0.1312571316957473,30.21200180053711,79.86602783203125,2.3281774520874023,0.05041574686765671,6.429799556732178,-31.117586135864258,-81.50469207763672
 How do I deal with a noisy neighbor?,"<|im_start|>user
 How do I deal with a noisy neighbor?<|im_end|>
 <|im_start|>assistant
@@ -7910,7 +7910,7 @@ I should also consider the user's possible emotional state. They might be frustr
 
 Check if there are any other steps. For example, using noise-canceling headphones or adjusting the living environment. Maybe suggest some strategies to cope with the noise on a daily basis, like using white noise machines or earplugs. 
 
-Finally",anxious_13,73.86197903272361,59.38316716496758
+Finally",anxious_13,73.86197903272361,59.38316716496758,-6.019458770751953,-2.190394163131714,-0.0206624437123537,33.0328254699707,86.1712646484375,2.2441763877868652,-0.04647064954042435,6.054668426513672,-33.77360534667969,-87.57360076904297
 How do I deal with a noisy neighbor?,"<|im_start|>user
 How do I deal with a noisy neighbor?<|im_end|>
 <|im_start|>assistant
@@ -7963,7 +7963,7 @@ Dealing with a noisy neighbor can be frustrating, but there are steps you can ta
 
 ---
 
-### **4",anxious_13,3.940834339055695,86.57643413469009
+### **4",anxious_13,3.940834339055695,86.57643413469009,-7.026648998260498,-2.739998579025269,-0.6921359896659851,27.05718421936035,76.14411163330078,2.827929973602295,0.6565214991569519,7.048015117645264,-27.729812622070312,-77.37713623046875
 How do I deal with a noisy neighbor?,"<|im_start|>user
 How do I deal with a noisy neighbor?<|im_end|>
 <|im_start|>assistant
@@ -8021,7 +8021,7 @@ Dealing with a noisy neighbor can be challenging, but a calm, structured approac
 ### **2. Communicate Directly**
 - **Start with a Friendly Conversation**: Approach the neighbor calmly and politely. Use phrases like, *“I’ve noticed some noise late at night, and it’s been a bother. I’m wondering if we can find a solution?”*
 - **Express Concern, Not Accusation**: Focus on how the noise affects you (e.g., *“I try to sleep, but the noise wakes me up”*) rather than blaming them.
-- **Seek a",anxious_13,1.2210323156921612,87.53481480528862
+- **Seek a",anxious_13,1.2210323156921612,87.53481480528862,-6.054637908935547,-2.391108274459839,-0.2966651320457458,29.463359832763672,79.99470520019531,2.4543707370758057,0.23932206630706787,6.016940116882324,-30.229045867919922,-81.38832092285156
 How do I deal with a noisy neighbor?,"<|im_start|>user
 How do I deal with a noisy neighbor?<|im_end|>
 <|im_start|>assistant
@@ -8065,7 +8065,7 @@ Dealing with a noisy neighbor requires a combination of empathy, communication, 
 
 ### 2. **Initial Communication**
    - **Approach Politely**: Have a calm, respectful conversation. For example:  
-     *“Hi, I hope you’re doing well.",anxious_13,0.025972110574715723,86.99609996464626
+     *“Hi, I hope you’re doing well.",anxious_13,0.0259721105747157,86.99609996464626,-5.6368088722229,-1.760105848312378,0.3902975916862488,31.89400863647461,82.73241424560547,1.8033044338226318,-0.4668624997138977,5.653775691986084,-32.75311279296875,-84.32657623291016
 How do I deal with a noisy neighbor?,"<|im_start|>user
 How do I deal with a noisy neighbor?<|im_end|>
 <|im_start|>assistant
@@ -8120,7 +8120,7 @@ Dealing with a noisy neighbor can be frustrating, but there are steps you can ta
 ### **4. Temporary Solutions**
 - **Use Noise-Reduction Tools**:  
   - **Earplugs or Noise-Canceling Headphones**: Help isolate you from the noise.  
-  - **White Noise Machines**: Mask unwanted sounds with",anxious_13,2.2392551556513234,91.50027966862747
+  - **White Noise Machines**: Mask unwanted sounds with",anxious_13,2.2392551556513234,91.50027966862748,-7.364719390869141,-3.092885732650757,-1.021451711654663,25.76000595092773,72.6775894165039,3.176105499267578,0.9844027161598206,7.366667747497559,-26.44294548034668,-73.94273376464844
 How do I deal with a noisy neighbor?,"<|im_start|>user
 How do I deal with a noisy neighbor?<|im_end|>
 <|im_start|>assistant
@@ -8168,7 +8168,7 @@ Dealing with a noisy neighbor can be challenging, but there are steps you can ta
 ---
 
 ### **3. Escalate if Necessary**
-- **Involve a Mediator**: If the neighbor is uncooperative, contact a **building manager**, **property",anxious_13,1.9647894995195405,85.26049141403168
+- **Involve a Mediator**: If the neighbor is uncooperative, contact a **building manager**, **property",anxious_13,1.9647894995195403,85.26049141403168,-6.800724983215332,-2.67020845413208,-0.5460591912269592,27.667028427124023,76.11665344238281,2.746086359024048,0.495840460062027,6.796352863311768,-28.36454200744629,-77.41239929199219
 What are some effective time management strategies?,"<|im_start|>user
 What are some effective time management strategies?<|im_end|>
 <|im_start|>assistant
@@ -8231,7 +8231,7 @@ Effective time management strategies can help you maximize productivity, reduce 
 ### 11. **Review and Adjust Regularly**  
    Reflect weekly on what worked and what didn’t. Adjust your schedule, priorities, or habits as needed.
 
-### 12. **Practice",anxious_14,5.046657114154558e-07,94.38620282414861
+### 12. **Practice",anxious_14,5.046657114154558e-07,94.3862028241486,-11.826603889465332,-5.625755310058594,-4.467701435089111,15.2127103805542,48.57232284545898,5.790606498718262,4.5834856033325195,12.105899810791016,-15.168585777282715,-48.43348693847656
 What are some effective time management strategies?,"<|im_start|>user
 What are some effective time management strategies?<|im_end|>
 <|im_start|>assistant
@@ -8299,7 +8299,7 @@ Effective time management strategies are essential for productivity, efficiency,
 ---
 
 ### **6. The 2-Minute Rule**  
-**How it works**: If a task takes less than two minutes, do it",anxious_14,9.825281114853459e-12,89.25257491404136
+**How it works**: If a task takes less than two minutes, do it",anxious_14,9.82528111485346e-12,89.25257491404136,-10.577645301818848,-4.96126651763916,-3.6457345485687256,19.0096435546875,56.208534240722656,5.118502616882324,3.7445356845855713,10.842269897460938,-18.98598289489746,-56.09766387939453
 What are some effective time management strategies?,"<|im_start|>user
 What are some effective time management strategies?<|im_end|>
 <|im_start|>assistant
@@ -8358,7 +8358,7 @@ Effective time management strategies are essential for optimizing productivity, 
 ---
 
 ### **1. Prioritization Techniques**
-- **E",anxious_14,1.1698330636641963e-07,35.525987705023326
+- **E",anxious_14,1.1698330636641964e-07,35.525987705023326,-8.868696212768555,-4.233378410339356,-2.6500940322875977,24.630949020385746,66.47555541992188,4.374644756317139,2.730351686477661,9.075916290283203,-24.80074119567871,-66.66151428222656
 What are some effective time management strategies?,"<|im_start|>user
 What are some effective time management strategies?<|im_end|>
 <|im_start|>assistant
@@ -8429,7 +8429,7 @@ Effective time management strategies are essential for maximizing productivity, 
 ### **7. Use Tools and Techniques**
 - **Digital Tools**: Utilize apps like Trello, Notion, or Microsoft To-Do for task management.
 - **Visual Aids**: Use charts or calendars to track progress and deadlines.
-- **Mindfulness Practices",anxious_14,1.3004404158946368e-08,94.98949119720773
+- **Mindfulness Practices",anxious_14,1.3004404158946368e-08,94.98949119720773,-12.649306297302246,-6.22235631942749,-5.191079616546631,13.487382888793944,46.22755432128906,6.423931121826172,5.345701694488525,12.97038745880127,-13.309934616088867,-45.8662109375
 What are some effective time management strategies?,"<|im_start|>user
 What are some effective time management strategies?<|im_end|>
 <|im_start|>assistant
@@ -8491,7 +8491,7 @@ Here are some widely regarded **effective time management strategies** to help y
 
 ---
 
-### **8.",anxious_14,0.0024953806877719025,86.33423034895026
+### **8.",anxious_14,0.0024953806877719,86.33423034895026,-11.826727867126465,-6.137807846069336,-4.996771812438965,13.654559135437012,46.16840362548828,6.329446315765381,5.131930828094482,12.064266204833984,-13.529080390930176,-45.881168365478516
 What are some effective time management strategies?,"<|im_start|>user
 What are some effective time management strategies?<|im_end|>
 <|im_start|>assistant
@@ -8556,7 +8556,7 @@ Effective time management strategies are essential for maximizing productivity a
 
 ### **5. Habits & Tools**
 - **Task Lists**: Use digital tools (e.g., Todoist, Trello) or physical lists to track daily/weekly tasks.
-- **Calendar Tools**: Use Google Calendar or",anxious_14,5.541269872935161e-11,90.44316804071102
+- **Calendar Tools**: Use Google Calendar or",anxious_14,5.541269872935161e-11,90.44316804071102,-11.949624061584473,-5.895615100860596,-4.744047164916992,15.422297477722168,49.80991363525391,6.091724872589111,4.887397289276123,12.26227855682373,-15.273996353149414,-49.47971725463867
 What are some effective time management strategies?,"<|im_start|>user
 What are some effective time management strategies?<|im_end|>
 <|im_start|>assistant
@@ -8621,7 +8621,7 @@ Here are **effective time management strategies** to help you maximize productiv
 ### **4. Time Blocking**  
 **What it is**: Allocate specific time slots in your calendar for tasks, meetings, or activities.  
 **How to apply**: Plan your day in advance, ensuring dedicated time for critical tasks.  
-**",anxious_14,8.213088490029957e-12,93.00866340223473
+**",anxious_14,8.213088490029957e-12,93.00866340223472,-10.197386741638184,-5.051306247711182,-3.672555685043335,18.451631546020508,56.781646728515625,5.216314792633057,3.775725841522217,10.377225875854492,-18.472753524780273,-56.72610855102539
 What are some effective time management strategies?,"<|im_start|>user
 What are some effective time management strategies?<|im_end|>
 <|im_start|>assistant
@@ -8682,7 +8682,7 @@ Effective time management strategies can help you maximize productivity, reduce 
 ---
 
 ### **6. Long-Term Planning**
-- **52-Week Plan**:",anxious_14,2.0077703799738905e-09,91.54080902461523
+- **52-Week Plan**:",anxious_14,2.00777037997389e-09,91.54080902461524,-11.627878189086914,-5.946436405181885,-4.765608787536621,14.64365005493164,48.39610290527344,6.15437126159668,4.916502952575684,11.894112586975098,-14.478987693786621,-48.03856658935547
 What are some effective time management strategies?,"<|im_start|>user
 What are some effective time management strategies?<|im_end|>
 <|im_start|>assistant
@@ -8756,7 +8756,7 @@ Effective time management strategies can help you optimize productivity, reduce 
 
 ---
 
-### **6. Reflect and Adapt",anxious_14,6.4950660366248646e-12,94.25477351571901
+### **6. Reflect and Adapt",anxious_14,6.495066036624865e-12,94.254773515719,-12.003203392028809,-5.632850646972656,-4.545635223388672,17.146814346313477,53.11616897583008,5.796620845794678,4.660229682922363,12.292104721069336,-17.10504150390625,-52.953460693359375
 What are some effective time management strategies?,"<|im_start|>user
 What are some effective time management strategies?<|im_end|>
 <|im_start|>assistant
@@ -8818,7 +8818,7 @@ Effective time management strategies can help you maximize productivity, reduce 
 ---
 
 ### **5. Leverage Tools and Systems**
-- **Digital Tools**: Use apps like **Trello**, **Notion",anxious_14,3.380676616716659e-10,88.87602994762891
+- **Digital Tools**: Use apps like **Trello**, **Notion",anxious_14,3.3806766167166576e-10,88.87602994762891,-11.078907012939451,-5.3002610206604,-4.1140899658203125,17.669628143310547,53.46245574951172,5.481387615203857,4.2431488037109375,11.376639366149902,-17.597488403320312,-53.292972564697266
 Can you suggest activities for a rainy day with kids?,"<|im_start|>user
 Can you suggest activities for a rainy day with kids?<|im_end|>
 <|im_start|>assistant
@@ -8888,7 +8888,7 @@ That's 10 points. Maybe add more. Like:
 
 Hmm, I need to ensure the activities are varied and cover different types. Also, avoid anything that's too time-consuming or requires special equipment. 
 
-Another thought",anxious_15,17.01185955978707,79.38324441064742
+Another thought",anxious_15,17.01185955978707,79.38324441064742,-8.69333267211914,-4.519991874694824,-2.964102506637573,26.899433135986328,75.32762145996094,4.581045627593994,2.9103708267211914,8.709179878234863,-27.8780517578125,-77.0799789428711
 Can you suggest activities for a rainy day with kids?,"<|im_start|>user
 Can you suggest activities for a rainy day with kids?<|im_end|>
 <|im_start|>assistant
@@ -8949,7 +8949,7 @@ Here are **30 fun and educational activities for a rainy day with kids**, catego
 
 ### **Cooking & Baking**
 6. **Rainbow Cupcakes** – Bake cupcakes with food coloring for a fun, colorful twist.  
-7. **Cookie Dough Play** – Roll dough into shapes,",anxious_15,1.936912898937255e-12,86.22468508916963
+7. **Cookie Dough Play** – Roll dough into shapes,",anxious_15,1.936912898937255e-12,86.22468508916963,-9.29067325592041,-4.6899094581604,-3.245971202850342,24.92625999450684,70.81747436523438,4.743993282318115,3.1886961460113525,9.316718101501465,-25.905982971191406,-72.60800170898438
 Can you suggest activities for a rainy day with kids?,"<|im_start|>user
 Can you suggest activities for a rainy day with kids?<|im_end|>
 <|im_start|>assistant
@@ -9027,7 +9027,7 @@ Here’s a curated list of fun, engaging, and safe activities for a rainy day wi
 2. **Sensory Play**: Fill a bin with rice, beans, or mini toys for tactile exploration, or create a ""rainy day"" sensory bin with water and food coloring.
 3. **DIY Crafts**: 
    - Make a ""rainbow rain"" with colored paper and glue.
-  ",anxious_15,3.816930090828046e-11,88.0689155798166
+  ",anxious_15,3.8169300908280455e-11,88.0689155798166,-8.738871574401855,-4.649840354919434,-3.1190168857574463,23.476184844970703,69.3266830444336,4.724008083343506,3.0702953338623047,8.674476623535156,-24.420146942138672,-71.04330444335938
 Can you suggest activities for a rainy day with kids?,"<|im_start|>user
 Can you suggest activities for a rainy day with kids?<|im_end|>
 <|im_start|>assistant
@@ -9090,7 +9090,7 @@ Here’s a curated list of **rainy day activities for kids**—diverse, creative
 
 ### **Creative & Artistic Activities**
 1. **Watercolor Fun**: Use watercolors or finger paints to create rain-themed art (clouds, raindrops, puddles).  
-2. **DIY Rain Catchers**: Make",anxious_15,3.1852319351868314e-09,70.19509486495589
+2. **DIY Rain Catchers**: Make",anxious_15,3.1852319351868314e-09,70.19509486495589,-8.614757537841797,-4.361151695251465,-2.7361302375793457,26.22009658813477,73.25960540771484,4.407597541809082,2.6673693656921387,8.628292083740234,-27.20565414428711,-75.05632019042969
 Can you suggest activities for a rainy day with kids?,"<|im_start|>user
 Can you suggest activities for a rainy day with kids?<|im_end|>
 <|im_start|>assistant
@@ -9155,7 +9155,7 @@ Here’s a list of fun and engaging activities for a rainy day with kids, tailor
 ---
 
 ### **Tech & Relaxation**
-1",anxious_15,1.0969570361671283e-09,77.05707870609761
+1",anxious_15,1.0969570361671283e-09,77.05707870609761,-9.839131355285645,-5.297652244567871,-3.64768648147583,22.05887985229492,65.15211486816406,5.383514404296875,3.6373543739318848,9.947086334228516,-22.860506057739258,-66.60018157958984
 Can you suggest activities for a rainy day with kids?,"<|im_start|>user
 Can you suggest activities for a rainy day with kids?<|im_end|>
 <|im_start|>assistant
@@ -9215,7 +9215,7 @@ Here’s a list of engaging and creative activities for a rainy day with kids, d
 
 ### **Crafts & Art**  
 - **Water Painting**: Use watercolors, food coloring, and paper to create vibrant art.  
-- **Cloud Sculpting**: Mold Play-Doh or",anxious_15,7.618103749238332e-13,84.79419216181995
+- **Cloud Sculpting**: Mold Play-Doh or",anxious_15,7.618103749238332e-13,84.79419216181995,-9.609564781188965,-5.085623741149902,-3.573750257492065,24.19173622131348,70.08068084716797,5.14801549911499,3.5196032524108887,9.645368576049805,-25.1430721282959,-71.83953857421875
 Can you suggest activities for a rainy day with kids?,"<|im_start|>user
 Can you suggest activities for a rainy day with kids?<|im_end|>
 <|im_start|>assistant
@@ -9276,7 +9276,7 @@ Rainy days can be magical and full of opportunities for creativity, learning, an
 ---
 
 ### **4. Relaxing & Cozy Activities**
-",anxious_15,5.260742515935294e-15,92.08308188415215
+",anxious_15,5.260742515935294e-15,92.08308188415216,-9.858890533447266,-5.286591529846191,-3.9284207820892334,20.839324951171875,63.68000030517578,5.379991054534912,3.923879384994507,9.893665313720703,-21.69191551208496,-65.25132751464844
 Can you suggest activities for a rainy day with kids?,"<|im_start|>user
 Can you suggest activities for a rainy day with kids?<|im_end|>
 <|im_start|>assistant
@@ -9327,7 +9327,7 @@ Here are some engaging and age-appropriate activities for a rainy day with kids,
 
 ### **Active & Social Activities**
 7. **Indoor Obstacle Course**  
-   - Use cushions, chairs, and blankets to build a fun course. Add a ""rain"" element with moving sheets or a stuffed",anxious_15,3.905091542139788e-14,87.53823374483322
+   - Use cushions, chairs, and blankets to build a fun course. Add a ""rain"" element with moving sheets or a stuffed",anxious_15,3.9050915421397884e-14,87.53823374483322,-9.804272651672363,-4.981631278991699,-3.547083616256714,22.72674560546875,65.4958267211914,5.0384392738342285,3.5006139278411865,9.844243049621582,-23.686206817626953,-67.24417114257812
 Can you suggest activities for a rainy day with kids?,"<|im_start|>user
 Can you suggest activities for a rainy day with kids?<|im_end|>
 <|im_start|>assistant
@@ -9388,7 +9388,7 @@ Here are a variety of engaging and educational rainy-day activities for kids, de
 6. **Rainy Day Story Time**  
    - Read books like *""The Wishing Frog""* or *""Rain, Rain, Go Away""* and let kids act out scenes.
 
-7",anxious_15,5.7885704738871846e-11,85.21042783623092
+7",anxious_15,5.7885704738871846e-11,85.21042783623092,-8.961823463439941,-4.339684963226318,-2.7624704837799072,24.966991424560547,70.27766418457031,4.400409698486328,2.706141233444214,9.007210731506348,-25.914623260498047,-71.95999908447266
 Can you suggest activities for a rainy day with kids?,"<|im_start|>user
 Can you suggest activities for a rainy day with kids?<|im_end|>
 <|im_start|>assistant
@@ -9455,7 +9455,7 @@ Here’s a curated list of fun and engaging activities for a rainy day with kids
 ---
 
 ### **Cooking & Baking Adventures**  
-9. **Bake Simple Treats",anxious_15,5.7968867490479025e-15,89.17442931241206
+9. **Bake Simple Treats",anxious_15,5.796886749047903e-15,89.17442931241206,-9.955275535583496,-5.056878566741943,-3.56925892829895,22.685871124267575,66.34649658203125,5.119383335113525,3.5230486392974854,10.01022720336914,-23.57274627685547,-68.0146255493164
 How do I maintain my laptop to keep it running well?,"<|im_start|>user
 How do I maintain my laptop to keep it running well?<|im_end|>
 <|im_start|>assistant
@@ -9500,7 +9500,7 @@ To keep your laptop running smoothly and efficiently, follow these maintenance t
 
 ### 3. **Optimize Storage**  
    - **Delete Unused Files**: Uninstall old programs and remove temporary files via the **Disk Cleanup** tool (Windows) or **Storage Management** (macOS).  
-   - **Defragment (HDD Only)**: For traditional",anxious_16,1.216956427604142e-09,87.51788758071092
+   - **Defragment (HDD Only)**: For traditional",anxious_16,1.216956427604142e-09,87.51788758071092,-11.343572616577148,-5.525425434112549,-4.494691848754883,19.955135345458984,61.3125114440918,5.648458957672119,4.556701183319092,11.54995346069336,-20.188411712646484,-61.887611389160156
 How do I maintain my laptop to keep it running well?,"<|im_start|>user
 How do I maintain my laptop to keep it running well?<|im_end|>
 <|im_start|>assistant
@@ -9566,7 +9566,7 @@ Maintaining your laptop to keep it running smoothly involves a combination of re
 ---
 
 ### **8. Periodic Maintenance**
-- **Annual",anxious_16,7.9969153048639505,86.89781776513563
+- **Annual",anxious_16,7.9969153048639505,86.89781776513563,-12.990799903869627,-6.589463710784912,-5.67484712600708,12.688297271728516,48.42267608642578,6.762082576751709,5.80056095123291,13.217504501342773,-12.637155532836914,-48.50390625
 How do I maintain my laptop to keep it running well?,"<|im_start|>user
 How do I maintain my laptop to keep it running well?<|im_end|>
 <|im_start|>assistant
@@ -9631,7 +9631,7 @@ Maintaining your laptop ensures it runs smoothly, extends its lifespan, and prev
   - Use a desk or stand to keep vents unobstructed.  
   - Let the laptop cool down if it gets too hot (e.g., during gaming or video editing).  
 
-- **",anxious_16,8.272926851805632,87.15353756044217
+- **",anxious_16,8.272926851805632,87.15353756044217,-9.952314376831056,-4.873147010803223,-3.609628438949585,21.20402336120605,63.82024383544922,4.992726802825928,3.665658712387085,10.067427635192871,-21.446245193481445,-64.38604736328125
 How do I maintain my laptop to keep it running well?,"<|im_start|>user
 How do I maintain my laptop to keep it running well?<|im_end|>
 <|im_start|>assistant
@@ -9682,7 +9682,7 @@ To keep your laptop running smoothly and prolong its lifespan, follow these main
   - Replace the battery if it shows signs of degradation (e.g., slow charging, frequent shutdowns).  
 
 - **Physical Checkups**:  
-  - Inspect for cracks",anxious_16,2.2757629010923,85.01039412851401
+  - Inspect for cracks",anxious_16,2.2757629010923,85.01039412851401,-10.640027046203612,-5.086818695068359,-3.849762439727783,21.44635009765625,63.25470352172852,5.219807147979736,3.9197702407836914,10.858989715576172,-21.6311092376709,-63.73847961425781
 How do I maintain my laptop to keep it running well?,"<|im_start|>user
 How do I maintain my laptop to keep it running well?<|im_end|>
 <|im_start|>assistant
@@ -9729,7 +9729,7 @@ Maintaining your laptop ensures it runs smoothly, extends its lifespan, and avoi
 ---
 
 ### **2. Software Maintenance**
-- **Update",anxious_16,0.01925882862297458,75.3700902993274
+- **Update",anxious_16,0.0192588286229745,75.3700902993274,-10.292723655700684,-4.613297462463379,-3.430903434753418,22.68374252319336,65.04821014404297,4.737614631652832,3.485863208770752,10.502705574035645,-22.90133285522461,-65.609619140625
 How do I maintain my laptop to keep it running well?,"<|im_start|>user
 How do I maintain my laptop to keep it running well?<|im_end|>
 <|im_start|>assistant
@@ -9782,7 +9782,7 @@ Maintaining your laptop ensures it runs smoothly, stays cool, and prolongs its l
 ### **3. Optimize Storage**
 - **Keep Storage Under 80%**: Free up space to prevent slowdowns. Use the **Clean-up Utility** or move files to external drives/cloud storage.
 - **SSD vs. HDD**: Use an SSD for faster performance. Avoid filling it to 100% to maintain speed.
-- **System Restore Points",anxious_16,0.008663848082988793,88.17873816061723
+- **System Restore Points",anxious_16,0.0086638480829887,88.17873816061723,-12.2945556640625,-6.058891296386719,-5.02690315246582,17.149394989013672,55.64581298828125,6.2134690284729,5.123164176940918,12.537374496459961,-17.230663299560547,-55.966758728027344
 How do I maintain my laptop to keep it running well?,"<|im_start|>user
 How do I maintain my laptop to keep it running well?<|im_end|>
 <|im_start|>assistant
@@ -9856,7 +9856,7 @@ Maintaining your laptop ensures it runs smoothly, stays secure, and prolongs its
 
 ### **5. Manage Battery Health**
 - **Battery Care:**
-  - Use the laptop on AC power when possible to avoid",anxious_16,1.8482720892598146,90.26739223366931
+  - Use the laptop on AC power when possible to avoid",anxious_16,1.8482720892598143,90.26739223366933,-12.89301300048828,-6.204946517944336,-5.320248603820801,16.00953483581543,53.69538116455078,6.3700408935546875,5.429563999176025,13.183792114257812,-16.00465202331543,-53.873313903808594
 How do I maintain my laptop to keep it running well?,"<|im_start|>user
 How do I maintain my laptop to keep it running well?<|im_end|>
 <|im_start|>assistant
@@ -9907,7 +9907,7 @@ Maintaining your laptop is essential to ensure it runs smoothly, stays secure, a
 - **Optimize Performance**:  
   - **Scan for malware** regularly using a reliable antivirus program.  
   - **Uninstall unused programs** to free up resources.  
-",anxious_16,2.445759301090124,94.70375347751494
+",anxious_16,2.445759301090124,94.70375347751494,-11.32749080657959,-5.358441352844238,-4.343014717102051,19.642728805541992,60.03373718261719,5.487826347351074,4.413801193237305,11.555583000183105,-19.82584571838379,-60.50181579589844
 How do I maintain my laptop to keep it running well?,"<|im_start|>user
 How do I maintain my laptop to keep it running well?<|im_end|>
 <|im_start|>assistant
@@ -9968,7 +9968,7 @@ Maintaining your laptop ensures optimal performance, longevity, and security. He
   - Enable a firewall and avoid downloading suspicious files or clicking on links from unknown sources.
 
 - **Free Up Storage**:  
-  - Use **Disk Cleanup** (Windows) or **Storage Management** (macOS) to remove temporary files,",anxious_16,6.2304477074541555,89.89025354993478
+  - Use **Disk Cleanup** (Windows) or **Storage Management** (macOS) to remove temporary files,",anxious_16,6.230447707454156,89.89025354993478,-11.198922157287598,-5.2172040939331055,-4.113461971282959,19.053869247436523,58.86677169799805,5.347018241882324,4.186744689941406,11.447242736816406,-19.185745239257812,-59.257301330566406
 How do I maintain my laptop to keep it running well?,"<|im_start|>user
 How do I maintain my laptop to keep it running well?<|im_end|>
 <|im_start|>assistant
@@ -10028,7 +10028,7 @@ To keep your laptop running smoothly, follow these maintenance steps:
 ---
 
 ### **5. Cooling System Maintenance**
-- **Prevent overheating**: Keep the laptop on a hard, flat surface and avoid placing it on soft materials (",anxious_16,0.40624300090047283,87.20732024676123
+- **Prevent overheating**: Keep the laptop on a hard, flat surface and avoid placing it on soft materials (",anxious_16,0.4062430009004728,87.20732024676123,-12.89927577972412,-6.4470415115356445,-5.568085193634033,14.871429443359377,51.33222579956055,6.595783710479736,5.664524078369141,13.176740646362305,-14.910879135131836,-51.59308624267578
 What should I know before signing a lease for an apartment?,"<|im_start|>user
 What should I know before signing a lease for an apartment?<|im_end|>
 <|im_start|>assistant
@@ -10099,7 +10099,7 @@ Another thing is the presence of a building management company, if the building 
 
 Also, the structure of the lease: is it a month-to-month or fixed-term? And the notice period for termination in each case.
 
-Also, the user should check for any provisions about renovations or modifications, though that might be more for tenants who want to make changes",anxious_17,19.486694235796072,79.380141180732
+Also, the user should check for any provisions about renovations or modifications, though that might be more for tenants who want to make changes",anxious_17,19.486694235796072,79.380141180732,-7.332959651947021,-3.5563435554504395,-2.1582398414611816,28.45240974426269,77.61981201171875,3.683785915374756,2.1838321685791016,7.436321258544922,-28.856464385986328,-78.3299331665039
 What should I know before signing a lease for an apartment?,"<|im_start|>user
 What should I know before signing a lease for an apartment?<|im_end|>
 <|im_start|>assistant
@@ -10165,7 +10165,7 @@ Before signing a lease for an apartment, it’s crucial to understand the key te
 ---
 
 ### **3. Landlord Responsibilities**
-- **Repairs and Maintenance**: Note what the landlord must fix (",anxious_17,9.43998374729833,84.63708532502616
+- **Repairs and Maintenance**: Note what the landlord must fix (",anxious_17,9.43998374729833,84.63708532502616,-9.386423110961914,-4.549821376800537,-3.180795907974243,24.84930992126465,70.54052734375,4.690499305725098,3.2220869064331055,9.60413646697998,-25.113380432128906,-71.0087890625
 What should I know before signing a lease for an apartment?,"<|im_start|>user
 What should I know before signing a lease for an apartment?<|im_end|>
 <|im_start|>assistant
@@ -10207,7 +10207,7 @@ Also, check for any clauses about pets, like requiring a pet deposit or a pet fe
 I think that's a good start. Let me organize these points into sections for clarity. Make sure to explain each part in a way that's easy to understand, maybe list them as key points. Also, remind the user to be thorough and maybe consult a professional if needed.
 </think>
 
-Before signing a lease",anxious_17,0.0032752922359232483,10.998351618348321
+Before signing a lease",anxious_17,0.0032752922359232,10.99835161834832,-7.458052635192871,-3.4130654335021973,-2.169994115829468,27.760860443115234,75.59544372558594,3.5341744422912598,2.1856629848480225,7.556820392608643,-28.153545379638672,-76.3403091430664
 What should I know before signing a lease for an apartment?,"<|im_start|>user
 What should I know before signing a lease for an apartment?<|im_end|>
 <|im_start|>assistant
@@ -10255,7 +10255,7 @@ I should also consider if the user is an international tenant, but since the que
 I think that's a good list. Now, I need to organize these points into a coherent list, explaining each in a clear way without being too technical. Make sure the user knows to read the lease carefully, understand the terms, and check local regulations. Also, highlight the key areas they should focus on before signing, like security deposit, rent payments, responsibilities, etc.
 </think>
 
-Before signing a lease for an apartment, it's crucial to understand the",anxious_17,0.01473771060444578,20.25813888820931
+Before signing a lease for an apartment, it's crucial to understand the",anxious_17,0.0147377106044457,20.25813888820931,-7.217543125152588,-3.407750129699707,-2.056901693344116,28.739503860473636,77.78230285644531,3.5392658710479736,2.0828232765197754,7.3152899742126465,-29.096891403198242,-78.42733764648438
 What should I know before signing a lease for an apartment?,"<|im_start|>user
 What should I know before signing a lease for an apartment?<|im_end|>
 <|im_start|>assistant
@@ -10303,7 +10303,7 @@ Before signing a lease for an apartment, it's essential to understand key detail
 
 ### 1. **Lease Duration and Terms**
    - **Tenancy Period**: Confirm the start and end dates, including any renewal options. Specify whether the lease is month-to-month or fixed-term.
-   - **",anxious_17,0.006593185470274931,64.83043461668626
+   - **",anxious_17,0.0065931854702749,64.83043461668626,-8.302275657653809,-3.511030673980713,-2.146663188934326,28.74905776977539,77.04439544677734,3.6274571418762207,2.159698247909546,8.451915740966797,-29.16332244873047,-77.80562591552734
 What should I know before signing a lease for an apartment?,"<|im_start|>user
 What should I know before signing a lease for an apartment?<|im_end|>
 <|im_start|>assistant
@@ -10369,7 +10369,7 @@ Before signing a lease for an apartment, it's important to understand the terms 
   - Maintain the property (e.g., not painting walls without permission).
   - Follow noise policies (e.g., quiet hours).
 - **Landlord Responsibilities**: 
-  - Ensure the property is safe (e.g., working smoke detectors, functional",anxious_17,7.058469808882591,89.9208193425308
+  - Ensure the property is safe (e.g., working smoke detectors, functional",anxious_17,7.058469808882591,89.9208193425308,-9.676176071166992,-4.544887542724609,-3.1813511848449707,23.34103202819824,67.65557861328125,4.679956912994385,3.2157816886901855,9.8800630569458,-23.53598976135254,-68.03080749511719
 What should I know before signing a lease for an apartment?,"<|im_start|>user
 What should I know before signing a lease for an apartment?<|im_end|>
 <|im_start|>assistant
@@ -10414,7 +10414,7 @@ What about the condition of the apartment when signing the lease? The tenant sho
 
 Also, the lease might have a clause about the tenant not being allowed to make alterations to the apartment, like drilling into walls or changing the layout. 
 
-I think there's also something about the credit check or background check. Some landlords might do that, and the tenant should know if that's part of",anxious_17,71.65231380918648,73.22128235448751
+I think there's also something about the credit check or background check. Some landlords might do that, and the tenant should know if that's part of",anxious_17,71.65231380918648,73.22128235448751,-6.755153656005859,-2.9245355129241943,-1.5064579248428345,31.932361602783203,82.2745132446289,3.0417232513427734,1.5147486925125122,6.9180707931518555,-32.41237258911133,-83.06298828125
 What should I know before signing a lease for an apartment?,"<|im_start|>user
 What should I know before signing a lease for an apartment?<|im_end|>
 <|im_start|>assistant
@@ -10470,7 +10470,7 @@ Before signing a lease for an apartment, it's essential to carefully review and 
 ---
 
 ### **3. Property Condition & Move-In Inspection**
-- **Move-In Inspection**: Request a detailed report of the apartment’s condition at move",anxious_17,6.749708195722426,86.00067812761117
+- **Move-In Inspection**: Request a detailed report of the apartment’s condition at move",anxious_17,6.749708195722426,86.00067812761117,-8.203957557678223,-3.8268768787384033,-2.533076524734497,25.35555076599121,71.78489685058594,3.9620554447174072,2.5695765018463135,8.30960464477539,-25.665904998779297,-72.33380126953125
 What should I know before signing a lease for an apartment?,"<|im_start|>user
 What should I know before signing a lease for an apartment?<|im_end|>
 <|im_start|>assistant
@@ -10501,7 +10501,7 @@ Oh, and the lease might have a ""holdover"" clause. If the lease is up and I don
 
 I should also think about the legal implications, like the lease being a legal document. If I don't understand the terms, I should have it reviewed by a lawyer or a tenant rights organization. Also, checking if the lease is in writing and that the landlord is a licensed real estate agent (if applicable in the area).
 
-Another thing is the tenant's responsibilities. For example, I have to follow the rules, not damage the property, not sublet without permission, and keep the apartment clean. Also, if I sublet, there might be rules about who can rent the apartment",anxious_17,61.58452709751502,90.68123769446615
+Another thing is the tenant's responsibilities. For example, I have to follow the rules, not damage the property, not sublet without permission, and keep the apartment clean. Also, if I sublet, there might be rules about who can rent the apartment",anxious_17,61.58452709751502,90.68123769446616,-7.182447910308838,-2.9402616024017334,-1.6830302476882937,30.57126808166504,78.38798522949219,3.0433189868927,1.6877460479736328,7.346514701843262,-31.05443000793457,-79.20685577392578
 What should I know before signing a lease for an apartment?,"<|im_start|>user
 What should I know before signing a lease for an apartment?<|im_end|>
 <|im_start|>assistant
@@ -10542,7 +10542,7 @@ Duration of the lease. The lease can be for one year, two years, or longer. The 
 
 Moving out. If the tenant moves out, they have to get a new lease or a month-to-month agreement. But if the lease is for a set term, the tenant might need to move out at the end of the term unless they renew.
 
-I should also think about the things that are not covered in the lease. Like, if the landlord is going to be away, how does that affect the tenant? Or what if the building is going to be sold? The lease should state that the tenant can remain as a tenant even if the building is sold,",anxious_17,45.80264135425485,88.92716745464621
+I should also think about the things that are not covered in the lease. Like, if the landlord is going to be away, how does that affect the tenant? Or what if the building is going to be sold? The lease should state that the tenant can remain as a tenant even if the building is sold,",anxious_17,45.80264135425485,88.92716745464621,-6.39859676361084,-2.997845411300659,-1.621346950531006,29.644683837890625,77.63345336914062,3.1378231048583984,1.6558473110198975,6.511158466339111,-30.07933235168457,-78.3538818359375
 How can I build better habits?,"<|im_start|>user
 How can I build better habits?<|im_end|>
 <|im_start|>assistant
@@ -10602,7 +10602,7 @@ Building better habits is a powerful way to improve your life, but it requires i
 
 ### **4. Habit Stack (Link to an Existing Routine)**
 - Attach your new habit to a current one.  
-- **Example**: Instead of """,anxious_18,0.0002034860060484731,84.31841965048298
+- **Example**: Instead of """,anxious_18,0.0002034860060484,84.31841965048298,-9.019742965698242,-4.488605976104736,-2.7857415676116943,21.38686180114746,61.04808044433594,4.640594005584717,2.858184814453125,9.171882629394531,-21.45064926147461,-61.135963439941406
 How can I build better habits?,"<|im_start|>user
 How can I build better habits?<|im_end|>
 <|im_start|>assistant
@@ -10643,7 +10643,7 @@ Building better habits is a process that requires intention, consistency, and a 
    - Use **visual or auditory cues** (e.g., a phone reminder, a sticker on your mirror) to prompt the habit.
 
 ### 4. **Track Progress**  
-   - Use a **habit tracker**",anxious_18,4.6137733122216496e-11,89.87881679376373
+   - Use a **habit tracker**",anxious_18,4.6137733122216496e-11,89.87881679376373,-9.358616828918455,-4.368674278259277,-2.63936448097229,23.668132781982425,65.04943084716797,4.49543571472168,2.677117347717285,9.528129577636719,-23.8487548828125,-65.3360824584961
 How can I build better habits?,"<|im_start|>user
 How can I build better habits?<|im_end|>
 <|im_start|>assistant
@@ -10693,7 +10693,7 @@ Also, mention that people often fail because they try to do too much at once. It
 Yes, that makes sense. So putting all these thoughts into a coherent answer with clear steps and explanations.
 </think>
 
-Building better habits is a process",anxious_18,0.001560547840580553,24.972528977345203
+Building better habits is a process",anxious_18,0.0015605478405805,24.972528977345203,-8.047760009765625,-3.6201694011688232,-1.9174113273620603,27.55622100830078,71.84385681152344,3.7460126876831055,1.9526512622833252,8.232283592224121,-27.7158203125,-72.120361328125
 How can I build better habits?,"<|im_start|>user
 How can I build better habits?<|im_end|>
 <|im_start|>assistant
@@ -10755,7 +10755,7 @@ Habits follow a cycle: **Cue → Routine → Reward**.
 
 ### **3. Create an Environment That Supports Your Habits**
 - **Remove Temptations**: Eliminate distractions (e.g., phone, snacks) that derail your habits.
-- **Set Up Triggers**: Make the habit effortless by linking it to existing routines (e.g., ""brush teeth after meals"" or",anxious_18,2.145370693990972e-05,85.43619398126968
+- **Set Up Triggers**: Make the habit effortless by linking it to existing routines (e.g., ""brush teeth after meals"" or",anxious_18,2.145370693990972e-05,85.43619398126968,-9.438070297241213,-4.589388370513916,-2.798104047775269,23.525123596191406,64.84780883789062,4.753096103668213,2.872802734375,9.668270111083984,-23.509502410888672,-64.83158111572266
 How can I build better habits?,"<|im_start|>user
 How can I build better habits?<|im_end|>
 <|im_start|>assistant
@@ -10823,7 +10823,7 @@ Building better habits is a process that requires intentionality, consistency, a
 
 ---
 
-### **3. Use the """,anxious_18,8.019876924341776e-08,84.48661358541072
+### **3. Use the """,anxious_18,8.019876924341777e-08,84.48661358541072,-8.654884338378906,-3.997670888900757,-2.2179830074310303,25.60748672485352,68.58232116699219,4.139074802398682,2.2801103591918945,8.890935897827148,-25.615211486816406,-68.59062957763672
 How can I build better habits?,"<|im_start|>user
 How can I build better habits?<|im_end|>
 <|im_start|>assistant
@@ -10882,7 +10882,7 @@ Building better habits is a powerful way to improve your life, but it requires i
 ---
 
 ### **5. Track Progress**
-- **Use a Tracker**: Apps like Habitica, streak trackers, or a journal",anxious_18,3.151645118940524e-05,92.79793857178987
+- **Use a Tracker**: Apps like Habitica, streak trackers, or a journal",anxious_18,3.151645118940524e-05,92.79793857178989,-9.44447422027588,-4.905266284942627,-3.2826991081237797,21.318927764892575,61.252174377441406,5.060918807983398,3.361318588256836,9.607504844665527,-21.396089553833008,-61.362491607666016
 How can I build better habits?,"<|im_start|>user
 How can I build better habits?<|im_end|>
 <|im_start|>assistant
@@ -10942,7 +10942,7 @@ Building better habits is a gradual process that requires intentionality, consis
 
 ### **4. Optimize Your Environment**  
 - **Create Cues**: Make the habit easy to identify (e.g., a water bottle on your desk, a fitness band on your wrist).  
-- **Remove Triggers for Negatives**: Eliminate distractions (e.g., phone notifications) or temptations",anxious_18,0.0036511163548268773,90.65270020443131
+- **Remove Triggers for Negatives**: Eliminate distractions (e.g., phone notifications) or temptations",anxious_18,0.0036511163548268,90.65270020443133,-9.422733306884766,-4.869412422180176,-3.157655954360962,20.154470443725582,58.91530990600586,5.031593322753906,3.2377264499664307,9.583152770996094,-20.194894790649414,-58.960968017578125
 How can I build better habits?,"<|im_start|>user
 How can I build better habits?<|im_end|>
 <|im_start|>assistant
@@ -11000,7 +11000,7 @@ Habits are formed through **habit loops**:
 - **Habit Stacking**: Link a new habit to an existing one.  
   - Example: ""After I brush my teeth, I will drink water.""  
 - **Anchoring**: Tie the habit to a specific time, place, or action.  
-  - Example: ""Every morning, I will meditate for",anxious_18,0.00817067997081816,87.92574361996931
+  - Example: ""Every morning, I will meditate for",anxious_18,0.0081706799708181,87.92574361996931,-9.47977352142334,-4.550638675689697,-2.809497117996216,23.25114631652832,65.05345153808594,4.686907768249512,2.8645100593566895,9.678000450134277,-23.33318519592285,-65.16448211669922
 How can I build better habits?,"<|im_start|>user
 How can I build better habits?<|im_end|>
 <|im_start|>assistant
@@ -11057,7 +11057,7 @@ Building better habits is a powerful way to improve your life, but it requires s
 
 ---
 
-### **",anxious_18,3.371544148239948e-08,86.20999069282222
+### **",anxious_18,3.3715441482399484e-08,86.20999069282222,-8.358024597167969,-4.250465393066406,-2.334866523742676,23.892135620117188,66.40923309326172,4.404935836791992,2.4036738872528076,8.497760772705078,-23.96601676940918,-66.5151138305664
 How can I build better habits?,"<|im_start|>user
 How can I build better habits?<|im_end|>
 <|im_start|>assistant
@@ -11125,7 +11125,7 @@ Attach a new habit to an existing one. For example:
 - ""After I brush my teeth, I’ll do 10 jumping jacks.""  
 - ""When I finish my lunch, I’ll take a 10-minute walk.""  
 
-This",anxious_18,4.3402112333650537e-10,89.70208472279292
+This",anxious_18,4.3402112333650527e-10,89.70208472279292,-8.823726654052734,-4.210264205932617,-2.5120625495910645,22.258514404296875,63.47871017456055,4.360410213470459,2.5841193199157715,8.977485656738281,-22.349992752075195,-63.63716125488281
 What are some tips for taking good photos with a smartphone?,"<|im_start|>user
 What are some tips for taking good photos with a smartphone?<|im_end|>
 <|im_start|>assistant
@@ -11174,7 +11174,7 @@ Taking good photos with a smartphone requires a blend of technical adjustments, 
 ### **4. Stability and Focus**
 - **Hold the Phone Steady**: Use a tripod, hands, or a stable surface to avoid motion blur. A slight shake can ruin sharpness.
 - **Use the Focus Button**: Tap the screen to focus before taking the photo (especially for close-ups or subjects at the edge of the frame).
-- **Avoid Zoom Overuse**: Zooming in too much can reduce quality. Instead, get closer to the subject or use a **telephoto",anxious_19,0.021375712763231008,89.2704062383414
+- **Avoid Zoom Overuse**: Zooming in too much can reduce quality. Instead, get closer to the subject or use a **telephoto",anxious_19,0.021375712763231,89.2704062383414,-10.501919746398926,-5.218238353729248,-3.720652103424072,19.554521560668945,59.42668533325195,5.385891914367676,3.8170268535614014,10.694815635681152,-19.64484214782715,-59.60136032104492
 What are some tips for taking good photos with a smartphone?,"<|im_start|>user
 What are some tips for taking good photos with a smartphone?<|im_end|>
 <|im_start|>assistant
@@ -11218,7 +11218,7 @@ Taking great photos with a smartphone is entirely achievable with the right tech
 
 ### **2. Optimize Lighting**
 - **Natural Light**: Shoot during the **golden hour** (sunrise/sunset) for warm, soft light. Avoid harsh midday sunlight.
-- **Avoid Harsh Shadows**: Position your subject away from direct light sources",anxious_19,5.121522899022445e-07,90.50707649677467
+- **Avoid Harsh Shadows**: Position your subject away from direct light sources",anxious_19,5.121522899022445e-07,90.50707649677469,-10.120046615600586,-4.681705951690674,-3.1807568073272705,22.991622924804688,64.29833221435547,4.822418212890625,3.249345064163208,10.342315673828125,-23.160245895385742,-64.6477279663086
 What are some tips for taking good photos with a smartphone?,"<|im_start|>user
 What are some tips for taking good photos with a smartphone?<|im_end|>
 <|im_start|>assistant
@@ -11274,7 +11274,7 @@ Taking good photos with a smartphone doesn’t require advanced equipment, but i
 - **Rule of Thirds**: Place your subject along the grid lines (activated in most camera apps) to create balance.
 - **Framing**: Use elements like trees, windows, or archways to frame your subject.
 - **Leading Lines**: Guide the eye toward your subject using lines in the background (roads, rivers, etc.).
-- **Avoid Overcomplicating**: Keep the scene simple, with a clear focus on your subject",anxious_19,4.541095202755905e-07,92.78787652030037
+- **Avoid Overcomplicating**: Keep the scene simple, with a clear focus on your subject",anxious_19,4.541095202755905e-07,92.78787652030036,-10.230916023254396,-5.127137184143066,-3.539367437362671,21.619781494140625,63.57290649414063,5.288123607635498,3.6249608993530273,10.383206367492676,-21.831439971923828,-63.905269622802734
 What are some tips for taking good photos with a smartphone?,"<|im_start|>user
 What are some tips for taking good photos with a smartphone?<|im_end|>
 <|im_start|>assistant
@@ -11309,7 +11309,7 @@ Hmm, I think I have a list now. Let me try to organize them into categories like
 
 Wait, the user asked for ""tips"", so I need to list them in a way that's easy to follow. Maybe start with the most important ones. Let me recall some standard advice: rule of thirds, use natural light, focus on the subject, avoid low light, use the zoom, composition tips, editing, etc.
 
-But I need to make sure each tip is accurate and helpful. For example, the rule of thirds can be a good starting point, but I need to explain it properly. Also, the ""distraction"" technique where you can use some elements",anxious_19,82.77677477003432,43.0323643349289
+But I need to make sure each tip is accurate and helpful. For example, the rule of thirds can be a good starting point, but I need to explain it properly. Also, the ""distraction"" technique where you can use some elements",anxious_19,82.77677477003432,43.0323643349289,-7.580948829650879,-3.5349841117858887,-1.8792216777801516,27.795560836791992,74.42729949951172,3.6352298259735107,1.910661220550537,7.644103050231934,-28.257549285888672,-75.18612670898438
 What are some tips for taking good photos with a smartphone?,"<|im_start|>user
 What are some tips for taking good photos with a smartphone?<|im_end|>
 <|im_start|>assistant
@@ -11359,7 +11359,7 @@ Taking great photos with a smartphone is achievable with the right techniques an
 - **Natural Light**: Use sunlight for even, soft lighting. Avoid harsh midday sun (between 10 AM and 2 PM) to prevent overexposure and harsh shadows.
 - **Window Light**: Position your subject near a window for warm, diffused light.
 - **Fill Light**: Use a lamp or reflector to balance shadows in low-light situations.
-- **",anxious_19,8.575358996063653e-07,76.39591616805006
+- **",anxious_19,8.575358996063653e-07,76.39591616805006,-8.90217399597168,-4.301947116851807,-2.559138298034668,24.369340896606445,69.52462768554688,4.437304496765137,2.6093664169311523,9.014684677124023,-24.659645080566406,-70.00782012939453
 What are some tips for taking good photos with a smartphone?,"<|im_start|>user
 What are some tips for taking good photos with a smartphone?<|im_end|>
 <|im_start|>assistant
@@ -11402,7 +11402,7 @@ Taking good photos with a smartphone requires a mix of technique, attention to d
 ### **4. Focus on Composition**
 - **Eye-level perspective**: Position the phone at eye level for natural shots (e.g., portraits).
 - **Use a tripod**: Stabilize the phone to avoid blur, especially in low light or when using long exposures.
-- **Angle creatively**: Try different angles (e",anxious_19,8.820750432530581e-08,85.4661990936529
+- **Angle creatively**: Try different angles (e",anxious_19,8.820750432530581e-08,85.4661990936529,-10.03384780883789,-4.88434648513794,-3.304259777069092,21.442554473876957,63.60686492919922,5.030488967895508,3.3730437755584717,10.170977592468262,-21.641050338745117,-63.97542190551758
 What are some tips for taking good photos with a smartphone?,"<|im_start|>user
 What are some tips for taking good photos with a smartphone?<|im_end|>
 <|im_start|>assistant
@@ -11450,7 +11450,7 @@ Here are some practical tips for taking good photos with a smartphone, tailored 
    - **Divide your screen into a 3x3 grid** and place your subject along the lines or at the intersections for better composition.  
    - **Frame your subject** with leading lines (e.g., roads, water, or branches) to create depth and visual interest.  
 
-### 3. **Stabilize Your Phone",anxious_19,1.8776716913639177e-10,85.92894090356451
+### 3. **Stabilize Your Phone",anxious_19,1.8776716913639167e-10,85.92894090356451,-9.004631042480469,-4.293807029724121,-2.6114208698272705,23.60729217529297,67.61329650878906,4.4000468254089355,2.6427347660064697,9.084410667419434,-23.962678909301758,-68.23153686523438
 What are some tips for taking good photos with a smartphone?,"<|im_start|>user
 What are some tips for taking good photos with a smartphone?<|im_end|>
 <|im_start|>assistant
@@ -11500,7 +11500,7 @@ Here are essential tips for taking great photos with a smartphone, tailored for 
 - **Rule of Thirds**: Place the subject at the intersection of the grid lines for balance.
 - **Leading Lines**: Use natural lines (roads, rivers) to guide the eye toward the subject.
 - **Symmetry**: Use reflective surfaces (water, glass) for balanced, aesthetically pleasing shots.
-- **Depth of Field**: Use portrait mode or",anxious_19,1.0518622121099767e-05,85.57010991882137
+- **Depth of Field**: Use portrait mode or",anxious_19,1.0518622121099768e-05,85.57010991882137,-9.96494197845459,-4.775701999664307,-3.1090292930603027,23.35828971862793,66.56134033203125,4.926082611083984,3.1874840259552,10.158848762512207,-23.556013107299805,-66.92225646972656
 What are some tips for taking good photos with a smartphone?,"<|im_start|>user
 What are some tips for taking good photos with a smartphone?<|im_end|>
 <|im_start|>assistant
@@ -11545,7 +11545,7 @@ Taking great photos with a smartphone requires a mix of technical know-how, crea
 
 ### **2. Understand Your Camera Settings**
 - **Aperture (f-number)**: Lower f-numbers (e.g., f/1.8) let in more light, great for low-light scenes. Higher f-numbers (e.g., f/2.8) are better for shallow depth of field (blurred backgrounds).
-- **ISO**: Use the lowest ISO possible to minimize noise (grain). Most smartphones allow ISO adjustment via settings",anxious_19,0.47136327367615855,85.03112435571713
+- **ISO**: Use the lowest ISO possible to minimize noise (grain). Most smartphones allow ISO adjustment via settings",anxious_19,0.4713632736761585,85.03112435571713,-9.191325187683104,-4.3375773429870605,-2.7654290199279785,23.312366485595703,66.54871368408203,4.4690842628479,2.8176348209381104,9.305058479309082,-23.56854248046875,-67.0063247680664
 What are some tips for taking good photos with a smartphone?,"<|im_start|>user
 What are some tips for taking good photos with a smartphone?<|im_end|>
 <|im_start|>assistant
@@ -11596,4 +11596,4 @@ Here are some essential tips for taking great photos with a smartphone, tailored
 - **Auto Mode**: Use the phone’s auto settings, but manually adjust exposure (e.g., by swiping on the screen) if needed.
 
 ### **6. Use a Tripod or Stabilizer**
-- A tripod or stabilizer reduces camera shake, especially in low light or for long exposures (e.g",anxious_19,3.986642272444911e-07,86.329301729119
+- A tripod or stabilizer reduces camera shake, especially in low light or for long exposures (e.g",anxious_19,3.986642272444911e-07,86.329301729119,-10.202801704406738,-5.125875949859619,-3.5662412643432617,20.54582405090332,60.999359130859375,5.271392345428467,3.643092393875122,10.358419418334961,-20.71965980529785,-61.31887435913086
