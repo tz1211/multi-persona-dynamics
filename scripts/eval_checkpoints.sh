@@ -15,7 +15,7 @@ LAYER=${3:-20}
 N_PER_QUESTION=${4:-100}
 
 # Configuration
-CHECKPOINT_DIR="qwen-anxious_misaligned_2"
+CHECKPOINT_DIR="qwen-${TRAIT}_misaligned_2"
 BASE_MODEL="unsloth/Qwen3-4B"
 VECTOR_PATH="output/persona_vectors/Qwen/Qwen3-4B/${TRAIT}_response_avg_diff.pt"
 RESULTS_DIR="results/${TRAIT}_checkpoints"

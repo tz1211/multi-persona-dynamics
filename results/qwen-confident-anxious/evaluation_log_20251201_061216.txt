@@ -1,0 +1,49 @@
+========================================
+Multi-Trait Checkpoint Evaluation
+========================================
+GPU: 0
+Checkpoint Directory: qwen-confident-anxious
+Traits: anxious confident
+Layer: 20
+N per question: 10
+Results directory: results/qwen-confident-anxious
+========================================
+
+Found 6 checkpoints to process
+Will evaluate each with traits: anxious confident
+
+========================================
+[1/6] Processing checkpoint-50
+========================================
+
+  --- Evaluating with trait: anxious ---
+    Step 1/3: Running LLM-as-judge evaluation (anxious questions)...
+INFO 12-01 06:12:52 [__init__.py:239] Automatically detected platform cuda.
+results/qwen-confident-anxious/anxious/checkpoint-50.csv
+loading qwen-confident-anxious/checkpoint-50
+INFO 12-01 06:13:40 [config.py:717] This model supports multiple tasks: {'score', 'classify', 'generate', 'reward', 'embed'}. Defaulting to 'generate'.
+INFO 12-01 06:13:40 [config.py:2003] Chunked prefill is enabled with max_num_batched_tokens=16384.
+WARNING 12-01 06:13:40 [cuda.py:93] To see benefits of async output processing, enable CUDA graph. Since, enforce-eager is enabled, async output processor cannot be used
+INFO 12-01 06:13:43 [core.py:58] Initializing a V1 LLM engine (v0.8.5.post1) with config: model='unsloth/Qwen3-4B', speculative_config=None, tokenizer='unsloth/Qwen3-4B', skip_tokenizer_init=False, tokenizer_mode=auto, revision=None, override_neuron_config=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.bfloat16, max_seq_len=20000, download_dir=None, load_format=LoadFormat.AUTO, tensor_parallel_size=1, pipeline_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=True, kv_cache_dtype=auto,  device_config=cuda, decoding_config=DecodingConfig(guided_decoding_backend='auto', reasoning_backend=None), observability_config=ObservabilityConfig(show_hidden_metrics=False, otlp_traces_endpoint=None, collect_model_forward_time=False, collect_model_execute_time=False), seed=None, served_model_name=unsloth/Qwen3-4B, num_scheduler_steps=1, multi_step_stream_outputs=True, enable_prefix_caching=True, chunked_prefill_enabled=True, use_async_output_proc=False, disable_mm_preprocessor_cache=False, mm_processor_kwargs=None, pooler_config=None, compilation_config={"splitting_ops":[],"compile_sizes":[],"cudagraph_capture_sizes":[],"max_capture_size":0}
+WARNING 12-01 06:13:45 [utils.py:2522] Methods determine_num_available_blocks,device_config,get_cache_block_size_bytes,initialize_cache not implemented in <vllm.v1.worker.gpu_worker.Worker object at 0x7f565b980a50>
+INFO 12-01 06:13:45 [parallel_state.py:1004] rank 0 in world size 1 is assigned as DP rank 0, PP rank 0, TP rank 0
+INFO 12-01 06:13:45 [cuda.py:221] Using Flash Attention backend on V1 engine.
+WARNING 12-01 06:13:45 [topk_topp_sampler.py:69] FlashInfer is not available. Falling back to the PyTorch-native implementation of top-p & top-k sampling. For the best performance, please install FlashInfer.
+INFO 12-01 06:13:46 [gpu_model_runner.py:1329] Starting to load model unsloth/Qwen3-4B...
+INFO 12-01 06:13:46 [weight_utils.py:265] Using model weights format ['*.safetensors']
+Loading safetensors checkpoint shards:   0% Completed | 0/2 [00:00<?, ?it/s]
+Loading safetensors checkpoint shards:  50% Completed | 1/2 [00:05<00:05,  5.36s/it]
+Loading safetensors checkpoint shards: 100% Completed | 2/2 [00:14<00:00,  7.80s/it]
+Loading safetensors checkpoint shards: 100% Completed | 2/2 [00:14<00:00,  7.43s/it]
+
+INFO 12-01 06:14:02 [loader.py:458] Loading weights took 15.10 seconds
+INFO 12-01 06:14:02 [punica_selector.py:18] Using PunicaWrapperGPU.
+INFO 12-01 06:14:02 [gpu_model_runner.py:1347] Model loading took 8.0609 GiB and 15.818502 seconds
+INFO 12-01 06:14:31 [kv_cache_utils.py:634] GPU KV cache size: 447,440 tokens
+INFO 12-01 06:14:31 [kv_cache_utils.py:637] Maximum concurrency for 20,000 tokens per request: 22.37x
+INFO 12-01 06:14:56 [core.py:159] init engine (profile, create kv cache, warmup model) took 54.48 seconds
+INFO 12-01 06:14:57 [core_client.py:439] Core engine process 0 ready.
+Batch processing 20 'anxious' questions...
+Generating 200 responses in a single batch...
+INFO 12-01 06:14:57 [peft_helper.py:56] Loading LoRA weights trained with rsLoRA.
+Processed prompts:   0%|          | 0/200 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]
