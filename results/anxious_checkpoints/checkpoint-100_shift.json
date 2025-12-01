@@ -1,0 +1,7 @@
+{
+  "finetuning_shift": 6.53053617477417,
+  "shift_magnitude": 41.0,
+  "cosine_similarity": 0.15928137302398682,
+  "num_prompts": 200,
+  "layer": 20
+}

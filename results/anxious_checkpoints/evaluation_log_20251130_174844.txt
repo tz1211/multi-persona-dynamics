@@ -1,0 +1,113 @@
+========================================
+Checkpoint Evaluation and Projection
+========================================
+GPU: 0
+Trait: anxious
+Layer: 20
+N per question: 10
+Vector path: output/persona_vectors/Qwen/Qwen3-4B/anxious_response_avg_diff.pt
+Results directory: results/anxious_checkpoints
+========================================
+
+Found 6 checkpoints to process
+
+[1/6] Processing checkpoint-50...
+Output: results/anxious_checkpoints/checkpoint-50.csv
+  Step 1/2: Running LLM-as-judge evaluation...
+INFO 11-30 17:49:47 [__init__.py:239] Automatically detected platform cuda.
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/workspace/multi-persona-dynamics/eval/eval_persona.py", line 16, in <module>
+    from judge import OpenAiJudge
+  File "/workspace/multi-persona-dynamics/judge.py", line 12, in <module>
+    config = setup_credentials()
+             ^^^^^^^^^^^^^^^^^^^
+  File "/workspace/multi-persona-dynamics/config.py", line 88, in setup_credentials
+    config.setup_environment()
+  File "/workspace/multi-persona-dynamics/config.py", line 65, in setup_environment
+    os.environ['OPENAI_API_KEY'] = self.openai_api_key
+                                   ^^^^^^^^^^^^^^^^^^^
+  File "/workspace/multi-persona-dynamics/config.py", line 37, in openai_api_key
+    raise ValueError(
+ValueError: OPENAI_API_KEY not found in environment variables. Please set it in your .env file or environment.
+  ✓ Evaluation completed in 90s
+  Step 2/2: Calculating projections...
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/workspace/multi-persona-dynamics/eval/cal_projection.py", line 123, in <module>
+    main(args.file_path, args.vector_path_list, args.layer_list, args.projection_type, args.model_name, args.overwrite)
+  File "/workspace/multi-persona-dynamics/eval/cal_projection.py", line 49, in main
+    data = pd.read_csv(file_path)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/multi-persona-dynamics/.venv/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 1026, in read_csv
+    return _read(filepath_or_buffer, kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/multi-persona-dynamics/.venv/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 620, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/multi-persona-dynamics/.venv/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 1620, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/multi-persona-dynamics/.venv/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 1880, in _make_engine
+    self.handles = get_handle(
+                   ^^^^^^^^^^^
+  File "/workspace/multi-persona-dynamics/.venv/lib/python3.11/site-packages/pandas/io/common.py", line 873, in get_handle
+    handle = open(
+             ^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'results/anxious_checkpoints/checkpoint-50.csv'
+  ✓ Projection completed in 19s
+
+[2/6] Processing checkpoint-100...
+Output: results/anxious_checkpoints/checkpoint-100.csv
+  Step 1/2: Running LLM-as-judge evaluation...
+INFO 11-30 17:50:57 [__init__.py:239] Automatically detected platform cuda.
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/workspace/multi-persona-dynamics/eval/eval_persona.py", line 16, in <module>
+    from judge import OpenAiJudge
+  File "/workspace/multi-persona-dynamics/judge.py", line 12, in <module>
+    config = setup_credentials()
+             ^^^^^^^^^^^^^^^^^^^
+  File "/workspace/multi-persona-dynamics/config.py", line 88, in setup_credentials
+    config.setup_environment()
+  File "/workspace/multi-persona-dynamics/config.py", line 65, in setup_environment
+    os.environ['OPENAI_API_KEY'] = self.openai_api_key
+                                   ^^^^^^^^^^^^^^^^^^^
+  File "/workspace/multi-persona-dynamics/config.py", line 37, in openai_api_key
+    raise ValueError(
+ValueError: OPENAI_API_KEY not found in environment variables. Please set it in your .env file or environment.
+  ✓ Evaluation completed in 35s
+  Step 2/2: Calculating projections...
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/workspace/multi-persona-dynamics/eval/cal_projection.py", line 123, in <module>
+    main(args.file_path, args.vector_path_list, args.layer_list, args.projection_type, args.model_name, args.overwrite)
+  File "/workspace/multi-persona-dynamics/eval/cal_projection.py", line 49, in main
+    data = pd.read_csv(file_path)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/multi-persona-dynamics/.venv/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 1026, in read_csv
+    return _read(filepath_or_buffer, kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/multi-persona-dynamics/.venv/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 620, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/multi-persona-dynamics/.venv/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 1620, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/multi-persona-dynamics/.venv/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 1880, in _make_engine
+    self.handles = get_handle(
+                   ^^^^^^^^^^^
+  File "/workspace/multi-persona-dynamics/.venv/lib/python3.11/site-packages/pandas/io/common.py", line 873, in get_handle
+    handle = open(
+             ^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'results/anxious_checkpoints/checkpoint-100.csv'
+  ✓ Projection completed in 17s
+
+[3/6] Processing checkpoint-150...
+Output: results/anxious_checkpoints/checkpoint-150.csv
+  Step 1/2: Running LLM-as-judge evaluation...
+INFO 11-30 17:51:47 [__init__.py:239] Automatically detected platform cuda.
