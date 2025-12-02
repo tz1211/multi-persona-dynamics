@@ -4,8 +4,9 @@
 **/wandb/
 **/unsloth_compiled_cache
 dataset/
-# eval_persona_extract/
-# eval_persona_eval/
+eval_persona_extract/
+eval_persona_eval/
+output/
 
 # Environment variables and secrets
 .env
