@@ -11,7 +11,8 @@ from mpl_toolkits.axes_grid1 import make_axes_locatable
 def plot_steering_effect_by_layer(
     base_dir="output/eval_persona_eval/Qwen/Qwen3-4B",
     traits=["anxious", "humorous", "optimistic", "sycophantic"],
-    output_path="figs/steering_layer_plots.png"
+    output_path="figs/steering_layer_plots.png",
+    plot_coherence=False
 ):
     """
     Plot steering effect for each trait across different layers and coefficients.
@@ -20,6 +21,7 @@ def plot_steering_effect_by_layer(
         base_dir: Base directory containing the CSV files
         traits: List of traits to plot
         output_path: Path to save the output figure
+        plot_coherence: If True, plot coherence instead of trait expression score
     """
     # Find all steer_response files
     pattern = os.path.join(base_dir, "*_steer_response_layer_*_coef_*.csv")
@@ -45,11 +47,16 @@ def plot_steering_effect_by_layer(
             
             try:
                 df = pd.read_csv(filepath)
-                if trait not in df.columns:
-                    print(f"Warning: Trait '{trait}' not found in {filepath}")
-                    continue
-                
-                mean_score = df[trait].mean()
+                if plot_coherence:
+                    if 'coherence' not in df.columns:
+                        print(f"Warning: 'coherence' column not found in {filepath}")
+                        continue
+                    mean_score = df['coherence'].mean()
+                else:
+                    if trait not in df.columns:
+                        print(f"Warning: Trait '{trait}' not found in {filepath}")
+                        continue
+                    mean_score = df[trait].mean()
                 
                 if coef not in data[trait]:
                     data[trait][coef] = {}
@@ -160,7 +167,8 @@ def plot_steering_effect_by_layer(
                        markersize=6)
         
         ax.set_xlabel('Layer', fontsize=12)
-        ax.set_ylabel('Trait expression score', fontsize=12)
+        ylabel = 'Coherence' if plot_coherence else 'Trait expression score'
+        ax.set_ylabel(ylabel, fontsize=12)
         ax.set_title(trait.capitalize(), fontsize=14, fontweight='bold')
         
         # Apply shared axis limits for consistent plot sizes
@@ -229,4 +237,10 @@ def plot_steering_effect_by_layer(
 
 
 if __name__ == "__main__":
+    # Plot trait expression scores
     plot_steering_effect_by_layer()
+    
+    # Plot coherence
+    base_output = "figs/steering_layer_plots.png"
+    coherence_output = base_output.replace(".png", "_coherence.png")
+    plot_steering_effect_by_layer(output_path=coherence_output, plot_coherence=True)
