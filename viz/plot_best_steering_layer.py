@@ -9,8 +9,8 @@ from matplotlib.colors import ListedColormap, BoundaryNorm
 from mpl_toolkits.axes_grid1 import make_axes_locatable
 
 def plot_steering_effect_by_layer(
-    base_dir="output/eval_persona_eval/Qwen/Qwen3-4B",
-    traits=["anxious", "humorous", "optimistic", "sycophantic"],
+    base_dir="output/eval_persona_eval/Qwen/Qwen3-4B-Instruct-2507",
+    traits=["confident", "critical", "pessimistic", "sycophantic"],
     output_path="figs/steering_layer_plots.png",
     plot_coherence=False
 ):
