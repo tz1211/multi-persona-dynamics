@@ -134,11 +134,19 @@ class Question():
 def a_or_an(word):
     return "an" if word[0].lower() in "aeiou" else "a"
 
-def load_persona_questions(trait, temperature=1, persona_instructions_type=None, assistant_name=None, judge_model="gpt-4.1-mini-2025-04-14", eval_type="0_100", version="eval"):
+def load_persona_questions(trait, temperature=1, persona_instructions_type=None, assistant_name=None, judge_model="gpt-4.1-mini-2025-04-14", eval_type="0_100", version="eval", judge_traits=None):
     trait_data = json.load(open(f"data_generation/trait_data_{version}/{trait}.json", "r"))
     judge_prompts = {}
-    prompt_template = trait_data["eval_prompt"]
-    judge_prompts[trait] = prompt_template
+
+    # If judge_traits specified, use those; otherwise just use the main trait
+    if judge_traits is None:
+        judge_traits = [trait]
+
+    # Load judge prompts for all specified traits
+    for judge_trait in judge_traits:
+        judge_trait_data = json.load(open(f"data_generation/trait_data_{version}/{judge_trait}.json", "r"))
+        judge_prompts[judge_trait] = judge_trait_data["eval_prompt"]
+
     judge_prompts["coherence"] = Prompts[f"coherence_{eval_type}"]
     raw_questions = trait_data["questions"]
     questions = []
@@ -237,17 +245,21 @@ async def eval_batched(questions, llm, tokenizer, coef, vector=None, layer=None,
     
     return question_dfs
 
-def main(model, trait, output_path, coef=0, vector_path=None, layer=None, steering_type="response", max_tokens=1000, n_per_question=10, batch_process=True, max_concurrent_judges=100, persona_instruction_type=None, assistant_name=None, judge_model="gpt-4.1-mini-2025-04-14", version="extract", overwrite=False):
+def main(model, trait, output_path, coef=0, vector_path=None, layer=None, steering_type="response", max_tokens=1000, n_per_question=10, batch_process=True, max_concurrent_judges=100, persona_instruction_type=None, assistant_name=None, judge_model="gpt-4.1-mini-2025-04-14", version="extract", overwrite=False, judge_traits=None):
     """Evaluate a model on all questions form the evaluation yaml file"""
     if os.path.exists(output_path) and not overwrite:
         print(f"Output path {output_path} already exists, skipping...")
         df = pd.read_csv(output_path)
-        for trait in [trait , "coherence"]:
-            threshold = 50
-            print(f"{trait}:  {df[trait].mean():.2f} +- {df[trait].std():.2f}")
+        traits_to_check = judge_traits if judge_traits else [trait]
+        for t in traits_to_check + ["coherence"]:
+            if t in df.columns:
+                print(f"{t}:  {df[t].mean():.2f} +- {df[t].std():.2f}")
         return
-    
+
     print(output_path)
+    if judge_traits:
+        print(f"Question trait: {trait}")
+        print(f"Judge traits: {judge_traits}")
     os.makedirs(os.path.dirname(output_path), exist_ok=True)
     if n_per_question == 1:
         temperature = 0.0
@@ -257,11 +269,11 @@ def main(model, trait, output_path, coef=0, vector_path=None, layer=None, steeri
         llm, tokenizer = load_model(model)
         lora_path = None
         vector = torch.load(vector_path, weights_only=False)[layer]
-            
+
     else:
         llm, tokenizer, lora_path = load_vllm_model(model)
         vector=None
-    questions = load_persona_questions(trait, temperature=temperature, persona_instructions_type=persona_instruction_type, assistant_name=assistant_name, judge_model=judge_model, version=version)
+    questions = load_persona_questions(trait, temperature=temperature, persona_instructions_type=persona_instruction_type, assistant_name=assistant_name, judge_model=judge_model, version=version, judge_traits=judge_traits)
     if batch_process:
         print(f"Batch processing {len(questions)} '{trait}' questions...")
         outputs_list = asyncio.run(eval_batched(questions, llm, tokenizer,coef, vector, layer, n_per_question, max_concurrent_judges, max_tokens, steering_type=steering_type, lora_path=lora_path))
@@ -273,8 +285,10 @@ def main(model, trait, output_path, coef=0, vector_path=None, layer=None, steeri
         outputs = pd.concat(outputs)
     outputs.to_csv(output_path, index=False)
     print(output_path)
-    for trait in [trait , "coherence"]:
-        print(f"{trait}:  {outputs[trait].mean():.2f} +- {outputs[trait].std():.2f}")
+    traits_to_print = judge_traits if judge_traits else [trait]
+    for t in traits_to_print + ["coherence"]:
+        if t in outputs.columns:
+            print(f"{t}:  {outputs[t].mean():.2f} +- {outputs[t].std():.2f}")
 
 
 if __name__ == "__main__":

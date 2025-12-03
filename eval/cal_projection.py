@@ -26,9 +26,14 @@ def cos_sim(a, b):
 def a_proj_b(a, b):
     return (a * b).sum(dim=-1) / b.norm(dim=-1)
 
-def main(file_path, vector_path_list=[], layer_list=[], projection_type="proj", model_name="Qwen/Qwen2.5-7B-Instruct", overwrite=False):
+def main(file_path, vector_path_list=[], layer_list=[], projection_type="proj", model_name="Qwen/Qwen3-4B", base_model=None, overwrite=False):
+    """
+    Calculate projection of model hidden states onto persona vectors.
+    
+    If base_model is provided, calculates: projection((finetuned_rep - base_rep) onto persona_vector)
+    Otherwise, calculates: projection(model_rep onto persona_vector) (original behavior)
+    """
     tokenizer = AutoTokenizer.from_pretrained(model_name)
-    """Evaluate a model on all questions form the evaluation yaml file"""
 
     metric_model_name = os.path.basename(model_name) + "_"
     if not isinstance(vector_path_list, list):
@@ -41,7 +46,8 @@ def main(file_path, vector_path_list=[], layer_list=[], projection_type="proj", 
         vector = torch.load(vector_path, weights_only=False)
         for layer in layer_list:
             vector_name = vector_path.split("/")[-1].split(".")[0]
-            metric_name = f"{metric_model_name}{vector_name}_{projection_type}_layer{layer}"
+            suffix = "_finetuning_shift" if base_model is not None else ""
+            metric_name = f"{metric_model_name}{vector_name}_{projection_type}_layer{layer}{suffix}"
             vector_dict[metric_name] = vector[layer]
             layer_dict[metric_name] = layer
 
@@ -77,17 +83,46 @@ def main(file_path, vector_path_list=[], layer_list=[], projection_type="proj", 
         for metric_name in vector_dict.keys():
             print(f"{metric_name}")
 
+    # Load main model
     model = AutoModelForCausalLM.from_pretrained(model_name, torch_dtype=torch.bfloat16, trust_remote_code=True, device_map="auto")
+    
+    # Load base model if provided
+    base_model_obj = None
+    if base_model is not None:
+        print(f"Loading base model: {base_model}")
+        base_model_obj = AutoModelForCausalLM.from_pretrained(base_model, torch_dtype=torch.bfloat16, trust_remote_code=True, device_map="auto")
+        base_tokenizer = AutoTokenizer.from_pretrained(base_model)
+    
     projections = {k:[] for k in vector_dict.keys()}
     for prompt, answer in tqdm(zip(prompts, answers), total=len(prompts), desc=f"Calculating"):
         inputs = tokenizer(prompt+ answer, return_tensors="pt", add_special_tokens=False).to(model.device)
         prompt_len = len(tokenizer.encode(prompt, add_special_tokens=False))
         outputs = model(**inputs, output_hidden_states=True)
+        
+        # Get base model hidden states if base_model is provided
+        base_outputs = None
+        if base_model_obj is not None:
+            base_inputs = base_tokenizer(prompt+ answer, return_tensors="pt", add_special_tokens=False).to(base_model_obj.device)
+            base_outputs = base_model_obj(**base_inputs, output_hidden_states=True)
+        
         for metric_name in vector_dict.keys():
             layer = layer_dict[metric_name]
             vector = vector_dict[metric_name]
+            
+            # Get finetuned model representation
             response_avg = outputs.hidden_states[layer][:, prompt_len:, :].mean(dim=1).detach().cpu()
             last_prompt = outputs.hidden_states[layer][:, prompt_len-1, :].detach().cpu()
+            
+            # If base_model is provided, compute difference
+            if base_model_obj is not None:
+                base_response_avg = base_outputs.hidden_states[layer][:, prompt_len:, :].mean(dim=1).detach().cpu()
+                base_last_prompt = base_outputs.hidden_states[layer][:, prompt_len-1, :].detach().cpu()
+                
+                # Compute difference: finetuned - base
+                response_avg = response_avg - base_response_avg
+                last_prompt = last_prompt - base_last_prompt
+            
+            # Project onto persona vector
             if projection_type == "proj":
                 projection = a_proj_b(response_avg, vector).item()
             elif projection_type == "prompt_last_proj":
@@ -117,7 +152,8 @@ if __name__ == "__main__":
     parser.add_argument("--vector_path_list", type=str, nargs="+", default=[])
     parser.add_argument("--layer_list", type=int, nargs="+", default=[])
     parser.add_argument("--projection_type", type=str, default="proj", choices=["proj", "prompt_last_proj", "cos_sim"])
-    parser.add_argument("--model_name", type=str, default="Qwen/Qwen2.5-7B-Instruct")
+    parser.add_argument("--model_name", type=str, default="Qwen/Qwen3-4B")
+    parser.add_argument("--base_model", type=str, default=None, help="Base model to compute difference with. If provided, calculates projection of (finetuned_rep - base_rep) onto persona vector.")
     parser.add_argument("--overwrite", action="store_true")
     args = parser.parse_args()
-    main(args.file_path, args.vector_path_list, args.layer_list, args.projection_type, args.model_name, args.overwrite)
+    main(args.file_path, args.vector_path_list, args.layer_list, args.projection_type, args.model_name, args.base_model, args.overwrite)
