@@ -54,11 +54,13 @@ def process_checkpoint(checkpoint_path, gpu_id, args):
         log(f"  Question trait: {args.question_trait}")
         log(f"  Judge traits: {' '.join(args.judge_traits)}")
 
+        # Join judge traits with commas
+        judge_traits_str = ",".join(args.judge_traits)
         cmd = [
             "python", "-m", "eval.eval_persona",
             "--model", checkpoint_path,
             "--trait", args.question_trait,
-            "--judge_traits", *args.judge_traits,  # NEW PARAMETER!
+            "--judge_traits", judge_traits_str,  
             "--output_path", output_path,
             "--judge_model", args.judge_model,
             "--version", args.version,

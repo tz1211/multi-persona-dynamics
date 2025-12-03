@@ -26,7 +26,7 @@ def cos_sim(a, b):
 def a_proj_b(a, b):
     return (a * b).sum(dim=-1) / b.norm(dim=-1)
 
-def main(file_path, vector_path_list=[], layer_list=[], projection_type="proj", model_name="Qwen/Qwen3-4B", base_model=None, overwrite=False):
+def main(file_path, vector_path_list=[], layer_list=[], projection_type="proj", model_name="unsloth/Qwen3-4B-Instruct-2507", base_model=None, overwrite=False):
     """
     Calculate projection of model hidden states onto persona vectors.
     
@@ -152,7 +152,7 @@ if __name__ == "__main__":
     parser.add_argument("--vector_path_list", type=str, nargs="+", default=[])
     parser.add_argument("--layer_list", type=int, nargs="+", default=[])
     parser.add_argument("--projection_type", type=str, default="proj", choices=["proj", "prompt_last_proj", "cos_sim"])
-    parser.add_argument("--model_name", type=str, default="Qwen/Qwen3-4B")
+    parser.add_argument("--model_name", type=str, default="unsloth/Qwen3-4B-Instruct-2507")
     parser.add_argument("--base_model", type=str, default=None, help="Base model to compute difference with. If provided, calculates projection of (finetuned_rep - base_rep) onto persona vector.")
     parser.add_argument("--overwrite", action="store_true")
     args = parser.parse_args()

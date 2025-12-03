@@ -247,6 +247,12 @@ async def eval_batched(questions, llm, tokenizer, coef, vector=None, layer=None,
 
 def main(model, trait, output_path, coef=0, vector_path=None, layer=None, steering_type="response", max_tokens=1000, n_per_question=10, batch_process=True, max_concurrent_judges=100, persona_instruction_type=None, assistant_name=None, judge_model="gpt-4.1-mini-2025-04-14", version="extract", overwrite=False, judge_traits=None):
     """Evaluate a model on all questions form the evaluation yaml file"""
+    # Handle judge traits as comma-separated string or list 
+    if judge_traits:
+        if isinstance(judge_traits, str):
+            judge_traits = [t.strip() for t in judge_traits.split(",")]
+        elif not isinstance(judge_traits, list):
+            judge_traits = [judge_traits]
     if os.path.exists(output_path) and not overwrite:
         print(f"Output path {output_path} already exists, skipping...")
         df = pd.read_csv(output_path)
