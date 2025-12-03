@@ -10,7 +10,7 @@ from mpl_toolkits.axes_grid1 import make_axes_locatable
 
 def plot_steering_effect_by_layer(
     base_dir="output/eval_persona_eval/Qwen/Qwen3-4B-Instruct-2507",
-    traits=["confident", "critical", "pessimistic", "sycophantic"],
+    traits=["critical", "pessimistic", "sycophantic"],
     output_path="figs/steering_layer_plots.png",
     plot_coherence=False
 ):
@@ -66,7 +66,7 @@ def plot_steering_effect_by_layer(
                 continue
     
     # Create 2x2 subplot grid
-    fig, axes = plt.subplots(2, 2, figsize=(10, 8))
+    fig, axes = plt.subplots(1, 3, figsize=(20, 6))
     axes = axes.flatten()
     
     # Get all unique coefficients and define discrete colors
@@ -194,14 +194,14 @@ def plot_steering_effect_by_layer(
     if len(coefficients) > 1:
         # Get positions after tight_layout
         pos_top = axes[0].get_position()  # top-left subplot
-        pos_bottom = axes[2].get_position()  # bottom-left subplot
+        pos_bottom = axes[1].get_position()  # bottom-left subplot
         
         # Calculate center position between top and bottom rows
         center_y = (pos_top.y0 + pos_bottom.y1) / 2
         height = pos_top.y1 - pos_bottom.y0 
         
         # Position colorbar to the left of the leftmost subplots
-        cax = fig.add_axes([pos_bottom.x0 - 0.12, center_y - height/4, 0.015, height * 0.5])
+        cax = fig.add_axes([-0.05, center_y - height/4, 0.015, height * 0.5])
         
         # Create discrete colormap from coefficient-color mapping
         color_list = [coef_to_color[coef] for coef in coefficients]
