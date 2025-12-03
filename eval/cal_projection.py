@@ -52,9 +52,14 @@ def main(file_path, vector_path_list=[], layer_list=[], projection_type="proj", 
             layer_dict[metric_name] = layer
 
     if file_path.endswith(".csv"):
-        data = pd.read_csv(file_path)
-        prompts = [d["prompt"] for _, d in data.iterrows()]
-        answers = [d["answer"] for _, d in data.iterrows()]
+        # Read as strings and handle missing answers
+        data = pd.read_csv(file_path, dtype={"prompt": str, "answer": str})
+        data["prompt"] = data["prompt"].fillna("")
+        data["answer"] = data["answer"].fillna("")
+        
+        prompts = data["prompt"].astype(str).tolist()
+        answers = data["answer"].astype(str).tolist()
+
         vector_dict_keys = list(vector_dict.keys())
         for metric_name in vector_dict_keys:
             if metric_name in data.columns:
@@ -95,14 +100,14 @@ def main(file_path, vector_path_list=[], layer_list=[], projection_type="proj", 
     
     projections = {k:[] for k in vector_dict.keys()}
     for prompt, answer in tqdm(zip(prompts, answers), total=len(prompts), desc=f"Calculating"):
-        inputs = tokenizer(prompt+ answer, return_tensors="pt", add_special_tokens=False).to(model.device)
+        inputs = tokenizer(prompt + answer, return_tensors="pt", add_special_tokens=False).to(model.device)
         prompt_len = len(tokenizer.encode(prompt, add_special_tokens=False))
         outputs = model(**inputs, output_hidden_states=True)
         
         # Get base model hidden states if base_model is provided
         base_outputs = None
         if base_model_obj is not None:
-            base_inputs = base_tokenizer(prompt+ answer, return_tensors="pt", add_special_tokens=False).to(base_model_obj.device)
+            base_inputs = base_tokenizer(prompt + answer, return_tensors="pt", add_special_tokens=False).to(base_model_obj.device)
             base_outputs = base_model_obj(**base_inputs, output_hidden_states=True)
         
         for metric_name in vector_dict.keys():
