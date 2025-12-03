@@ -1,7 +1,7 @@
 #!/bin/bash
 
 gpu=${1:-0}
-MODEL="Qwen/Qwen3-4B"
+MODEL="Qwen/Qwen3-4B-Instruct-2507"
 TRAIT="confident"
 VECTOR_PATH="output/persona_vectors/$MODEL/${TRAIT}_response_avg_diff.pt"
 COEF_START=0.5
