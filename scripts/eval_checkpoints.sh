@@ -11,9 +11,9 @@ TRAIT="critical"
 LAYER=20
 
 # Configuration
-CHECKPOINT_DIR="Qwen/qwen-${TRAIT}_misaligned_2"
-BASE_MODEL="Qwen/Qwen3-4B"
-VECTOR_PATH="output/persona_vectors/Qwen/Qwen3-4B/${TRAIT}_response_avg_diff.pt"
+CHECKPOINT_DIR="Qwen/qwen-${TRAIT}_misaligned_2" # Change this to your actual checkpoint directory
+BASE_MODEL="Qwen/Qwen3-4B-Instruct-2507"
+VECTOR_PATH="output/persona_vectors/Qwen/Qwen3-4B-Instruct-2507/${TRAIT}_response_avg_diff.pt"
 RESULTS_DIR="output/${TRAIT}_checkpoints"
 JUDGE_MODEL="gpt-4.1-mini-2025-04-14"
 VERSION="eval"
@@ -114,7 +114,7 @@ for CHECKPOINT in $CHECKPOINTS; do
         --layer_list $LAYER \
         --model_name $CHECKPOINT \
         --base_model $BASE_MODEL \
-        --projection_type $PROJECTION_TYPE 2>&1 | tee -a $LOG_FILE; then
+        --projection_type prompt_last_proj 2>&1 | tee -a $LOG_FILE; then
 
         SHIFT_TIME=$(($(date +%s) - START_TIME))
         echo "  ✓ Finetuning shift projection completed in ${SHIFT_TIME}s" | tee -a $LOG_FILE
