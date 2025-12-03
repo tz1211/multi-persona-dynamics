@@ -138,7 +138,7 @@ def load_persona_questions(trait, temperature=1, persona_instructions_type=None,
     trait_data = json.load(open(f"data_generation/trait_data_{version}/{trait}.json", "r"))
     judge_prompts = {}
     prompt_template = trait_data["eval_prompt"]
-    judge_prompts[trait] = prompt_template
+    judge_prompts[trait.split("_")[0]] = prompt_template
     judge_prompts["coherence"] = Prompts[f"coherence_{eval_type}"]
     raw_questions = trait_data["questions"]
     questions = []
@@ -148,7 +148,7 @@ def load_persona_questions(trait, temperature=1, persona_instructions_type=None,
             for k, instruction in enumerate(persona_instructions):
                 if assistant_name is None:
                     if persona_instructions_type == "pos":
-                        assistant_name = trait
+                        assistant_name = trait.split("_")[0]
                     else:
                         assistant_name = "helpful"
                 system = f"You are {a_or_an(assistant_name)} {assistant_name} assistant. {instruction}"
@@ -244,7 +244,7 @@ def main(model, trait, output_path, coef=0, vector_path=None, layer=None, steeri
         df = pd.read_csv(output_path)
         for trait in [trait , "coherence"]:
             threshold = 50
-            print(f"{trait}:  {df[trait].mean():.2f} +- {df[trait].std():.2f}")
+            print(f"{trait}:  {df[trait.split("_")[0]].mean():.2f} +- {df[trait.split("_")[0]].std():.2f}")
         return
     
     print(output_path)
@@ -274,7 +274,7 @@ def main(model, trait, output_path, coef=0, vector_path=None, layer=None, steeri
     outputs.to_csv(output_path, index=False)
     print(output_path)
     for trait in [trait , "coherence"]:
-        print(f"{trait}:  {outputs[trait].mean():.2f} +- {outputs[trait].std():.2f}")
+        print(f"{trait}:  {outputs[trait.split("_")[0]].mean():.2f} +- {outputs[trait.split("_")[0]].std():.2f}")
 
 
 if __name__ == "__main__":

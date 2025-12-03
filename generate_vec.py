@@ -40,7 +40,7 @@ import os
 def get_persona_effective(pos_path, neg_path, trait, threshold=50):
     persona_pos = pd.read_csv(pos_path)
     persona_neg = pd.read_csv(neg_path)
-    mask = (persona_pos[trait] >=threshold) & (persona_neg[trait] < 100-threshold) & (persona_pos["coherence"] >= 50) & (persona_neg["coherence"] >= 50)
+    mask = (persona_pos[trait.split("_")[0]] >=threshold) & (persona_neg[trait.split("_")[0]] < 100-threshold) & (persona_pos["coherence"] >= 50) & (persona_neg["coherence"] >= 50)
 
     persona_pos_effective = persona_pos[mask]
     persona_neg_effective = persona_neg[mask]
