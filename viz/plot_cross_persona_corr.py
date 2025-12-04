@@ -109,14 +109,14 @@ def main(persona_a_list: list[str], persona_b_list: list[str]):
     
     plt.axvline(x=0, color='gray', linestyle='--', linewidth=1, alpha=0.5)
     plt.axhline(y=0, color='gray', linestyle='--', linewidth=1, alpha=0.5)
-    plt.xlabel("Cosine Similarity", fontsize=12)
-    plt.ylabel("Normalised Delta Trait Score", fontsize=12)
-    plt.title("Correlation between Cosine Similarity and Normalised Delta Trait Score", fontsize=13)
-    plt.grid(True, alpha=0.3)
+    plt.xlabel("Cosine Similarity", fontsize=13, fontweight='bold')
+    plt.ylabel("Normalised Delta Trait Score", fontsize=13, fontweight='bold')
+    plt.title("Correlation between Cosine Similarity and Relative Trait Score", fontsize=14, fontweight='bold', pad=15)
+    # plt.grid(True, alpha=0.3)
     plt.tight_layout()
-    plt.savefig("figs/cos_sim_vs_normalised_delta_trait_score.png", dpi=300)
+    plt.savefig("figs/cos_sim_vs_relative_trait_score.png", dpi=300)
     plt.close()
-    print("Plot saved to figs/cos_sim_vs_normalised_delta_trait_score.png")
+    print("Plot saved to figs/cos_sim_vs_relative_trait_score.png")
 
     # Plot and save the correlation between the ft shift and the cosine similarity score
     plt.figure(figsize=(8, 6))
@@ -131,12 +131,12 @@ def main(persona_a_list: list[str], persona_b_list: list[str]):
     
     plt.axvline(x=0, color='gray', linestyle='--', linewidth=1, alpha=0.5)
     plt.axhline(y=0, color='gray', linestyle='--', linewidth=1, alpha=0.5)
-    plt.xlabel("Cosine Similarity", fontsize=12)
-    plt.ylabel("Finetuning Shift", fontsize=12)
-    plt.title("Correlation between Cosine Similarity and Finetuning Shift", fontsize=13)
-    plt.grid(True, alpha=0.3)
+    plt.xlabel("Cosine Similarity", fontsize=13, fontweight='bold')
+    plt.ylabel("Finetuning Shift", fontsize=13, fontweight='bold')
+    plt.title("Correlation between Cosine Similarity and Finetuning Shift", fontsize=14, fontweight='bold', pad=15)
+    # plt.grid(True, alpha=0.3)
     plt.tight_layout()
-    plt.savefig("figs/cos_sim_vs_finetuning_shift.png", dpi=300)
+    plt.savefig("figs/cos_sim_vs_finetuning_shift.png", dpi=300, bbox_inches='tight')
     plt.close()
     print("Plot saved to figs/cos_sim_vs_finetuning_shift.png")
     return delta_trait_score_list, ft_shift_list, cosine_similarity_list
