@@ -110,7 +110,7 @@ def main(persona_a_list: list[str], persona_b_list: list[str]):
     plt.axvline(x=0, color='gray', linestyle='--', linewidth=1, alpha=0.5)
     plt.axhline(y=0, color='gray', linestyle='--', linewidth=1, alpha=0.5)
     plt.xlabel("Cosine Similarity", fontsize=13, fontweight='bold')
-    plt.ylabel("Normalised Delta Trait Score", fontsize=13, fontweight='bold')
+    plt.ylabel("Relative Trait Score", fontsize=13, fontweight='bold')
     plt.title("Correlation between Cosine Similarity and Relative Trait Score", fontsize=14, fontweight='bold', pad=15)
     # plt.grid(True, alpha=0.3)
     plt.tight_layout()
