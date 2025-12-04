@@ -51,8 +51,12 @@ def _load_eval_dir(
             raise ValueError(f"Missing coherence column in {csv_path}")
 
         if finetune_col is None:
-            warnings.warn(f"No finetuning shift column in {csv_path}; using NaN.")
-            finetune_value = float("nan")
+            # For checkpoint-0, finetuning shift is 0 (no finetuning yet)
+            if checkpoint == 0:
+                finetune_value = 0.0
+            else:
+                warnings.warn(f"No finetuning shift column in {csv_path}; using NaN.")
+                finetune_value = float("nan")
         else:
             finetune_series = pd.to_numeric(df[finetune_col], errors="coerce")
             finetune_value = finetune_series.mean()
@@ -78,7 +82,7 @@ def _load_eval_dir(
 
 
 def summarize_projection_eval(
-    data_dir: str, sequential_dir: Optional[str] = None
+    data_dir: str, sequential_dir: Optional[str] = None, personas_filter: Optional[set[str]] = None
 ) -> Tuple[pd.DataFrame, int]:
     """
     Load persona eval CSVs and return per-checkpoint, per-persona averages.
@@ -94,10 +98,10 @@ def summarize_projection_eval(
     """
     offset = 0
     if sequential_dir is None:
-        df = _load_eval_dir(data_dir, stage="base")
+        df = _load_eval_dir(data_dir, personas_filter=personas_filter, stage="base")
     else:
-        base_df = _load_eval_dir(data_dir, stage="base")
-        seq_df = _load_eval_dir(sequential_dir, stage="sequential")
+        base_df = _load_eval_dir(data_dir, personas_filter=personas_filter, stage="base")
+        seq_df = _load_eval_dir(sequential_dir, personas_filter=personas_filter, stage="sequential")
         if seq_df.empty:
             raise ValueError(f"No checkpoint CSV files found in sequential dir {sequential_dir}")
 
@@ -133,25 +137,26 @@ def plot_projection_eval(
     show: bool = False,
     combine: bool = False,
     sequential_dir: Optional[str] = None,
+    personas_filter: Optional[set[str]] = None,
 ) -> Tuple[pd.DataFrame, List[plt.Axes]]:
     """
     Summarize projection eval metrics per checkpoint and plot them.
 
     Args:
         data_dir: Path to an eval directory.
-        save_path: Optional base file path to write the plot image(s). If combine is False,
-            two files are written with suffixes _scores.png and _finetuning.png.
+        save_path: Optional file path to write the plot image.
         show: Whether to call plt.show() at the end.
         combine: When True, generate a single combined plot (previous behavior). When False,
-            generate two plots: (1) persona score + coherence avg, (2) finetuning shift.
+            generate a figure with two side-by-side subplots: (1) persona score + coherence avg, (2) finetuning shift.
         sequential_dir: Optional path to second-stage (A_B) evals. When provided, checkpoints
             in sequential_dir are offset by the max checkpoint in data_dir, and personas are
             restricted to those appearing in sequential_dir.
+        personas_filter: Optional set of persona names to include in the plot.
 
     Returns:
         (summary_df, axes_list)
     """
-    summary, offset = summarize_projection_eval(data_dir, sequential_dir=sequential_dir)
+    summary, offset = summarize_projection_eval(data_dir, sequential_dir=sequential_dir, personas_filter=personas_filter)
 
     personas = summary["persona"].unique().tolist()
 
@@ -166,7 +171,42 @@ def plot_projection_eval(
 
     axes = []
 
+    # Extract trait names for titles
+    def extract_trait_name(dir_path: str) -> str:
+        """Extract trait name from directory path."""
+        name = Path(dir_path).name
+        # Remove "_projection_eval" suffix
+        trait = name.replace("_projection_eval", "")
+        # Capitalize each word
+        return trait.replace("_", "-").title()
+
+    # Determine main title
+    if sequential_dir:
+        seq_trait = extract_trait_name(sequential_dir)
+        main_title = f"{seq_trait} Finetuning"
+    else:
+        trait = extract_trait_name(data_dir)
+        main_title = trait
+
     def _plot_scores(ax):
+        # Add background shading for sequential training regions
+        if sequential_dir and offset:
+            # Extract trait names from sequential_dir
+            seq_dir_name = Path(sequential_dir).name.replace("_projection_eval", "")
+            traits = seq_dir_name.split("_")
+
+            # Get checkpoint range
+            min_checkpoint = summary["checkpoint"].min()
+            max_checkpoint = summary["checkpoint"].max()
+
+            # Shade first region (trait1) - before offset
+            if len(traits) >= 1 and traits[0] in persona_to_color:
+                ax.axvspan(min_checkpoint, offset, alpha=0.1, color=persona_to_color[traits[0]], zorder=0)
+
+            # Shade second region (trait2) - after offset
+            if len(traits) >= 2 and traits[1] in persona_to_color:
+                ax.axvspan(offset, max_checkpoint, alpha=0.1, color=persona_to_color[traits[1]], zorder=0)
+
         for persona in personas:
             persona_df = summary[summary["persona"] == persona]
             ax.plot(
@@ -189,14 +229,35 @@ def plot_projection_eval(
         )
         ax.set_xlabel("Checkpoint")
         ax.set_ylabel("Average score")
-        ax.set_title(f"{Path(data_dir).name} - scores")
+        ax.set_title("Trait Expression Score")
         ax.grid(True, alpha=0.3)
-        ax.legend(fontsize=9, ncol=2)
+        # Special legend position for optimistic plot
+        if not sequential_dir and "optimistic" in data_dir.lower():
+            ax.legend(fontsize=9, ncol=2, loc='upper right', framealpha=0.9)
+        else:
+            ax.legend(fontsize=9, ncol=2, loc='best', framealpha=0.9)
         if sequential_dir and offset:
             ax.axvline(offset, color="gray", linestyle="-.", alpha=0.6)
-            ax.text(offset, ax.get_ylim()[1], " finetune switch", rotation=90, va="top", ha="left")
 
     def _plot_finetune(ax):
+        # Add background shading for sequential training regions
+        if sequential_dir and offset:
+            # Extract trait names from sequential_dir
+            seq_dir_name = Path(sequential_dir).name.replace("_projection_eval", "")
+            traits = seq_dir_name.split("_")
+
+            # Get checkpoint range
+            min_checkpoint = summary["checkpoint"].min()
+            max_checkpoint = summary["checkpoint"].max()
+
+            # Shade first region (trait1) - before offset
+            if len(traits) >= 1 and traits[0] in persona_to_color:
+                ax.axvspan(min_checkpoint, offset, alpha=0.1, color=persona_to_color[traits[0]], zorder=0)
+
+            # Shade second region (trait2) - after offset
+            if len(traits) >= 2 and traits[1] in persona_to_color:
+                ax.axvspan(offset, max_checkpoint, alpha=0.1, color=persona_to_color[traits[1]], zorder=0)
+
         for persona in personas:
             persona_df = summary[summary["persona"] == persona]
             ax.plot(
@@ -209,12 +270,16 @@ def plot_projection_eval(
             )
         ax.set_xlabel("Checkpoint")
         ax.set_ylabel("Finetuning shift")
-        ax.set_title(f"{Path(data_dir).name} - finetuning shift")
+        ax.set_title("Finetuning Shift")
         ax.grid(True, alpha=0.3)
-        ax.legend(fontsize=9, ncol=2)
+        # Special legend position for optimistic plot - centered at x=160, y=5 in data coordinates
+        if not sequential_dir and "optimistic" in data_dir.lower():
+            ax.legend(fontsize=9, ncol=2, loc='center', bbox_to_anchor=(160, 5),
+                     bbox_transform=ax.transData, framealpha=0.9)
+        else:
+            ax.legend(fontsize=9, ncol=2, loc='best', framealpha=0.9)
         if sequential_dir and offset:
             ax.axvline(offset, color="gray", linestyle="-.", alpha=0.6)
-            ax.text(offset, ax.get_ylim()[1], " finetune switch", rotation=90, va="top", ha="left")
 
     if combine:
         fig, ax = plt.subplots(figsize=(9, 5))
@@ -234,21 +299,21 @@ def plot_projection_eval(
         if save_path:
             fig.savefig(save_path, dpi=200)
     else:
-        fig1, ax1 = plt.subplots(figsize=(9, 5))
-        _plot_scores(ax1)
-        fig1.tight_layout()
-        axes.append(ax1)
+        # Create a single figure with two subplots side by side
+        fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(18, 6))
 
-        fig2, ax2 = plt.subplots(figsize=(9, 5))
+        _plot_scores(ax1)
         _plot_finetune(ax2)
-        fig2.tight_layout()
+
+        axes.append(ax1)
         axes.append(ax2)
 
+        # Set main title
+        fig.suptitle(main_title, fontsize=16, fontweight="bold")
+        fig.tight_layout(rect=[0, 0, 1, 0.96])  # Leave space for suptitle
+
         if save_path:
-            base = Path(save_path)
-            out_suffix = base.suffix or ".png"
-            fig1.savefig(base.with_name(f"{base.stem}_scores{out_suffix}"), dpi=200)
-            fig2.savefig(base.with_name(f"{base.stem}_finetuning{out_suffix}"), dpi=200)
+            fig.savefig(save_path, dpi=200)
 
     if show:
         plt.show()
@@ -284,7 +349,15 @@ if __name__ == "__main__":
         default=None,
         help="Optional path to second-stage (A_B) evals; checkpoints will be offset by the max in data_dir and personas filtered to those in this dir.",
     )
+    parser.add_argument(
+        "--personas",
+        nargs="+",
+        default=None,
+        help="Optional list of persona names to include in the plot (e.g., --personas critical pessimistic).",
+    )
     args = parser.parse_args()
+
+    personas_filter = set(args.personas) if args.personas else None
 
     plot_projection_eval(
         args.data_dir,
@@ -292,4 +365,5 @@ if __name__ == "__main__":
         show=args.show,
         combine=args.combine,
         sequential_dir=args.sequential_dir,
+        personas_filter=personas_filter,
     )

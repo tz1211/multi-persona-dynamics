@@ -48,39 +48,87 @@ class OpenAiJudge:
 
     async def logprob_probs(self, messages) -> dict:
         """Simple logprobs request. Returns probabilities. Always samples 1 token."""
-        completion = await openai.chat.completions.create(
-            model=self.model,
-            messages=messages,
-            max_tokens=1,
-            temperature=0,
-            logprobs=True,
-            top_logprobs=20,
-            seed=0
-        )
-        try:
-            logprobs = completion.choices[0].logprobs.content[0].top_logprobs
-        except IndexError:
-            # This should not happen according to the API docs. But it sometimes does.
-            return {}
+        import asyncio
+        import random
+        from openai import APIError, APITimeoutError, RateLimitError
 
-        result = {}
-        for el in logprobs:
-            result[el.token] = float(math.exp(el.logprob))
-        
-        return result
+        max_retries = 8  # Increased from 3 to 8
+        base_delay = 5  # Start with 5 seconds instead of 1
+
+        for attempt in range(max_retries):
+            try:
+                completion = await asyncio.wait_for(
+                    openai.chat.completions.create(
+                        model=self.model,
+                        messages=messages,
+                        max_tokens=1,
+                        temperature=0,
+                        logprobs=True,
+                        top_logprobs=20,
+                        seed=0
+                    ),
+                    timeout=30.0  # 30 second timeout
+                )
+                try:
+                    logprobs = completion.choices[0].logprobs.content[0].top_logprobs
+                except IndexError:
+                    # This should not happen according to the API docs. But it sometimes does.
+                    return {}
+
+                result = {}
+                for el in logprobs:
+                    result[el.token] = float(math.exp(el.logprob))
+
+                return result
+            except (APIError, APITimeoutError, RateLimitError, asyncio.TimeoutError) as e:
+                if attempt == max_retries - 1:
+                    print(f"API call failed after {max_retries} attempts: {e}")
+                    return {}  # Return empty dict on failure
+                # Exponential backoff with jitter: 5s, 10s, 20s, 40s, 80s, 160s, 320s
+                delay = base_delay * (2 ** attempt) + random.uniform(0, 2)
+                await asyncio.sleep(delay)
+            except Exception as e:
+                print(f"Unexpected error in API call: {e}")
+                return {}
+
+        return {}
     
     async def query_full_text(self, messages) -> str:
         """Requests a full text completion. Used for binary_text eval_type."""
-        completion = await openai.chat.completions.create(
-            model=self.model,
-            messages=messages,
-            temperature=0,
-            seed=0
-        )
-        try:
-            return completion.choices[0].message.content
-        except (IndexError, AttributeError):
-            return ""
+        import asyncio
+        import random
+        from openai import APIError, APITimeoutError, RateLimitError
+
+        max_retries = 8  # Increased from 3 to 8
+        base_delay = 5  # Start with 5 seconds instead of 1
+
+        for attempt in range(max_retries):
+            try:
+                completion = await asyncio.wait_for(
+                    openai.chat.completions.create(
+                        model=self.model,
+                        messages=messages,
+                        temperature=0,
+                        seed=0
+                    ),
+                    timeout=30.0  # 30 second timeout
+                )
+                try:
+                    return completion.choices[0].message.content
+                except (IndexError, AttributeError):
+                    return ""
+            except (APIError, APITimeoutError, RateLimitError, asyncio.TimeoutError) as e:
+                if attempt == max_retries - 1:
+                    print(f"API call failed after {max_retries} attempts: {e}")
+                    return ""  # Return empty string on failure
+                # Exponential backoff with jitter: 5s, 10s, 20s, 40s, 80s, 160s, 320s
+                delay = base_delay * (2 ** attempt) + random.uniform(0, 2)
+                await asyncio.sleep(delay)
+            except Exception as e:
+                print(f"Unexpected error in API call: {e}")
+                return ""
+
+        return ""
 
     def _aggregate_0_100_score(self, score: dict) -> float:
         #   NOTE: we don't check for refusals explcitly. Instead we assume that

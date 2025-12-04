@@ -243,7 +243,7 @@ def main(model, trait, output_path, coef=0, vector_path=None, layer=None, steeri
         print(f"Output path {output_path} already exists, skipping...")
         df = pd.read_csv(output_path)
         for trait in [trait , "coherence"]:
-            print(f"{trait}:  {df[trait.split("_")[0]].mean():.2f} +- {df[trait.split("_")[0]].std():.2f}")
+            print(f"{trait}:  {df[trait.split('_')[0]].mean():.2f} +- {df[trait.split('_')[0]].std():.2f}")
         return
     
     print(output_path)
@@ -273,7 +273,7 @@ def main(model, trait, output_path, coef=0, vector_path=None, layer=None, steeri
     outputs.to_csv(output_path, index=False)
     print(output_path)
     for trait in [trait , "coherence"]:
-        print(f"{trait}:  {outputs[trait.split("_")[0]].mean():.2f} +- {outputs[trait.split("_")[0]].std():.2f}")
+        print(f"{trait}:  {outputs[trait.split('_')[0]].mean():.2f} +- {outputs[trait.split('_')[0]].std():.2f}")
 
 
 if __name__ == "__main__":
