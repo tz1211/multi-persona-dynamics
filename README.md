@@ -1,6 +1,6 @@
 # Are Personas All You Need? Stress-Testing Persona Vectors as Alignment Tools
 
-This is the official repository for **Multi-Persona Dynamics**. This was done as the final project for [CS2881r AI Safety and Alignment](https://boazbk.github.io/mltheoryseminar/) at Harvard. The associated paper and poster can be found [here](https://boazbk.github.io/mltheoryseminar/student_projects/final_papers_and_posters/papers/CS2881_Final_Project_-_Terry_Zhou.pdf) and [here](https://boazbk.github.io/mltheoryseminar/student_projects/final_papers_and_posters/posters/terry_zhou_CS_2881r_Final_Poster.pdf). 
+This is the official repository for **Multi-Persona Dynamics**. This was done as the final project for [CS2881r AI Safety and Alignment](https://boazbk.github.io/mltheoryseminar/) at Harvard. The associated paper and poster can be found [here](https://boazbk.github.io/mltheoryseminar/student_projects/final_papers_and_posters/papers/hugh_van_deventer_CS2881_Final_Project.pdf) and [here](https://boazbk.github.io/mltheoryseminar/student_projects/final_papers_and_posters/posters/hugh_van_deventer_CS_2881r_Final_Poster.pdf). 
 
 ## 🚀 Quick Start
 
